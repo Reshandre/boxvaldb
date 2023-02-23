@@ -1,0 +1,41 @@
+{% extends 'base_simple.html' %}
+
+{% block content %}
+<h1>Load or export Data</h1>
+<form method="post">
+    {% csrf_token %} 
+    {{ appform.as_p }}
+    <button type="{{submitlist}}" class="btn btn-primary" name="getApp" style="background:orange" value="Enter App"> Select value </button> <br>
+    {%  if submitimportexport != 'none'%}
+        <button type="submit" class="btn btn-primary" name="Export" style="{ackground:green,display:{{submitimportexport}}" value="Export"> Export</button> 
+        <button type="submit" class="btn btn-primary" name="Import" style="background:yellow,display:{{submitimportexport}}" value="Import"> Import </button> 
+    {% else %}
+
+    {% endif %}
+    
+</form>
+
+{{ message }}
+
+
+{% if fieldlist %}
+    <table>
+            <tr>
+                <th>Index</th>
+                <th>FieldName</th>
+                <th>class</th>
+            </tr>
+        {% for fld in fieldlist %}
+            <tr>
+                <td>{{fld.0}}</th>
+                <td>{{fld.1}}</th>
+                <td>{{fld.2}}</th>
+
+            </tr>      
+        {% endfor %}
+    </table>
+
+{% endif %}
+
+
+{% endblock %}

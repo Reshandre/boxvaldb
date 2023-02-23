@@ -1,0 +1,7268 @@
+[
+{
+ "model": "admin.logentry",
+ "pk": 1,
+ "fields": {
+  "action_time": "2023-01-23T13:50:02.473Z",
+  "user": 1,
+  "content_type": 11,
+  "object_id": "16",
+  "object_repr": "Paris",
+  "action_flag": 1,
+  "change_message": "[{\"added\": {}}]"
+ }
+},
+{
+ "model": "admin.logentry",
+ "pk": 2,
+ "fields": {
+  "action_time": "2023-01-23T13:50:35.784Z",
+  "user": 1,
+  "content_type": 11,
+  "object_id": "17",
+  "object_repr": "Montargis",
+  "action_flag": 1,
+  "change_message": "[{\"added\": {}}]"
+ }
+},
+{
+ "model": "admin.logentry",
+ "pk": 3,
+ "fields": {
+  "action_time": "2023-01-24T19:20:54.790Z",
+  "user": 1,
+  "content_type": 4,
+  "object_id": "2",
+  "object_repr": "bob",
+  "action_flag": 1,
+  "change_message": "[{\"added\": {}}]"
+ }
+},
+{
+ "model": "admin.logentry",
+ "pk": 4,
+ "fields": {
+  "action_time": "2023-01-24T19:22:04.825Z",
+  "user": 1,
+  "content_type": 4,
+  "object_id": "2",
+  "object_repr": "bob",
+  "action_flag": 2,
+  "change_message": "[{\"changed\": {\"fields\": [\"First name\", \"Last name\", \"Email address\"]}}]"
+ }
+},
+{
+ "model": "admin.logentry",
+ "pk": 5,
+ "fields": {
+  "action_time": "2023-01-24T21:03:54.135Z",
+  "user": 1,
+  "content_type": 14,
+  "object_id": "1",
+  "object_repr": "Bob - Luck",
+  "action_flag": 1,
+  "change_message": "[{\"added\": {}}]"
+ }
+},
+{
+ "model": "admin.logentry",
+ "pk": 6,
+ "fields": {
+  "action_time": "2023-01-24T21:46:06.741Z",
+  "user": 1,
+  "content_type": 15,
+  "object_id": "2",
+  "object_repr": "Valentin - 1L24",
+  "action_flag": 1,
+  "change_message": "[{\"added\": {}}]"
+ }
+},
+{
+ "model": "admin.logentry",
+ "pk": 7,
+ "fields": {
+  "action_time": "2023-01-24T22:21:30.093Z",
+  "user": 1,
+  "content_type": 16,
+  "object_id": "1",
+  "object_repr": " profile bob ",
+  "action_flag": 2,
+  "change_message": "[{\"changed\": {\"fields\": [\"RelatedToBusinesspartner\"]}}]"
+ }
+},
+{
+ "model": "admin.logentry",
+ "pk": 8,
+ "fields": {
+  "action_time": "2023-02-09T00:01:55.485Z",
+  "user": 1,
+  "content_type": 24,
+  "object_id": "6",
+  "object_repr": "ModelFieldMapper object (6)",
+  "action_flag": 3,
+  "change_message": ""
+ }
+},
+{
+ "model": "admin.logentry",
+ "pk": 9,
+ "fields": {
+  "action_time": "2023-02-09T17:49:19.405Z",
+  "user": 1,
+  "content_type": 24,
+  "object_id": "8",
+  "object_repr": "ModelFieldMapper object (8)",
+  "action_flag": 3,
+  "change_message": ""
+ }
+},
+{
+ "model": "admin.logentry",
+ "pk": 10,
+ "fields": {
+  "action_time": "2023-02-09T18:02:10.289Z",
+  "user": 1,
+  "content_type": 24,
+  "object_id": "10",
+  "object_repr": "ModelFieldMapper object (10)",
+  "action_flag": 3,
+  "change_message": ""
+ }
+},
+{
+ "model": "admin.logentry",
+ "pk": 11,
+ "fields": {
+  "action_time": "2023-02-09T18:02:23.828Z",
+  "user": 1,
+  "content_type": 24,
+  "object_id": "9",
+  "object_repr": "ModelFieldMapper object (9)",
+  "action_flag": 3,
+  "change_message": ""
+ }
+},
+{
+ "model": "auth.permission",
+ "pk": 1,
+ "fields": {
+  "name": "Can add log entry",
+  "content_type": 1,
+  "codename": "add_logentry"
+ }
+},
+{
+ "model": "auth.permission",
+ "pk": 2,
+ "fields": {
+  "name": "Can change log entry",
+  "content_type": 1,
+  "codename": "change_logentry"
+ }
+},
+{
+ "model": "auth.permission",
+ "pk": 3,
+ "fields": {
+  "name": "Can delete log entry",
+  "content_type": 1,
+  "codename": "delete_logentry"
+ }
+},
+{
+ "model": "auth.permission",
+ "pk": 4,
+ "fields": {
+  "name": "Can view log entry",
+  "content_type": 1,
+  "codename": "view_logentry"
+ }
+},
+{
+ "model": "auth.permission",
+ "pk": 5,
+ "fields": {
+  "name": "Can add permission",
+  "content_type": 2,
+  "codename": "add_permission"
+ }
+},
+{
+ "model": "auth.permission",
+ "pk": 6,
+ "fields": {
+  "name": "Can change permission",
+  "content_type": 2,
+  "codename": "change_permission"
+ }
+},
+{
+ "model": "auth.permission",
+ "pk": 7,
+ "fields": {
+  "name": "Can delete permission",
+  "content_type": 2,
+  "codename": "delete_permission"
+ }
+},
+{
+ "model": "auth.permission",
+ "pk": 8,
+ "fields": {
+  "name": "Can view permission",
+  "content_type": 2,
+  "codename": "view_permission"
+ }
+},
+{
+ "model": "auth.permission",
+ "pk": 9,
+ "fields": {
+  "name": "Can add group",
+  "content_type": 3,
+  "codename": "add_group"
+ }
+},
+{
+ "model": "auth.permission",
+ "pk": 10,
+ "fields": {
+  "name": "Can change group",
+  "content_type": 3,
+  "codename": "change_group"
+ }
+},
+{
+ "model": "auth.permission",
+ "pk": 11,
+ "fields": {
+  "name": "Can delete group",
+  "content_type": 3,
+  "codename": "delete_group"
+ }
+},
+{
+ "model": "auth.permission",
+ "pk": 12,
+ "fields": {
+  "name": "Can view group",
+  "content_type": 3,
+  "codename": "view_group"
+ }
+},
+{
+ "model": "auth.permission",
+ "pk": 13,
+ "fields": {
+  "name": "Can add user",
+  "content_type": 4,
+  "codename": "add_user"
+ }
+},
+{
+ "model": "auth.permission",
+ "pk": 14,
+ "fields": {
+  "name": "Can change user",
+  "content_type": 4,
+  "codename": "change_user"
+ }
+},
+{
+ "model": "auth.permission",
+ "pk": 15,
+ "fields": {
+  "name": "Can delete user",
+  "content_type": 4,
+  "codename": "delete_user"
+ }
+},
+{
+ "model": "auth.permission",
+ "pk": 16,
+ "fields": {
+  "name": "Can view user",
+  "content_type": 4,
+  "codename": "view_user"
+ }
+},
+{
+ "model": "auth.permission",
+ "pk": 17,
+ "fields": {
+  "name": "Can add content type",
+  "content_type": 5,
+  "codename": "add_contenttype"
+ }
+},
+{
+ "model": "auth.permission",
+ "pk": 18,
+ "fields": {
+  "name": "Can change content type",
+  "content_type": 5,
+  "codename": "change_contenttype"
+ }
+},
+{
+ "model": "auth.permission",
+ "pk": 19,
+ "fields": {
+  "name": "Can delete content type",
+  "content_type": 5,
+  "codename": "delete_contenttype"
+ }
+},
+{
+ "model": "auth.permission",
+ "pk": 20,
+ "fields": {
+  "name": "Can view content type",
+  "content_type": 5,
+  "codename": "view_contenttype"
+ }
+},
+{
+ "model": "auth.permission",
+ "pk": 21,
+ "fields": {
+  "name": "Can add session",
+  "content_type": 6,
+  "codename": "add_session"
+ }
+},
+{
+ "model": "auth.permission",
+ "pk": 22,
+ "fields": {
+  "name": "Can change session",
+  "content_type": 6,
+  "codename": "change_session"
+ }
+},
+{
+ "model": "auth.permission",
+ "pk": 23,
+ "fields": {
+  "name": "Can delete session",
+  "content_type": 6,
+  "codename": "delete_session"
+ }
+},
+{
+ "model": "auth.permission",
+ "pk": 24,
+ "fields": {
+  "name": "Can view session",
+  "content_type": 6,
+  "codename": "view_session"
+ }
+},
+{
+ "model": "auth.permission",
+ "pk": 25,
+ "fields": {
+  "name": "Can add standardized volume",
+  "content_type": 7,
+  "codename": "add_standardizedvolume"
+ }
+},
+{
+ "model": "auth.permission",
+ "pk": 26,
+ "fields": {
+  "name": "Can change standardized volume",
+  "content_type": 7,
+  "codename": "change_standardizedvolume"
+ }
+},
+{
+ "model": "auth.permission",
+ "pk": 27,
+ "fields": {
+  "name": "Can delete standardized volume",
+  "content_type": 7,
+  "codename": "delete_standardizedvolume"
+ }
+},
+{
+ "model": "auth.permission",
+ "pk": 28,
+ "fields": {
+  "name": "Can view standardized volume",
+  "content_type": 7,
+  "codename": "view_standardizedvolume"
+ }
+},
+{
+ "model": "auth.permission",
+ "pk": 29,
+ "fields": {
+  "name": "Can add geographical unit",
+  "content_type": 8,
+  "codename": "add_geographicalunit"
+ }
+},
+{
+ "model": "auth.permission",
+ "pk": 30,
+ "fields": {
+  "name": "Can change geographical unit",
+  "content_type": 8,
+  "codename": "change_geographicalunit"
+ }
+},
+{
+ "model": "auth.permission",
+ "pk": 31,
+ "fields": {
+  "name": "Can delete geographical unit",
+  "content_type": 8,
+  "codename": "delete_geographicalunit"
+ }
+},
+{
+ "model": "auth.permission",
+ "pk": 32,
+ "fields": {
+  "name": "Can view geographical unit",
+  "content_type": 8,
+  "codename": "view_geographicalunit"
+ }
+},
+{
+ "model": "auth.permission",
+ "pk": 33,
+ "fields": {
+  "name": "Can manage locations",
+  "content_type": 8,
+  "codename": "can_manage_locations"
+ }
+},
+{
+ "model": "auth.permission",
+ "pk": 34,
+ "fields": {
+  "name": "Can add continent",
+  "content_type": 9,
+  "codename": "add_continent"
+ }
+},
+{
+ "model": "auth.permission",
+ "pk": 35,
+ "fields": {
+  "name": "Can change continent",
+  "content_type": 9,
+  "codename": "change_continent"
+ }
+},
+{
+ "model": "auth.permission",
+ "pk": 36,
+ "fields": {
+  "name": "Can delete continent",
+  "content_type": 9,
+  "codename": "delete_continent"
+ }
+},
+{
+ "model": "auth.permission",
+ "pk": 37,
+ "fields": {
+  "name": "Can view continent",
+  "content_type": 9,
+  "codename": "view_continent"
+ }
+},
+{
+ "model": "auth.permission",
+ "pk": 38,
+ "fields": {
+  "name": "Can add country",
+  "content_type": 10,
+  "codename": "add_country"
+ }
+},
+{
+ "model": "auth.permission",
+ "pk": 39,
+ "fields": {
+  "name": "Can change country",
+  "content_type": 10,
+  "codename": "change_country"
+ }
+},
+{
+ "model": "auth.permission",
+ "pk": 40,
+ "fields": {
+  "name": "Can delete country",
+  "content_type": 10,
+  "codename": "delete_country"
+ }
+},
+{
+ "model": "auth.permission",
+ "pk": 41,
+ "fields": {
+  "name": "Can view country",
+  "content_type": 10,
+  "codename": "view_country"
+ }
+},
+{
+ "model": "auth.permission",
+ "pk": 42,
+ "fields": {
+  "name": "Can add city",
+  "content_type": 11,
+  "codename": "add_city"
+ }
+},
+{
+ "model": "auth.permission",
+ "pk": 43,
+ "fields": {
+  "name": "Can change city",
+  "content_type": 11,
+  "codename": "change_city"
+ }
+},
+{
+ "model": "auth.permission",
+ "pk": 44,
+ "fields": {
+  "name": "Can delete city",
+  "content_type": 11,
+  "codename": "delete_city"
+ }
+},
+{
+ "model": "auth.permission",
+ "pk": 45,
+ "fields": {
+  "name": "Can view city",
+  "content_type": 11,
+  "codename": "view_city"
+ }
+},
+{
+ "model": "auth.permission",
+ "pk": 46,
+ "fields": {
+  "name": "Can add address",
+  "content_type": 12,
+  "codename": "add_address"
+ }
+},
+{
+ "model": "auth.permission",
+ "pk": 47,
+ "fields": {
+  "name": "Can change address",
+  "content_type": 12,
+  "codename": "change_address"
+ }
+},
+{
+ "model": "auth.permission",
+ "pk": 48,
+ "fields": {
+  "name": "Can delete address",
+  "content_type": 12,
+  "codename": "delete_address"
+ }
+},
+{
+ "model": "auth.permission",
+ "pk": 49,
+ "fields": {
+  "name": "Can view address",
+  "content_type": 12,
+  "codename": "view_address"
+ }
+},
+{
+ "model": "auth.permission",
+ "pk": 50,
+ "fields": {
+  "name": "Can add business partner",
+  "content_type": 13,
+  "codename": "add_businesspartner"
+ }
+},
+{
+ "model": "auth.permission",
+ "pk": 51,
+ "fields": {
+  "name": "Can change business partner",
+  "content_type": 13,
+  "codename": "change_businesspartner"
+ }
+},
+{
+ "model": "auth.permission",
+ "pk": 52,
+ "fields": {
+  "name": "Can delete business partner",
+  "content_type": 13,
+  "codename": "delete_businesspartner"
+ }
+},
+{
+ "model": "auth.permission",
+ "pk": 53,
+ "fields": {
+  "name": "Can view business partner",
+  "content_type": 13,
+  "codename": "view_businesspartner"
+ }
+},
+{
+ "model": "auth.permission",
+ "pk": 54,
+ "fields": {
+  "name": "Can add individual person",
+  "content_type": 14,
+  "codename": "add_individualperson"
+ }
+},
+{
+ "model": "auth.permission",
+ "pk": 55,
+ "fields": {
+  "name": "Can change individual person",
+  "content_type": 14,
+  "codename": "change_individualperson"
+ }
+},
+{
+ "model": "auth.permission",
+ "pk": 56,
+ "fields": {
+  "name": "Can delete individual person",
+  "content_type": 14,
+  "codename": "delete_individualperson"
+ }
+},
+{
+ "model": "auth.permission",
+ "pk": 57,
+ "fields": {
+  "name": "Can view individual person",
+  "content_type": 14,
+  "codename": "view_individualperson"
+ }
+},
+{
+ "model": "auth.permission",
+ "pk": 58,
+ "fields": {
+  "name": "Can add organization",
+  "content_type": 15,
+  "codename": "add_organization"
+ }
+},
+{
+ "model": "auth.permission",
+ "pk": 59,
+ "fields": {
+  "name": "Can change organization",
+  "content_type": 15,
+  "codename": "change_organization"
+ }
+},
+{
+ "model": "auth.permission",
+ "pk": 60,
+ "fields": {
+  "name": "Can delete organization",
+  "content_type": 15,
+  "codename": "delete_organization"
+ }
+},
+{
+ "model": "auth.permission",
+ "pk": 61,
+ "fields": {
+  "name": "Can view organization",
+  "content_type": 15,
+  "codename": "view_organization"
+ }
+},
+{
+ "model": "auth.permission",
+ "pk": 62,
+ "fields": {
+  "name": "Can add profile",
+  "content_type": 16,
+  "codename": "add_profile"
+ }
+},
+{
+ "model": "auth.permission",
+ "pk": 63,
+ "fields": {
+  "name": "Can change profile",
+  "content_type": 16,
+  "codename": "change_profile"
+ }
+},
+{
+ "model": "auth.permission",
+ "pk": 64,
+ "fields": {
+  "name": "Can delete profile",
+  "content_type": 16,
+  "codename": "delete_profile"
+ }
+},
+{
+ "model": "auth.permission",
+ "pk": 65,
+ "fields": {
+  "name": "Can view profile",
+  "content_type": 16,
+  "codename": "view_profile"
+ }
+},
+{
+ "model": "auth.permission",
+ "pk": 66,
+ "fields": {
+  "name": "Can add asset",
+  "content_type": 17,
+  "codename": "add_asset"
+ }
+},
+{
+ "model": "auth.permission",
+ "pk": 67,
+ "fields": {
+  "name": "Can change asset",
+  "content_type": 17,
+  "codename": "change_asset"
+ }
+},
+{
+ "model": "auth.permission",
+ "pk": 68,
+ "fields": {
+  "name": "Can delete asset",
+  "content_type": 17,
+  "codename": "delete_asset"
+ }
+},
+{
+ "model": "auth.permission",
+ "pk": 69,
+ "fields": {
+  "name": "Can view asset",
+  "content_type": 17,
+  "codename": "view_asset"
+ }
+},
+{
+ "model": "auth.permission",
+ "pk": 70,
+ "fields": {
+  "name": "Can add real estate property",
+  "content_type": 18,
+  "codename": "add_realestateproperty"
+ }
+},
+{
+ "model": "auth.permission",
+ "pk": 71,
+ "fields": {
+  "name": "Can change real estate property",
+  "content_type": 18,
+  "codename": "change_realestateproperty"
+ }
+},
+{
+ "model": "auth.permission",
+ "pk": 72,
+ "fields": {
+  "name": "Can delete real estate property",
+  "content_type": 18,
+  "codename": "delete_realestateproperty"
+ }
+},
+{
+ "model": "auth.permission",
+ "pk": 73,
+ "fields": {
+  "name": "Can view real estate property",
+  "content_type": 18,
+  "codename": "view_realestateproperty"
+ }
+},
+{
+ "model": "auth.permission",
+ "pk": 74,
+ "fields": {
+  "name": "Can add box",
+  "content_type": 19,
+  "codename": "add_box"
+ }
+},
+{
+ "model": "auth.permission",
+ "pk": 75,
+ "fields": {
+  "name": "Can change box",
+  "content_type": 19,
+  "codename": "change_box"
+ }
+},
+{
+ "model": "auth.permission",
+ "pk": 76,
+ "fields": {
+  "name": "Can delete box",
+  "content_type": 19,
+  "codename": "delete_box"
+ }
+},
+{
+ "model": "auth.permission",
+ "pk": 77,
+ "fields": {
+  "name": "Can view box",
+  "content_type": 19,
+  "codename": "view_box"
+ }
+},
+{
+ "model": "auth.permission",
+ "pk": 78,
+ "fields": {
+  "name": "Can add box reservation request",
+  "content_type": 20,
+  "codename": "add_boxreservationrequest"
+ }
+},
+{
+ "model": "auth.permission",
+ "pk": 79,
+ "fields": {
+  "name": "Can change box reservation request",
+  "content_type": 20,
+  "codename": "change_boxreservationrequest"
+ }
+},
+{
+ "model": "auth.permission",
+ "pk": 80,
+ "fields": {
+  "name": "Can delete box reservation request",
+  "content_type": 20,
+  "codename": "delete_boxreservationrequest"
+ }
+},
+{
+ "model": "auth.permission",
+ "pk": 81,
+ "fields": {
+  "name": "Can view box reservation request",
+  "content_type": 20,
+  "codename": "view_boxreservationrequest"
+ }
+},
+{
+ "model": "auth.permission",
+ "pk": 82,
+ "fields": {
+  "name": "Can add box confirmed reservation",
+  "content_type": 21,
+  "codename": "add_boxconfirmedreservation"
+ }
+},
+{
+ "model": "auth.permission",
+ "pk": 83,
+ "fields": {
+  "name": "Can change box confirmed reservation",
+  "content_type": 21,
+  "codename": "change_boxconfirmedreservation"
+ }
+},
+{
+ "model": "auth.permission",
+ "pk": 84,
+ "fields": {
+  "name": "Can delete box confirmed reservation",
+  "content_type": 21,
+  "codename": "delete_boxconfirmedreservation"
+ }
+},
+{
+ "model": "auth.permission",
+ "pk": 85,
+ "fields": {
+  "name": "Can view box confirmed reservation",
+  "content_type": 21,
+  "codename": "view_boxconfirmedreservation"
+ }
+},
+{
+ "model": "auth.permission",
+ "pk": 86,
+ "fields": {
+  "name": "Can add box occupied",
+  "content_type": 22,
+  "codename": "add_boxoccupied"
+ }
+},
+{
+ "model": "auth.permission",
+ "pk": 87,
+ "fields": {
+  "name": "Can change box occupied",
+  "content_type": 22,
+  "codename": "change_boxoccupied"
+ }
+},
+{
+ "model": "auth.permission",
+ "pk": 88,
+ "fields": {
+  "name": "Can delete box occupied",
+  "content_type": 22,
+  "codename": "delete_boxoccupied"
+ }
+},
+{
+ "model": "auth.permission",
+ "pk": 89,
+ "fields": {
+  "name": "Can view box occupied",
+  "content_type": 22,
+  "codename": "view_boxoccupied"
+ }
+},
+{
+ "model": "auth.permission",
+ "pk": 90,
+ "fields": {
+  "name": "Can add box occupied log",
+  "content_type": 23,
+  "codename": "add_boxoccupiedlog"
+ }
+},
+{
+ "model": "auth.permission",
+ "pk": 91,
+ "fields": {
+  "name": "Can change box occupied log",
+  "content_type": 23,
+  "codename": "change_boxoccupiedlog"
+ }
+},
+{
+ "model": "auth.permission",
+ "pk": 92,
+ "fields": {
+  "name": "Can delete box occupied log",
+  "content_type": 23,
+  "codename": "delete_boxoccupiedlog"
+ }
+},
+{
+ "model": "auth.permission",
+ "pk": 93,
+ "fields": {
+  "name": "Can view box occupied log",
+  "content_type": 23,
+  "codename": "view_boxoccupiedlog"
+ }
+},
+{
+ "model": "auth.permission",
+ "pk": 94,
+ "fields": {
+  "name": "Can add model field mapper",
+  "content_type": 24,
+  "codename": "add_modelfieldmapper"
+ }
+},
+{
+ "model": "auth.permission",
+ "pk": 95,
+ "fields": {
+  "name": "Can change model field mapper",
+  "content_type": 24,
+  "codename": "change_modelfieldmapper"
+ }
+},
+{
+ "model": "auth.permission",
+ "pk": 96,
+ "fields": {
+  "name": "Can delete model field mapper",
+  "content_type": 24,
+  "codename": "delete_modelfieldmapper"
+ }
+},
+{
+ "model": "auth.permission",
+ "pk": 97,
+ "fields": {
+  "name": "Can view model field mapper",
+  "content_type": 24,
+  "codename": "view_modelfieldmapper"
+ }
+},
+{
+ "model": "auth.user",
+ "pk": 1,
+ "fields": {
+  "password": "pbkdf2_sha256$390000$p62Fnks1LYWX3Uc4DXhZPQ$f/2fENm+AH5FSoZh1A91vya+SB/PAPJSdXxeAxWVveY=",
+  "last_login": "2023-02-05T19:10:01.054Z",
+  "is_superuser": true,
+  "username": "reshandre",
+  "first_name": "",
+  "last_name": "",
+  "email": "katz.andre@gmail.com",
+  "is_staff": true,
+  "is_active": true,
+  "date_joined": "2023-01-17T19:44:37.028Z",
+  "groups": [],
+  "user_permissions": []
+ }
+},
+{
+ "model": "auth.user",
+ "pk": 2,
+ "fields": {
+  "password": "pbkdf2_sha256$390000$iIccmMGIimyNXeO0Bv79f9$lcHTJxcGN4jPZC5breBTnfJDWiKsBTXwTi3Y4OREgHI=",
+  "last_login": null,
+  "is_superuser": false,
+  "username": "bob",
+  "first_name": "Bob",
+  "last_name": "Lucky",
+  "email": "g@tchak.com",
+  "is_staff": false,
+  "is_active": true,
+  "date_joined": "2023-01-24T19:20:54Z",
+  "groups": [],
+  "user_permissions": []
+ }
+},
+{
+ "model": "contenttypes.contenttype",
+ "pk": 1,
+ "fields": {
+  "app_label": "admin",
+  "model": "logentry"
+ }
+},
+{
+ "model": "contenttypes.contenttype",
+ "pk": 2,
+ "fields": {
+  "app_label": "auth",
+  "model": "permission"
+ }
+},
+{
+ "model": "contenttypes.contenttype",
+ "pk": 3,
+ "fields": {
+  "app_label": "auth",
+  "model": "group"
+ }
+},
+{
+ "model": "contenttypes.contenttype",
+ "pk": 4,
+ "fields": {
+  "app_label": "auth",
+  "model": "user"
+ }
+},
+{
+ "model": "contenttypes.contenttype",
+ "pk": 5,
+ "fields": {
+  "app_label": "contenttypes",
+  "model": "contenttype"
+ }
+},
+{
+ "model": "contenttypes.contenttype",
+ "pk": 6,
+ "fields": {
+  "app_label": "sessions",
+  "model": "session"
+ }
+},
+{
+ "model": "contenttypes.contenttype",
+ "pk": 7,
+ "fields": {
+  "app_label": "masters",
+  "model": "standardizedvolume"
+ }
+},
+{
+ "model": "contenttypes.contenttype",
+ "pk": 8,
+ "fields": {
+  "app_label": "locations",
+  "model": "geographicalunit"
+ }
+},
+{
+ "model": "contenttypes.contenttype",
+ "pk": 9,
+ "fields": {
+  "app_label": "locations",
+  "model": "continent"
+ }
+},
+{
+ "model": "contenttypes.contenttype",
+ "pk": 10,
+ "fields": {
+  "app_label": "locations",
+  "model": "country"
+ }
+},
+{
+ "model": "contenttypes.contenttype",
+ "pk": 11,
+ "fields": {
+  "app_label": "locations",
+  "model": "city"
+ }
+},
+{
+ "model": "contenttypes.contenttype",
+ "pk": 12,
+ "fields": {
+  "app_label": "locations",
+  "model": "address"
+ }
+},
+{
+ "model": "contenttypes.contenttype",
+ "pk": 13,
+ "fields": {
+  "app_label": "partners",
+  "model": "businesspartner"
+ }
+},
+{
+ "model": "contenttypes.contenttype",
+ "pk": 14,
+ "fields": {
+  "app_label": "partners",
+  "model": "individualperson"
+ }
+},
+{
+ "model": "contenttypes.contenttype",
+ "pk": 15,
+ "fields": {
+  "app_label": "partners",
+  "model": "organization"
+ }
+},
+{
+ "model": "contenttypes.contenttype",
+ "pk": 16,
+ "fields": {
+  "app_label": "profiles",
+  "model": "profile"
+ }
+},
+{
+ "model": "contenttypes.contenttype",
+ "pk": 17,
+ "fields": {
+  "app_label": "assets",
+  "model": "asset"
+ }
+},
+{
+ "model": "contenttypes.contenttype",
+ "pk": 18,
+ "fields": {
+  "app_label": "assets",
+  "model": "realestateproperty"
+ }
+},
+{
+ "model": "contenttypes.contenttype",
+ "pk": 19,
+ "fields": {
+  "app_label": "assets",
+  "model": "box"
+ }
+},
+{
+ "model": "contenttypes.contenttype",
+ "pk": 20,
+ "fields": {
+  "app_label": "boxes",
+  "model": "boxreservationrequest"
+ }
+},
+{
+ "model": "contenttypes.contenttype",
+ "pk": 21,
+ "fields": {
+  "app_label": "boxes",
+  "model": "boxconfirmedreservation"
+ }
+},
+{
+ "model": "contenttypes.contenttype",
+ "pk": 22,
+ "fields": {
+  "app_label": "boxes",
+  "model": "boxoccupied"
+ }
+},
+{
+ "model": "contenttypes.contenttype",
+ "pk": 23,
+ "fields": {
+  "app_label": "boxes",
+  "model": "boxoccupiedlog"
+ }
+},
+{
+ "model": "contenttypes.contenttype",
+ "pk": 24,
+ "fields": {
+  "app_label": "param",
+  "model": "modelfieldmapper"
+ }
+},
+{
+ "model": "sessions.session",
+ "pk": "56sfq8blxdxxvjy2bn04e1o7m7mx6x0p",
+ "fields": {
+  "session_data": ".eJxVjMsOwiAQRf-FtSGUl-DSvd9AmGGQqoGktCvjv0uTLnR7zzn3zULc1hK2TkuYE7uwiZ1-N4j4pLqD9Ij13ji2ui4z8F3hB-381hK9rof7d1BiL6N2qIUnaZzJBjJIRxYloHcgnAWllbGEKYHxOPCQ0ec8KXHWVkqPgn2-82Y4Ow:1pHrt3:1gYLYd_mDMBc794gRrB1ReWZzuT686xImEmLIhxrJgk",
+  "expire_date": "2023-01-31T19:44:49.758Z"
+ }
+},
+{
+ "model": "sessions.session",
+ "pk": "6m8d3nfg4r9zfcln1tyey5lc7tskwkrw",
+ "fields": {
+  "session_data": ".eJxVjMsOwiAQRf-FtSGUl-DSvd9AmGGQqoGktCvjv0uTLnR7zzn3zULc1hK2TkuYE7uwiZ1-N4j4pLqD9Ij13ji2ui4z8F3hB-381hK9rof7d1BiL6N2qIUnaZzJBjJIRxYloHcgnAWllbGEKYHxOPCQ0ec8KXHWVkqPgn2-82Y4Ow:1pOkOn:w_ol8LY9mxNEI5ojHDSuxw2arqcVjHAke7g0-XVMIAw",
+  "expire_date": "2023-02-19T19:10:01.073Z"
+ }
+},
+{
+ "model": "sessions.session",
+ "pk": "fj9e8vka7ju7eojlf78rr5r7oafnv0et",
+ "fields": {
+  "session_data": ".eJxVjMsOwiAQRf-FtSGUl-DSvd9AmGGQqoGktCvjv0uTLnR7zzn3zULc1hK2TkuYE7uwiZ1-N4j4pLqD9Ij13ji2ui4z8F3hB-381hK9rof7d1BiL6N2qIUnaZzJBjJIRxYloHcgnAWllbGEKYHxOPCQ0ec8KXHWVkqPgn2-82Y4Ow:1pJw47:n03Z7ueFviKYqKCCBo481edTBIR8b5oiNguKZ-TknoM",
+  "expire_date": "2023-02-06T12:36:47.051Z"
+ }
+},
+{
+ "model": "param.modelfieldmapper",
+ "pk": 7,
+ "fields": {
+  "AppName": "locations",
+  "ModelName": "Country",
+  "ModelFieldName": "GeographicalUnitName",
+  "ModelMappedName": "CountryName",
+  "AppForeignKeyName": "",
+  "ModelForeignKeyModel": "",
+  "ModelForeignKeyField": ""
+ }
+},
+{
+ "model": "param.modelfieldmapper",
+ "pk": 11,
+ "fields": {
+  "AppName": "locations",
+  "ModelName": "Country",
+  "ModelFieldName": "GeographicalUnitShortName",
+  "ModelMappedName": "CountryShortName",
+  "AppForeignKeyName": "",
+  "ModelForeignKeyModel": "",
+  "ModelForeignKeyField": ""
+ }
+},
+{
+ "model": "param.modelfieldmapper",
+ "pk": 12,
+ "fields": {
+  "AppName": "locations",
+  "ModelName": "Country",
+  "ModelFieldName": "IsPartOf",
+  "ModelMappedName": "",
+  "AppForeignKeyName": "locations",
+  "ModelForeignKeyModel": "Continent",
+  "ModelForeignKeyField": "ContinentCode"
+ }
+},
+{
+ "model": "locations.geographicalunit",
+ "pk": 6,
+ "fields": {
+  "GeographicalUnitId": "Country_FR",
+  "GeographicalUnitCategory": "Country",
+  "GeographicalUnitName": "France",
+  "GeographicalUnitShortName": "France",
+  "HierarchyLevel": 30,
+  "IsPartOf": 8
+ }
+},
+{
+ "model": "locations.geographicalunit",
+ "pk": 8,
+ "fields": {
+  "GeographicalUnitId": "Continent_EU",
+  "GeographicalUnitCategory": "Continent",
+  "GeographicalUnitName": "Europe",
+  "GeographicalUnitShortName": "Europe",
+  "HierarchyLevel": 20,
+  "IsPartOf": null
+ }
+},
+{
+ "model": "locations.geographicalunit",
+ "pk": 9,
+ "fields": {
+  "GeographicalUnitId": "Continent_AF",
+  "GeographicalUnitCategory": "Continent",
+  "GeographicalUnitName": "Africa",
+  "GeographicalUnitShortName": "Africa",
+  "HierarchyLevel": 20,
+  "IsPartOf": null
+ }
+},
+{
+ "model": "locations.geographicalunit",
+ "pk": 10,
+ "fields": {
+  "GeographicalUnitId": "Continent_AN",
+  "GeographicalUnitCategory": "Continent",
+  "GeographicalUnitName": "Antartica",
+  "GeographicalUnitShortName": "Antartica",
+  "HierarchyLevel": 20,
+  "IsPartOf": null
+ }
+},
+{
+ "model": "locations.geographicalunit",
+ "pk": 11,
+ "fields": {
+  "GeographicalUnitId": "Continent_AS",
+  "GeographicalUnitCategory": "Continent",
+  "GeographicalUnitName": "Asia",
+  "GeographicalUnitShortName": "Asia",
+  "HierarchyLevel": 20,
+  "IsPartOf": null
+ }
+},
+{
+ "model": "locations.geographicalunit",
+ "pk": 12,
+ "fields": {
+  "GeographicalUnitId": "Continent_OC",
+  "GeographicalUnitCategory": "Continent",
+  "GeographicalUnitName": "Oceania",
+  "GeographicalUnitShortName": "Oceania",
+  "HierarchyLevel": 20,
+  "IsPartOf": null
+ }
+},
+{
+ "model": "locations.geographicalunit",
+ "pk": 13,
+ "fields": {
+  "GeographicalUnitId": "Continent_NA",
+  "GeographicalUnitCategory": "Continent",
+  "GeographicalUnitName": "North America",
+  "GeographicalUnitShortName": "North America",
+  "HierarchyLevel": 20,
+  "IsPartOf": null
+ }
+},
+{
+ "model": "locations.geographicalunit",
+ "pk": 14,
+ "fields": {
+  "GeographicalUnitId": "Continent_SA",
+  "GeographicalUnitCategory": "Continent",
+  "GeographicalUnitName": "South America",
+  "GeographicalUnitShortName": "South America",
+  "HierarchyLevel": 20,
+  "IsPartOf": null
+ }
+},
+{
+ "model": "locations.geographicalunit",
+ "pk": 15,
+ "fields": {
+  "GeographicalUnitId": "Country_BE",
+  "GeographicalUnitCategory": "Country",
+  "GeographicalUnitName": "Belgium",
+  "GeographicalUnitShortName": "Belgium",
+  "HierarchyLevel": 30,
+  "IsPartOf": 8
+ }
+},
+{
+ "model": "locations.geographicalunit",
+ "pk": 16,
+ "fields": {
+  "GeographicalUnitId": "City_PARIS",
+  "GeographicalUnitCategory": "City",
+  "GeographicalUnitName": "Paris",
+  "GeographicalUnitShortName": "Paris",
+  "HierarchyLevel": 40,
+  "IsPartOf": 6
+ }
+},
+{
+ "model": "locations.geographicalunit",
+ "pk": 17,
+ "fields": {
+  "GeographicalUnitId": "City_MONTARGIS",
+  "GeographicalUnitCategory": "City",
+  "GeographicalUnitName": "Montargis",
+  "GeographicalUnitShortName": "Montargis",
+  "HierarchyLevel": 40,
+  "IsPartOf": 6
+ }
+},
+{
+ "model": "locations.geographicalunit",
+ "pk": 18,
+ "fields": {
+  "GeographicalUnitId": "Country_AX",
+  "GeographicalUnitCategory": "Country",
+  "GeographicalUnitName": "Åland Islands",
+  "GeographicalUnitShortName": "Åland Islands",
+  "HierarchyLevel": 30,
+  "IsPartOf": 8
+ }
+},
+{
+ "model": "locations.geographicalunit",
+ "pk": 19,
+ "fields": {
+  "GeographicalUnitId": "Country_ZM",
+  "GeographicalUnitCategory": "Country",
+  "GeographicalUnitName": "Zambia",
+  "GeographicalUnitShortName": "Zambia",
+  "HierarchyLevel": 30,
+  "IsPartOf": 9
+ }
+},
+{
+ "model": "locations.geographicalunit",
+ "pk": 20,
+ "fields": {
+  "GeographicalUnitId": "Country_YE",
+  "GeographicalUnitCategory": "Country",
+  "GeographicalUnitName": "Yemen",
+  "GeographicalUnitShortName": "Yemen",
+  "HierarchyLevel": 30,
+  "IsPartOf": 11
+ }
+},
+{
+ "model": "locations.geographicalunit",
+ "pk": 21,
+ "fields": {
+  "GeographicalUnitId": "Country_EH",
+  "GeographicalUnitCategory": "Country",
+  "GeographicalUnitName": "Western Sahara",
+  "GeographicalUnitShortName": "Western Sahara",
+  "HierarchyLevel": 30,
+  "IsPartOf": 9
+ }
+},
+{
+ "model": "locations.geographicalunit",
+ "pk": 22,
+ "fields": {
+  "GeographicalUnitId": "Country_WF",
+  "GeographicalUnitCategory": "Country",
+  "GeographicalUnitName": "Wallis and Futuna",
+  "GeographicalUnitShortName": "Wallis and Futuna",
+  "HierarchyLevel": 30,
+  "IsPartOf": 12
+ }
+},
+{
+ "model": "locations.geographicalunit",
+ "pk": 23,
+ "fields": {
+  "GeographicalUnitId": "Country_VI",
+  "GeographicalUnitCategory": "Country",
+  "GeographicalUnitName": "Virgin Islands (U.S.)",
+  "GeographicalUnitShortName": "Virgin Islands ",
+  "HierarchyLevel": 30,
+  "IsPartOf": 13
+ }
+},
+{
+ "model": "locations.geographicalunit",
+ "pk": 24,
+ "fields": {
+  "GeographicalUnitId": "Country_VG",
+  "GeographicalUnitCategory": "Country",
+  "GeographicalUnitName": "Virgin Islands (British)",
+  "GeographicalUnitShortName": "Virgin Islands",
+  "HierarchyLevel": 30,
+  "IsPartOf": 13
+ }
+},
+{
+ "model": "locations.geographicalunit",
+ "pk": 25,
+ "fields": {
+  "GeographicalUnitId": "Country_VN",
+  "GeographicalUnitCategory": "Country",
+  "GeographicalUnitName": "Vietnam",
+  "GeographicalUnitShortName": "Vietnam",
+  "HierarchyLevel": 30,
+  "IsPartOf": 11
+ }
+},
+{
+ "model": "locations.geographicalunit",
+ "pk": 26,
+ "fields": {
+  "GeographicalUnitId": "Country_VE",
+  "GeographicalUnitCategory": "Country",
+  "GeographicalUnitName": "Venezuela (Bolivarian Republic of)",
+  "GeographicalUnitShortName": "Venezuela",
+  "HierarchyLevel": 30,
+  "IsPartOf": 14
+ }
+},
+{
+ "model": "locations.geographicalunit",
+ "pk": 27,
+ "fields": {
+  "GeographicalUnitId": "Country_VU",
+  "GeographicalUnitCategory": "Country",
+  "GeographicalUnitName": "Vanuatu",
+  "GeographicalUnitShortName": "Vanuatu",
+  "HierarchyLevel": 30,
+  "IsPartOf": 12
+ }
+},
+{
+ "model": "locations.geographicalunit",
+ "pk": 28,
+ "fields": {
+  "GeographicalUnitId": "Country_UZ",
+  "GeographicalUnitCategory": "Country",
+  "GeographicalUnitName": "Uzbekistan",
+  "GeographicalUnitShortName": "Uzbekistan",
+  "HierarchyLevel": 30,
+  "IsPartOf": 11
+ }
+},
+{
+ "model": "locations.geographicalunit",
+ "pk": 29,
+ "fields": {
+  "GeographicalUnitId": "Country_UY",
+  "GeographicalUnitCategory": "Country",
+  "GeographicalUnitName": "Uruguay",
+  "GeographicalUnitShortName": "Uruguay",
+  "HierarchyLevel": 30,
+  "IsPartOf": 14
+ }
+},
+{
+ "model": "locations.geographicalunit",
+ "pk": 30,
+ "fields": {
+  "GeographicalUnitId": "Country_US",
+  "GeographicalUnitCategory": "Country",
+  "GeographicalUnitName": "United States of America (the)",
+  "GeographicalUnitShortName": "USA",
+  "HierarchyLevel": 30,
+  "IsPartOf": 13
+ }
+},
+{
+ "model": "locations.geographicalunit",
+ "pk": 31,
+ "fields": {
+  "GeographicalUnitId": "Country_UM",
+  "GeographicalUnitCategory": "Country",
+  "GeographicalUnitName": "United States Minor Outlying Islands (the)",
+  "GeographicalUnitShortName": "United States Minor Outlying Islands ",
+  "HierarchyLevel": 30,
+  "IsPartOf": 12
+ }
+},
+{
+ "model": "locations.geographicalunit",
+ "pk": 32,
+ "fields": {
+  "GeographicalUnitId": "Country_GB",
+  "GeographicalUnitCategory": "Country",
+  "GeographicalUnitName": "United Kingdom of Great Britain and Northern Ireland (the)",
+  "GeographicalUnitShortName": "UK",
+  "HierarchyLevel": 30,
+  "IsPartOf": 8
+ }
+},
+{
+ "model": "locations.geographicalunit",
+ "pk": 33,
+ "fields": {
+  "GeographicalUnitId": "Country_AE",
+  "GeographicalUnitCategory": "Country",
+  "GeographicalUnitName": "United Arab Emirates (the)",
+  "GeographicalUnitShortName": "UAE",
+  "HierarchyLevel": 30,
+  "IsPartOf": 11
+ }
+},
+{
+ "model": "locations.geographicalunit",
+ "pk": 34,
+ "fields": {
+  "GeographicalUnitId": "Country_UA",
+  "GeographicalUnitCategory": "Country",
+  "GeographicalUnitName": "Ukraine",
+  "GeographicalUnitShortName": "Ukraine",
+  "HierarchyLevel": 30,
+  "IsPartOf": 8
+ }
+},
+{
+ "model": "locations.geographicalunit",
+ "pk": 35,
+ "fields": {
+  "GeographicalUnitId": "Country_UG",
+  "GeographicalUnitCategory": "Country",
+  "GeographicalUnitName": "Uganda",
+  "GeographicalUnitShortName": "Uganda",
+  "HierarchyLevel": 30,
+  "IsPartOf": 9
+ }
+},
+{
+ "model": "locations.geographicalunit",
+ "pk": 36,
+ "fields": {
+  "GeographicalUnitId": "Country_TV",
+  "GeographicalUnitCategory": "Country",
+  "GeographicalUnitName": "Tuvalu",
+  "GeographicalUnitShortName": "Tuvalu",
+  "HierarchyLevel": 30,
+  "IsPartOf": 12
+ }
+},
+{
+ "model": "locations.geographicalunit",
+ "pk": 37,
+ "fields": {
+  "GeographicalUnitId": "Country_TC",
+  "GeographicalUnitCategory": "Country",
+  "GeographicalUnitName": "Turks and Caicos Islands (the)",
+  "GeographicalUnitShortName": "Turks and Caicos Islands ",
+  "HierarchyLevel": 30,
+  "IsPartOf": 13
+ }
+},
+{
+ "model": "locations.geographicalunit",
+ "pk": 38,
+ "fields": {
+  "GeographicalUnitId": "Country_TM",
+  "GeographicalUnitCategory": "Country",
+  "GeographicalUnitName": "Turkmenistan",
+  "GeographicalUnitShortName": "Turkmenistan",
+  "HierarchyLevel": 30,
+  "IsPartOf": 11
+ }
+},
+{
+ "model": "locations.geographicalunit",
+ "pk": 39,
+ "fields": {
+  "GeographicalUnitId": "Country_TR",
+  "GeographicalUnitCategory": "Country",
+  "GeographicalUnitName": "Turkey",
+  "GeographicalUnitShortName": "Turkey",
+  "HierarchyLevel": 30,
+  "IsPartOf": 8
+ }
+},
+{
+ "model": "locations.geographicalunit",
+ "pk": 40,
+ "fields": {
+  "GeographicalUnitId": "Country_TN",
+  "GeographicalUnitCategory": "Country",
+  "GeographicalUnitName": "Tunisia",
+  "GeographicalUnitShortName": "Tunisia",
+  "HierarchyLevel": 30,
+  "IsPartOf": 9
+ }
+},
+{
+ "model": "locations.geographicalunit",
+ "pk": 41,
+ "fields": {
+  "GeographicalUnitId": "Country_TT",
+  "GeographicalUnitCategory": "Country",
+  "GeographicalUnitName": "Trinidad and Tobago",
+  "GeographicalUnitShortName": "Trinidad",
+  "HierarchyLevel": 30,
+  "IsPartOf": 13
+ }
+},
+{
+ "model": "locations.geographicalunit",
+ "pk": 42,
+ "fields": {
+  "GeographicalUnitId": "Country_TO",
+  "GeographicalUnitCategory": "Country",
+  "GeographicalUnitName": "Tonga",
+  "GeographicalUnitShortName": "Tonga",
+  "HierarchyLevel": 30,
+  "IsPartOf": 12
+ }
+},
+{
+ "model": "locations.geographicalunit",
+ "pk": 43,
+ "fields": {
+  "GeographicalUnitId": "Country_TK",
+  "GeographicalUnitCategory": "Country",
+  "GeographicalUnitName": "Tokelau",
+  "GeographicalUnitShortName": "Tokelau",
+  "HierarchyLevel": 30,
+  "IsPartOf": 12
+ }
+},
+{
+ "model": "locations.geographicalunit",
+ "pk": 44,
+ "fields": {
+  "GeographicalUnitId": "Country_TG",
+  "GeographicalUnitCategory": "Country",
+  "GeographicalUnitName": "Togo",
+  "GeographicalUnitShortName": "Togo",
+  "HierarchyLevel": 30,
+  "IsPartOf": 9
+ }
+},
+{
+ "model": "locations.geographicalunit",
+ "pk": 45,
+ "fields": {
+  "GeographicalUnitId": "Country_TL",
+  "GeographicalUnitCategory": "Country",
+  "GeographicalUnitName": "Timor-Leste",
+  "GeographicalUnitShortName": "East Timor",
+  "HierarchyLevel": 30,
+  "IsPartOf": 11
+ }
+},
+{
+ "model": "locations.geographicalunit",
+ "pk": 46,
+ "fields": {
+  "GeographicalUnitId": "Country_TH",
+  "GeographicalUnitCategory": "Country",
+  "GeographicalUnitName": "Thailand",
+  "GeographicalUnitShortName": "Thailand",
+  "HierarchyLevel": 30,
+  "IsPartOf": 11
+ }
+},
+{
+ "model": "locations.geographicalunit",
+ "pk": 47,
+ "fields": {
+  "GeographicalUnitId": "Country_TZ",
+  "GeographicalUnitCategory": "Country",
+  "GeographicalUnitName": "Tanzania, United Republic of",
+  "GeographicalUnitShortName": "Tanzania",
+  "HierarchyLevel": 30,
+  "IsPartOf": 9
+ }
+},
+{
+ "model": "locations.geographicalunit",
+ "pk": 48,
+ "fields": {
+  "GeographicalUnitId": "Country_TJ",
+  "GeographicalUnitCategory": "Country",
+  "GeographicalUnitName": "Tajikistan",
+  "GeographicalUnitShortName": "Tajikistan",
+  "HierarchyLevel": 30,
+  "IsPartOf": 11
+ }
+},
+{
+ "model": "locations.geographicalunit",
+ "pk": 49,
+ "fields": {
+  "GeographicalUnitId": "Country_TW",
+  "GeographicalUnitCategory": "Country",
+  "GeographicalUnitName": "Taiwan (Province of China)",
+  "GeographicalUnitShortName": "Taiwan",
+  "HierarchyLevel": 30,
+  "IsPartOf": 11
+ }
+},
+{
+ "model": "locations.geographicalunit",
+ "pk": 50,
+ "fields": {
+  "GeographicalUnitId": "Country_SY",
+  "GeographicalUnitCategory": "Country",
+  "GeographicalUnitName": "Syrian Arab Republic",
+  "GeographicalUnitShortName": "Syrian Arab Republic",
+  "HierarchyLevel": 30,
+  "IsPartOf": 11
+ }
+},
+{
+ "model": "locations.geographicalunit",
+ "pk": 51,
+ "fields": {
+  "GeographicalUnitId": "Country_CH",
+  "GeographicalUnitCategory": "Country",
+  "GeographicalUnitName": "Switzerland",
+  "GeographicalUnitShortName": "Switzerland",
+  "HierarchyLevel": 30,
+  "IsPartOf": 8
+ }
+},
+{
+ "model": "locations.geographicalunit",
+ "pk": 52,
+ "fields": {
+  "GeographicalUnitId": "Country_SE",
+  "GeographicalUnitCategory": "Country",
+  "GeographicalUnitName": "Sweden",
+  "GeographicalUnitShortName": "Sweden",
+  "HierarchyLevel": 30,
+  "IsPartOf": 8
+ }
+},
+{
+ "model": "locations.geographicalunit",
+ "pk": 53,
+ "fields": {
+  "GeographicalUnitId": "Country_SJ",
+  "GeographicalUnitCategory": "Country",
+  "GeographicalUnitName": "Svalbard and Jan Mayen",
+  "GeographicalUnitShortName": "Svalbard and Jan Mayen",
+  "HierarchyLevel": 30,
+  "IsPartOf": 8
+ }
+},
+{
+ "model": "locations.geographicalunit",
+ "pk": 54,
+ "fields": {
+  "GeographicalUnitId": "Country_SR",
+  "GeographicalUnitCategory": "Country",
+  "GeographicalUnitName": "Suriname",
+  "GeographicalUnitShortName": "Suriname",
+  "HierarchyLevel": 30,
+  "IsPartOf": 14
+ }
+},
+{
+ "model": "locations.geographicalunit",
+ "pk": 55,
+ "fields": {
+  "GeographicalUnitId": "Country_SD",
+  "GeographicalUnitCategory": "Country",
+  "GeographicalUnitName": "Sudan (the)",
+  "GeographicalUnitShortName": "Sudan",
+  "HierarchyLevel": 30,
+  "IsPartOf": 9
+ }
+},
+{
+ "model": "locations.geographicalunit",
+ "pk": 56,
+ "fields": {
+  "GeographicalUnitId": "Country_LK",
+  "GeographicalUnitCategory": "Country",
+  "GeographicalUnitName": "Sri Lanka",
+  "GeographicalUnitShortName": "Sri Lanka",
+  "HierarchyLevel": 30,
+  "IsPartOf": 11
+ }
+},
+{
+ "model": "locations.geographicalunit",
+ "pk": 57,
+ "fields": {
+  "GeographicalUnitId": "Country_ES",
+  "GeographicalUnitCategory": "Country",
+  "GeographicalUnitName": "Spain",
+  "GeographicalUnitShortName": "Spain",
+  "HierarchyLevel": 30,
+  "IsPartOf": 8
+ }
+},
+{
+ "model": "locations.geographicalunit",
+ "pk": 58,
+ "fields": {
+  "GeographicalUnitId": "Country_SS",
+  "GeographicalUnitCategory": "Country",
+  "GeographicalUnitName": "South Sudan",
+  "GeographicalUnitShortName": "South Sudan",
+  "HierarchyLevel": 30,
+  "IsPartOf": 9
+ }
+},
+{
+ "model": "locations.geographicalunit",
+ "pk": 59,
+ "fields": {
+  "GeographicalUnitId": "Country_GS",
+  "GeographicalUnitCategory": "Country",
+  "GeographicalUnitName": "South Georgia and the South Sandwich Islands",
+  "GeographicalUnitShortName": "South Georgia and the South Sandwich Islands",
+  "HierarchyLevel": 30,
+  "IsPartOf": 10
+ }
+},
+{
+ "model": "locations.geographicalunit",
+ "pk": 60,
+ "fields": {
+  "GeographicalUnitId": "Country_ZA",
+  "GeographicalUnitCategory": "Country",
+  "GeographicalUnitName": "South Africa",
+  "GeographicalUnitShortName": "South Africa",
+  "HierarchyLevel": 30,
+  "IsPartOf": 9
+ }
+},
+{
+ "model": "locations.geographicalunit",
+ "pk": 61,
+ "fields": {
+  "GeographicalUnitId": "Country_SO",
+  "GeographicalUnitCategory": "Country",
+  "GeographicalUnitName": "Somalia",
+  "GeographicalUnitShortName": "Somalia",
+  "HierarchyLevel": 30,
+  "IsPartOf": 9
+ }
+},
+{
+ "model": "locations.geographicalunit",
+ "pk": 62,
+ "fields": {
+  "GeographicalUnitId": "Country_SB",
+  "GeographicalUnitCategory": "Country",
+  "GeographicalUnitName": "Solomon Islands",
+  "GeographicalUnitShortName": "Solomon Islands",
+  "HierarchyLevel": 30,
+  "IsPartOf": 12
+ }
+},
+{
+ "model": "locations.geographicalunit",
+ "pk": 63,
+ "fields": {
+  "GeographicalUnitId": "Country_SI",
+  "GeographicalUnitCategory": "Country",
+  "GeographicalUnitName": "Slovenia",
+  "GeographicalUnitShortName": "Slovenia",
+  "HierarchyLevel": 30,
+  "IsPartOf": 8
+ }
+},
+{
+ "model": "locations.geographicalunit",
+ "pk": 64,
+ "fields": {
+  "GeographicalUnitId": "Country_SK",
+  "GeographicalUnitCategory": "Country",
+  "GeographicalUnitName": "Slovakia",
+  "GeographicalUnitShortName": "Slovakia",
+  "HierarchyLevel": 30,
+  "IsPartOf": 8
+ }
+},
+{
+ "model": "locations.geographicalunit",
+ "pk": 65,
+ "fields": {
+  "GeographicalUnitId": "Country_SX",
+  "GeographicalUnitCategory": "Country",
+  "GeographicalUnitName": "Sint Maarten (Dutch part)",
+  "GeographicalUnitShortName": "Sint Maarten",
+  "HierarchyLevel": 30,
+  "IsPartOf": 13
+ }
+},
+{
+ "model": "locations.geographicalunit",
+ "pk": 66,
+ "fields": {
+  "GeographicalUnitId": "Country_SG",
+  "GeographicalUnitCategory": "Country",
+  "GeographicalUnitName": "Singapore",
+  "GeographicalUnitShortName": "Singapore",
+  "HierarchyLevel": 30,
+  "IsPartOf": 11
+ }
+},
+{
+ "model": "locations.geographicalunit",
+ "pk": 67,
+ "fields": {
+  "GeographicalUnitId": "Country_SL",
+  "GeographicalUnitCategory": "Country",
+  "GeographicalUnitName": "Sierra Leone",
+  "GeographicalUnitShortName": "Sierra Leone",
+  "HierarchyLevel": 30,
+  "IsPartOf": 9
+ }
+},
+{
+ "model": "locations.geographicalunit",
+ "pk": 68,
+ "fields": {
+  "GeographicalUnitId": "Country_SC",
+  "GeographicalUnitCategory": "Country",
+  "GeographicalUnitName": "Seychelles",
+  "GeographicalUnitShortName": "Seychelles",
+  "HierarchyLevel": 30,
+  "IsPartOf": 9
+ }
+},
+{
+ "model": "locations.geographicalunit",
+ "pk": 69,
+ "fields": {
+  "GeographicalUnitId": "Country_RS",
+  "GeographicalUnitCategory": "Country",
+  "GeographicalUnitName": "Serbia",
+  "GeographicalUnitShortName": "Serbia",
+  "HierarchyLevel": 30,
+  "IsPartOf": 8
+ }
+},
+{
+ "model": "locations.geographicalunit",
+ "pk": 70,
+ "fields": {
+  "GeographicalUnitId": "Country_SN",
+  "GeographicalUnitCategory": "Country",
+  "GeographicalUnitName": "Senegal",
+  "GeographicalUnitShortName": "Senegal",
+  "HierarchyLevel": 30,
+  "IsPartOf": 9
+ }
+},
+{
+ "model": "locations.geographicalunit",
+ "pk": 71,
+ "fields": {
+  "GeographicalUnitId": "Country_SA",
+  "GeographicalUnitCategory": "Country",
+  "GeographicalUnitName": "Saudi Arabia",
+  "GeographicalUnitShortName": "Saudi Arabia",
+  "HierarchyLevel": 30,
+  "IsPartOf": 11
+ }
+},
+{
+ "model": "locations.geographicalunit",
+ "pk": 72,
+ "fields": {
+  "GeographicalUnitId": "Country_ST",
+  "GeographicalUnitCategory": "Country",
+  "GeographicalUnitName": "Sao Tome and Principe",
+  "GeographicalUnitShortName": "Sao Tome and Principe",
+  "HierarchyLevel": 30,
+  "IsPartOf": 9
+ }
+},
+{
+ "model": "locations.geographicalunit",
+ "pk": 73,
+ "fields": {
+  "GeographicalUnitId": "Country_SM",
+  "GeographicalUnitCategory": "Country",
+  "GeographicalUnitName": "San Marino",
+  "GeographicalUnitShortName": "San Marino",
+  "HierarchyLevel": 30,
+  "IsPartOf": 8
+ }
+},
+{
+ "model": "locations.geographicalunit",
+ "pk": 74,
+ "fields": {
+  "GeographicalUnitId": "Country_WS",
+  "GeographicalUnitCategory": "Country",
+  "GeographicalUnitName": "Samoa",
+  "GeographicalUnitShortName": "Samoa",
+  "HierarchyLevel": 30,
+  "IsPartOf": 12
+ }
+},
+{
+ "model": "locations.geographicalunit",
+ "pk": 75,
+ "fields": {
+  "GeographicalUnitId": "Country_VC",
+  "GeographicalUnitCategory": "Country",
+  "GeographicalUnitName": "Saint Vincent and the Grenadines",
+  "GeographicalUnitShortName": "Saint Vincent and the Grenadines",
+  "HierarchyLevel": 30,
+  "IsPartOf": 13
+ }
+},
+{
+ "model": "locations.geographicalunit",
+ "pk": 76,
+ "fields": {
+  "GeographicalUnitId": "Country_PM",
+  "GeographicalUnitCategory": "Country",
+  "GeographicalUnitName": "Saint Pierre and Miquelon",
+  "GeographicalUnitShortName": "Saint Pierre and Miquelon",
+  "HierarchyLevel": 30,
+  "IsPartOf": 13
+ }
+},
+{
+ "model": "locations.geographicalunit",
+ "pk": 77,
+ "fields": {
+  "GeographicalUnitId": "Country_MF",
+  "GeographicalUnitCategory": "Country",
+  "GeographicalUnitName": "Saint Martin (French part)",
+  "GeographicalUnitShortName": "Saint Martin",
+  "HierarchyLevel": 30,
+  "IsPartOf": 13
+ }
+},
+{
+ "model": "locations.geographicalunit",
+ "pk": 78,
+ "fields": {
+  "GeographicalUnitId": "Country_LC",
+  "GeographicalUnitCategory": "Country",
+  "GeographicalUnitName": "Saint Lucia",
+  "GeographicalUnitShortName": "Saint Lucia",
+  "HierarchyLevel": 30,
+  "IsPartOf": 13
+ }
+},
+{
+ "model": "locations.geographicalunit",
+ "pk": 79,
+ "fields": {
+  "GeographicalUnitId": "Country_KN",
+  "GeographicalUnitCategory": "Country",
+  "GeographicalUnitName": "Saint Kitts and Nevis",
+  "GeographicalUnitShortName": "Saint Kitts and Nevis",
+  "HierarchyLevel": 30,
+  "IsPartOf": 13
+ }
+},
+{
+ "model": "locations.geographicalunit",
+ "pk": 80,
+ "fields": {
+  "GeographicalUnitId": "Country_SH",
+  "GeographicalUnitCategory": "Country",
+  "GeographicalUnitName": "Saint Helena, Ascension and Tristan da Cunha",
+  "GeographicalUnitShortName": "Saint Helena, Ascension and Tristan da Cunha",
+  "HierarchyLevel": 30,
+  "IsPartOf": 9
+ }
+},
+{
+ "model": "locations.geographicalunit",
+ "pk": 81,
+ "fields": {
+  "GeographicalUnitId": "Country_BL",
+  "GeographicalUnitCategory": "Country",
+  "GeographicalUnitName": "Saint Barthélemy",
+  "GeographicalUnitShortName": "Saint Barthélemy",
+  "HierarchyLevel": 30,
+  "IsPartOf": 13
+ }
+},
+{
+ "model": "locations.geographicalunit",
+ "pk": 82,
+ "fields": {
+  "GeographicalUnitId": "Country_RE",
+  "GeographicalUnitCategory": "Country",
+  "GeographicalUnitName": "Réunion",
+  "GeographicalUnitShortName": "Réunion",
+  "HierarchyLevel": 30,
+  "IsPartOf": 9
+ }
+},
+{
+ "model": "locations.geographicalunit",
+ "pk": 83,
+ "fields": {
+  "GeographicalUnitId": "Country_RW",
+  "GeographicalUnitCategory": "Country",
+  "GeographicalUnitName": "Rwanda",
+  "GeographicalUnitShortName": "Rwanda",
+  "HierarchyLevel": 30,
+  "IsPartOf": 9
+ }
+},
+{
+ "model": "locations.geographicalunit",
+ "pk": 84,
+ "fields": {
+  "GeographicalUnitId": "Country_RU",
+  "GeographicalUnitCategory": "Country",
+  "GeographicalUnitName": "Russian Federation (the)",
+  "GeographicalUnitShortName": "Russia",
+  "HierarchyLevel": 30,
+  "IsPartOf": 8
+ }
+},
+{
+ "model": "locations.geographicalunit",
+ "pk": 85,
+ "fields": {
+  "GeographicalUnitId": "Country_RO",
+  "GeographicalUnitCategory": "Country",
+  "GeographicalUnitName": "Romania",
+  "GeographicalUnitShortName": "Romania",
+  "HierarchyLevel": 30,
+  "IsPartOf": 8
+ }
+},
+{
+ "model": "locations.geographicalunit",
+ "pk": 86,
+ "fields": {
+  "GeographicalUnitId": "Country_MK",
+  "GeographicalUnitCategory": "Country",
+  "GeographicalUnitName": "Republic of North Macedonia",
+  "GeographicalUnitShortName": "North Macedonia",
+  "HierarchyLevel": 30,
+  "IsPartOf": 8
+ }
+},
+{
+ "model": "locations.geographicalunit",
+ "pk": 87,
+ "fields": {
+  "GeographicalUnitId": "Country_QA",
+  "GeographicalUnitCategory": "Country",
+  "GeographicalUnitName": "Qatar",
+  "GeographicalUnitShortName": "Qatar",
+  "HierarchyLevel": 30,
+  "IsPartOf": 11
+ }
+},
+{
+ "model": "locations.geographicalunit",
+ "pk": 88,
+ "fields": {
+  "GeographicalUnitId": "Country_PR",
+  "GeographicalUnitCategory": "Country",
+  "GeographicalUnitName": "Puerto Rico",
+  "GeographicalUnitShortName": "Puerto Rico",
+  "HierarchyLevel": 30,
+  "IsPartOf": 13
+ }
+},
+{
+ "model": "locations.geographicalunit",
+ "pk": 89,
+ "fields": {
+  "GeographicalUnitId": "Country_PT",
+  "GeographicalUnitCategory": "Country",
+  "GeographicalUnitName": "Portugal",
+  "GeographicalUnitShortName": "Portugal",
+  "HierarchyLevel": 30,
+  "IsPartOf": 8
+ }
+},
+{
+ "model": "locations.geographicalunit",
+ "pk": 90,
+ "fields": {
+  "GeographicalUnitId": "Country_PL",
+  "GeographicalUnitCategory": "Country",
+  "GeographicalUnitName": "Poland",
+  "GeographicalUnitShortName": "Poland",
+  "HierarchyLevel": 30,
+  "IsPartOf": 8
+ }
+},
+{
+ "model": "locations.geographicalunit",
+ "pk": 91,
+ "fields": {
+  "GeographicalUnitId": "Country_PN",
+  "GeographicalUnitCategory": "Country",
+  "GeographicalUnitName": "Pitcairn",
+  "GeographicalUnitShortName": "Pitcairn",
+  "HierarchyLevel": 30,
+  "IsPartOf": 12
+ }
+},
+{
+ "model": "locations.geographicalunit",
+ "pk": 92,
+ "fields": {
+  "GeographicalUnitId": "Country_PH",
+  "GeographicalUnitCategory": "Country",
+  "GeographicalUnitName": "Philippines (the)",
+  "GeographicalUnitShortName": "Philippines",
+  "HierarchyLevel": 30,
+  "IsPartOf": 11
+ }
+},
+{
+ "model": "locations.geographicalunit",
+ "pk": 93,
+ "fields": {
+  "GeographicalUnitId": "Country_PE",
+  "GeographicalUnitCategory": "Country",
+  "GeographicalUnitName": "Peru",
+  "GeographicalUnitShortName": "Peru",
+  "HierarchyLevel": 30,
+  "IsPartOf": 14
+ }
+},
+{
+ "model": "locations.geographicalunit",
+ "pk": 94,
+ "fields": {
+  "GeographicalUnitId": "Country_PY",
+  "GeographicalUnitCategory": "Country",
+  "GeographicalUnitName": "Paraguay",
+  "GeographicalUnitShortName": "Paraguay",
+  "HierarchyLevel": 30,
+  "IsPartOf": 14
+ }
+},
+{
+ "model": "locations.geographicalunit",
+ "pk": 95,
+ "fields": {
+  "GeographicalUnitId": "Country_PG",
+  "GeographicalUnitCategory": "Country",
+  "GeographicalUnitName": "Papua New Guinea",
+  "GeographicalUnitShortName": "Papua New Guinea",
+  "HierarchyLevel": 30,
+  "IsPartOf": 12
+ }
+},
+{
+ "model": "locations.geographicalunit",
+ "pk": 96,
+ "fields": {
+  "GeographicalUnitId": "Country_PA",
+  "GeographicalUnitCategory": "Country",
+  "GeographicalUnitName": "Panama",
+  "GeographicalUnitShortName": "Panama",
+  "HierarchyLevel": 30,
+  "IsPartOf": 13
+ }
+},
+{
+ "model": "locations.geographicalunit",
+ "pk": 97,
+ "fields": {
+  "GeographicalUnitId": "Country_PS",
+  "GeographicalUnitCategory": "Country",
+  "GeographicalUnitName": "Palestine, State of",
+  "GeographicalUnitShortName": "Palestine",
+  "HierarchyLevel": 30,
+  "IsPartOf": 11
+ }
+},
+{
+ "model": "locations.geographicalunit",
+ "pk": 98,
+ "fields": {
+  "GeographicalUnitId": "Country_PW",
+  "GeographicalUnitCategory": "Country",
+  "GeographicalUnitName": "Palau",
+  "GeographicalUnitShortName": "Palau",
+  "HierarchyLevel": 30,
+  "IsPartOf": 12
+ }
+},
+{
+ "model": "locations.geographicalunit",
+ "pk": 99,
+ "fields": {
+  "GeographicalUnitId": "Country_PK",
+  "GeographicalUnitCategory": "Country",
+  "GeographicalUnitName": "Pakistan",
+  "GeographicalUnitShortName": "Pakistan",
+  "HierarchyLevel": 30,
+  "IsPartOf": 11
+ }
+},
+{
+ "model": "locations.geographicalunit",
+ "pk": 100,
+ "fields": {
+  "GeographicalUnitId": "Country_OM",
+  "GeographicalUnitCategory": "Country",
+  "GeographicalUnitName": "Oman",
+  "GeographicalUnitShortName": "Oman",
+  "HierarchyLevel": 30,
+  "IsPartOf": 11
+ }
+},
+{
+ "model": "locations.geographicalunit",
+ "pk": 101,
+ "fields": {
+  "GeographicalUnitId": "Country_NO",
+  "GeographicalUnitCategory": "Country",
+  "GeographicalUnitName": "Norway",
+  "GeographicalUnitShortName": "Norway",
+  "HierarchyLevel": 30,
+  "IsPartOf": 8
+ }
+},
+{
+ "model": "locations.geographicalunit",
+ "pk": 102,
+ "fields": {
+  "GeographicalUnitId": "Country_MP",
+  "GeographicalUnitCategory": "Country",
+  "GeographicalUnitName": "Northern Mariana Islands (the)",
+  "GeographicalUnitShortName": "Northern Mariana Islands",
+  "HierarchyLevel": 30,
+  "IsPartOf": 12
+ }
+},
+{
+ "model": "locations.geographicalunit",
+ "pk": 103,
+ "fields": {
+  "GeographicalUnitId": "Country_NF",
+  "GeographicalUnitCategory": "Country",
+  "GeographicalUnitName": "Norfolk Island",
+  "GeographicalUnitShortName": "Norfolk Island",
+  "HierarchyLevel": 30,
+  "IsPartOf": 12
+ }
+},
+{
+ "model": "locations.geographicalunit",
+ "pk": 104,
+ "fields": {
+  "GeographicalUnitId": "Country_NU",
+  "GeographicalUnitCategory": "Country",
+  "GeographicalUnitName": "Niue",
+  "GeographicalUnitShortName": "Niue",
+  "HierarchyLevel": 30,
+  "IsPartOf": 12
+ }
+},
+{
+ "model": "locations.geographicalunit",
+ "pk": 105,
+ "fields": {
+  "GeographicalUnitId": "Country_NG",
+  "GeographicalUnitCategory": "Country",
+  "GeographicalUnitName": "Nigeria",
+  "GeographicalUnitShortName": "Nigeria",
+  "HierarchyLevel": 30,
+  "IsPartOf": 9
+ }
+},
+{
+ "model": "locations.geographicalunit",
+ "pk": 106,
+ "fields": {
+  "GeographicalUnitId": "Country_NE",
+  "GeographicalUnitCategory": "Country",
+  "GeographicalUnitName": "Niger (the)",
+  "GeographicalUnitShortName": "Niger (the)",
+  "HierarchyLevel": 30,
+  "IsPartOf": 9
+ }
+},
+{
+ "model": "locations.geographicalunit",
+ "pk": 107,
+ "fields": {
+  "GeographicalUnitId": "Country_NI",
+  "GeographicalUnitCategory": "Country",
+  "GeographicalUnitName": "Nicaragua",
+  "GeographicalUnitShortName": "Nicaragua",
+  "HierarchyLevel": 30,
+  "IsPartOf": 13
+ }
+},
+{
+ "model": "locations.geographicalunit",
+ "pk": 108,
+ "fields": {
+  "GeographicalUnitId": "Country_NZ",
+  "GeographicalUnitCategory": "Country",
+  "GeographicalUnitName": "New Zealand",
+  "GeographicalUnitShortName": "New Zealand",
+  "HierarchyLevel": 30,
+  "IsPartOf": 12
+ }
+},
+{
+ "model": "locations.geographicalunit",
+ "pk": 109,
+ "fields": {
+  "GeographicalUnitId": "Country_NC",
+  "GeographicalUnitCategory": "Country",
+  "GeographicalUnitName": "New Caledonia",
+  "GeographicalUnitShortName": "New Caledonia",
+  "HierarchyLevel": 30,
+  "IsPartOf": 12
+ }
+},
+{
+ "model": "locations.geographicalunit",
+ "pk": 110,
+ "fields": {
+  "GeographicalUnitId": "Country_NL",
+  "GeographicalUnitCategory": "Country",
+  "GeographicalUnitName": "Netherlands (the)",
+  "GeographicalUnitShortName": "Netherlands",
+  "HierarchyLevel": 30,
+  "IsPartOf": 8
+ }
+},
+{
+ "model": "locations.geographicalunit",
+ "pk": 111,
+ "fields": {
+  "GeographicalUnitId": "Country_NP",
+  "GeographicalUnitCategory": "Country",
+  "GeographicalUnitName": "Nepal",
+  "GeographicalUnitShortName": "Nepal",
+  "HierarchyLevel": 30,
+  "IsPartOf": 11
+ }
+},
+{
+ "model": "locations.geographicalunit",
+ "pk": 112,
+ "fields": {
+  "GeographicalUnitId": "Country_NR",
+  "GeographicalUnitCategory": "Country",
+  "GeographicalUnitName": "Nauru",
+  "GeographicalUnitShortName": "Nauru",
+  "HierarchyLevel": 30,
+  "IsPartOf": 12
+ }
+},
+{
+ "model": "locations.geographicalunit",
+ "pk": 113,
+ "fields": {
+  "GeographicalUnitId": "Country_NA",
+  "GeographicalUnitCategory": "Country",
+  "GeographicalUnitName": "Namibia",
+  "GeographicalUnitShortName": "Namibia",
+  "HierarchyLevel": 30,
+  "IsPartOf": 9
+ }
+},
+{
+ "model": "locations.geographicalunit",
+ "pk": 114,
+ "fields": {
+  "GeographicalUnitId": "Country_MM",
+  "GeographicalUnitCategory": "Country",
+  "GeographicalUnitName": "Myanmar",
+  "GeographicalUnitShortName": "Myanmar",
+  "HierarchyLevel": 30,
+  "IsPartOf": 11
+ }
+},
+{
+ "model": "locations.geographicalunit",
+ "pk": 115,
+ "fields": {
+  "GeographicalUnitId": "Country_MZ",
+  "GeographicalUnitCategory": "Country",
+  "GeographicalUnitName": "Mozambique",
+  "GeographicalUnitShortName": "Mozambique",
+  "HierarchyLevel": 30,
+  "IsPartOf": 9
+ }
+},
+{
+ "model": "locations.geographicalunit",
+ "pk": 116,
+ "fields": {
+  "GeographicalUnitId": "Country_MA",
+  "GeographicalUnitCategory": "Country",
+  "GeographicalUnitName": "Morocco",
+  "GeographicalUnitShortName": "Morocco",
+  "HierarchyLevel": 30,
+  "IsPartOf": 9
+ }
+},
+{
+ "model": "locations.geographicalunit",
+ "pk": 117,
+ "fields": {
+  "GeographicalUnitId": "Country_MS",
+  "GeographicalUnitCategory": "Country",
+  "GeographicalUnitName": "Montserrat",
+  "GeographicalUnitShortName": "Montserrat",
+  "HierarchyLevel": 30,
+  "IsPartOf": 13
+ }
+},
+{
+ "model": "locations.geographicalunit",
+ "pk": 118,
+ "fields": {
+  "GeographicalUnitId": "Country_ME",
+  "GeographicalUnitCategory": "Country",
+  "GeographicalUnitName": "Montenegro",
+  "GeographicalUnitShortName": "Montenegro",
+  "HierarchyLevel": 30,
+  "IsPartOf": 8
+ }
+},
+{
+ "model": "locations.geographicalunit",
+ "pk": 119,
+ "fields": {
+  "GeographicalUnitId": "Country_MN",
+  "GeographicalUnitCategory": "Country",
+  "GeographicalUnitName": "Mongolia",
+  "GeographicalUnitShortName": "Mongolia",
+  "HierarchyLevel": 30,
+  "IsPartOf": 11
+ }
+},
+{
+ "model": "locations.geographicalunit",
+ "pk": 120,
+ "fields": {
+  "GeographicalUnitId": "Country_MC",
+  "GeographicalUnitCategory": "Country",
+  "GeographicalUnitName": "Monaco",
+  "GeographicalUnitShortName": "Monaco",
+  "HierarchyLevel": 30,
+  "IsPartOf": 8
+ }
+},
+{
+ "model": "locations.geographicalunit",
+ "pk": 121,
+ "fields": {
+  "GeographicalUnitId": "Country_MD",
+  "GeographicalUnitCategory": "Country",
+  "GeographicalUnitName": "Moldova (the Republic of)",
+  "GeographicalUnitShortName": "Moldova",
+  "HierarchyLevel": 30,
+  "IsPartOf": 8
+ }
+},
+{
+ "model": "locations.geographicalunit",
+ "pk": 122,
+ "fields": {
+  "GeographicalUnitId": "Country_FM",
+  "GeographicalUnitCategory": "Country",
+  "GeographicalUnitName": "Micronesia (Federated States of)",
+  "GeographicalUnitShortName": "Micronesia",
+  "HierarchyLevel": 30,
+  "IsPartOf": 12
+ }
+},
+{
+ "model": "locations.geographicalunit",
+ "pk": 123,
+ "fields": {
+  "GeographicalUnitId": "Country_MX",
+  "GeographicalUnitCategory": "Country",
+  "GeographicalUnitName": "Mexico",
+  "GeographicalUnitShortName": "Mexico",
+  "HierarchyLevel": 30,
+  "IsPartOf": 13
+ }
+},
+{
+ "model": "locations.geographicalunit",
+ "pk": 124,
+ "fields": {
+  "GeographicalUnitId": "Country_YT",
+  "GeographicalUnitCategory": "Country",
+  "GeographicalUnitName": "Mayotte",
+  "GeographicalUnitShortName": "Mayotte",
+  "HierarchyLevel": 30,
+  "IsPartOf": 9
+ }
+},
+{
+ "model": "locations.geographicalunit",
+ "pk": 125,
+ "fields": {
+  "GeographicalUnitId": "Country_MU",
+  "GeographicalUnitCategory": "Country",
+  "GeographicalUnitName": "Mauritius",
+  "GeographicalUnitShortName": "Mauritius",
+  "HierarchyLevel": 30,
+  "IsPartOf": 9
+ }
+},
+{
+ "model": "locations.geographicalunit",
+ "pk": 126,
+ "fields": {
+  "GeographicalUnitId": "Country_MR",
+  "GeographicalUnitCategory": "Country",
+  "GeographicalUnitName": "Mauritania",
+  "GeographicalUnitShortName": "Mauritania",
+  "HierarchyLevel": 30,
+  "IsPartOf": 9
+ }
+},
+{
+ "model": "locations.geographicalunit",
+ "pk": 127,
+ "fields": {
+  "GeographicalUnitId": "Country_MQ",
+  "GeographicalUnitCategory": "Country",
+  "GeographicalUnitName": "Martinique",
+  "GeographicalUnitShortName": "Martinique",
+  "HierarchyLevel": 30,
+  "IsPartOf": 13
+ }
+},
+{
+ "model": "locations.geographicalunit",
+ "pk": 128,
+ "fields": {
+  "GeographicalUnitId": "Country_MH",
+  "GeographicalUnitCategory": "Country",
+  "GeographicalUnitName": "Marshall Islands (the)",
+  "GeographicalUnitShortName": "Marshall Islands",
+  "HierarchyLevel": 30,
+  "IsPartOf": 12
+ }
+},
+{
+ "model": "locations.geographicalunit",
+ "pk": 129,
+ "fields": {
+  "GeographicalUnitId": "Country_MT",
+  "GeographicalUnitCategory": "Country",
+  "GeographicalUnitName": "Malta",
+  "GeographicalUnitShortName": "Malta",
+  "HierarchyLevel": 30,
+  "IsPartOf": 8
+ }
+},
+{
+ "model": "locations.geographicalunit",
+ "pk": 130,
+ "fields": {
+  "GeographicalUnitId": "Country_ML",
+  "GeographicalUnitCategory": "Country",
+  "GeographicalUnitName": "Mali",
+  "GeographicalUnitShortName": "Mali",
+  "HierarchyLevel": 30,
+  "IsPartOf": 9
+ }
+},
+{
+ "model": "locations.geographicalunit",
+ "pk": 131,
+ "fields": {
+  "GeographicalUnitId": "Country_MV",
+  "GeographicalUnitCategory": "Country",
+  "GeographicalUnitName": "Maldives",
+  "GeographicalUnitShortName": "Maldives",
+  "HierarchyLevel": 30,
+  "IsPartOf": 11
+ }
+},
+{
+ "model": "locations.geographicalunit",
+ "pk": 132,
+ "fields": {
+  "GeographicalUnitId": "Country_MY",
+  "GeographicalUnitCategory": "Country",
+  "GeographicalUnitName": "Malaysia",
+  "GeographicalUnitShortName": "Malaysia",
+  "HierarchyLevel": 30,
+  "IsPartOf": 11
+ }
+},
+{
+ "model": "locations.geographicalunit",
+ "pk": 133,
+ "fields": {
+  "GeographicalUnitId": "Country_MW",
+  "GeographicalUnitCategory": "Country",
+  "GeographicalUnitName": "Malawi",
+  "GeographicalUnitShortName": "Malawi",
+  "HierarchyLevel": 30,
+  "IsPartOf": 9
+ }
+},
+{
+ "model": "locations.geographicalunit",
+ "pk": 134,
+ "fields": {
+  "GeographicalUnitId": "Country_MG",
+  "GeographicalUnitCategory": "Country",
+  "GeographicalUnitName": "Madagascar",
+  "GeographicalUnitShortName": "Madagascar",
+  "HierarchyLevel": 30,
+  "IsPartOf": 9
+ }
+},
+{
+ "model": "locations.geographicalunit",
+ "pk": 135,
+ "fields": {
+  "GeographicalUnitId": "Country_MO",
+  "GeographicalUnitCategory": "Country",
+  "GeographicalUnitName": "Macao",
+  "GeographicalUnitShortName": "Macao",
+  "HierarchyLevel": 30,
+  "IsPartOf": 11
+ }
+},
+{
+ "model": "locations.geographicalunit",
+ "pk": 136,
+ "fields": {
+  "GeographicalUnitId": "Country_LU",
+  "GeographicalUnitCategory": "Country",
+  "GeographicalUnitName": "Luxembourg",
+  "GeographicalUnitShortName": "Luxembourg",
+  "HierarchyLevel": 30,
+  "IsPartOf": 8
+ }
+},
+{
+ "model": "locations.geographicalunit",
+ "pk": 137,
+ "fields": {
+  "GeographicalUnitId": "Country_LT",
+  "GeographicalUnitCategory": "Country",
+  "GeographicalUnitName": "Lithuania",
+  "GeographicalUnitShortName": "Lithuania",
+  "HierarchyLevel": 30,
+  "IsPartOf": 8
+ }
+},
+{
+ "model": "locations.geographicalunit",
+ "pk": 138,
+ "fields": {
+  "GeographicalUnitId": "Country_LI",
+  "GeographicalUnitCategory": "Country",
+  "GeographicalUnitName": "Liechtenstein",
+  "GeographicalUnitShortName": "Liechtenstein",
+  "HierarchyLevel": 30,
+  "IsPartOf": 8
+ }
+},
+{
+ "model": "locations.geographicalunit",
+ "pk": 139,
+ "fields": {
+  "GeographicalUnitId": "Country_LY",
+  "GeographicalUnitCategory": "Country",
+  "GeographicalUnitName": "Libya",
+  "GeographicalUnitShortName": "Libya",
+  "HierarchyLevel": 30,
+  "IsPartOf": 9
+ }
+},
+{
+ "model": "locations.geographicalunit",
+ "pk": 140,
+ "fields": {
+  "GeographicalUnitId": "Country_LR",
+  "GeographicalUnitCategory": "Country",
+  "GeographicalUnitName": "Liberia",
+  "GeographicalUnitShortName": "Liberia",
+  "HierarchyLevel": 30,
+  "IsPartOf": 9
+ }
+},
+{
+ "model": "locations.geographicalunit",
+ "pk": 141,
+ "fields": {
+  "GeographicalUnitId": "Country_LS",
+  "GeographicalUnitCategory": "Country",
+  "GeographicalUnitName": "Lesotho",
+  "GeographicalUnitShortName": "Lesotho",
+  "HierarchyLevel": 30,
+  "IsPartOf": 9
+ }
+},
+{
+ "model": "locations.geographicalunit",
+ "pk": 142,
+ "fields": {
+  "GeographicalUnitId": "Country_LB",
+  "GeographicalUnitCategory": "Country",
+  "GeographicalUnitName": "Lebanon",
+  "GeographicalUnitShortName": "Lebanon",
+  "HierarchyLevel": 30,
+  "IsPartOf": 11
+ }
+},
+{
+ "model": "locations.geographicalunit",
+ "pk": 143,
+ "fields": {
+  "GeographicalUnitId": "Country_LV",
+  "GeographicalUnitCategory": "Country",
+  "GeographicalUnitName": "Latvia",
+  "GeographicalUnitShortName": "Latvia",
+  "HierarchyLevel": 30,
+  "IsPartOf": 8
+ }
+},
+{
+ "model": "locations.geographicalunit",
+ "pk": 144,
+ "fields": {
+  "GeographicalUnitId": "Country_LA",
+  "GeographicalUnitCategory": "Country",
+  "GeographicalUnitName": "Lao People's Democratic Republic (the)",
+  "GeographicalUnitShortName": "Lao",
+  "HierarchyLevel": 30,
+  "IsPartOf": 11
+ }
+},
+{
+ "model": "locations.geographicalunit",
+ "pk": 145,
+ "fields": {
+  "GeographicalUnitId": "Country_KG",
+  "GeographicalUnitCategory": "Country",
+  "GeographicalUnitName": "Kyrgyzstan",
+  "GeographicalUnitShortName": "Kyrgyzstan",
+  "HierarchyLevel": 30,
+  "IsPartOf": 11
+ }
+},
+{
+ "model": "locations.geographicalunit",
+ "pk": 146,
+ "fields": {
+  "GeographicalUnitId": "Country_KW",
+  "GeographicalUnitCategory": "Country",
+  "GeographicalUnitName": "Kuwait",
+  "GeographicalUnitShortName": "Kuwait",
+  "HierarchyLevel": 30,
+  "IsPartOf": 11
+ }
+},
+{
+ "model": "locations.geographicalunit",
+ "pk": 147,
+ "fields": {
+  "GeographicalUnitId": "Country_KR",
+  "GeographicalUnitCategory": "Country",
+  "GeographicalUnitName": "Korea (the Republic of)",
+  "GeographicalUnitShortName": "South Korea",
+  "HierarchyLevel": 30,
+  "IsPartOf": 11
+ }
+},
+{
+ "model": "locations.geographicalunit",
+ "pk": 148,
+ "fields": {
+  "GeographicalUnitId": "Country_KP",
+  "GeographicalUnitCategory": "Country",
+  "GeographicalUnitName": "Korea (the Democratic People's Republic of)",
+  "GeographicalUnitShortName": "North Korea",
+  "HierarchyLevel": 30,
+  "IsPartOf": 11
+ }
+},
+{
+ "model": "locations.geographicalunit",
+ "pk": 149,
+ "fields": {
+  "GeographicalUnitId": "Country_KI",
+  "GeographicalUnitCategory": "Country",
+  "GeographicalUnitName": "Kiribati",
+  "GeographicalUnitShortName": "Kiribati",
+  "HierarchyLevel": 30,
+  "IsPartOf": 12
+ }
+},
+{
+ "model": "locations.geographicalunit",
+ "pk": 150,
+ "fields": {
+  "GeographicalUnitId": "Country_KE",
+  "GeographicalUnitCategory": "Country",
+  "GeographicalUnitName": "Kenya",
+  "GeographicalUnitShortName": "Kenya",
+  "HierarchyLevel": 30,
+  "IsPartOf": 9
+ }
+},
+{
+ "model": "locations.geographicalunit",
+ "pk": 151,
+ "fields": {
+  "GeographicalUnitId": "Country_KZ",
+  "GeographicalUnitCategory": "Country",
+  "GeographicalUnitName": "Kazakhstan",
+  "GeographicalUnitShortName": "Kazakhstan",
+  "HierarchyLevel": 30,
+  "IsPartOf": 8
+ }
+},
+{
+ "model": "locations.geographicalunit",
+ "pk": 152,
+ "fields": {
+  "GeographicalUnitId": "Country_JO",
+  "GeographicalUnitCategory": "Country",
+  "GeographicalUnitName": "Jordan",
+  "GeographicalUnitShortName": "Jordan",
+  "HierarchyLevel": 30,
+  "IsPartOf": 11
+ }
+},
+{
+ "model": "locations.geographicalunit",
+ "pk": 153,
+ "fields": {
+  "GeographicalUnitId": "Country_JE",
+  "GeographicalUnitCategory": "Country",
+  "GeographicalUnitName": "Jersey",
+  "GeographicalUnitShortName": "Jersey",
+  "HierarchyLevel": 30,
+  "IsPartOf": 8
+ }
+},
+{
+ "model": "locations.geographicalunit",
+ "pk": 154,
+ "fields": {
+  "GeographicalUnitId": "Country_JP",
+  "GeographicalUnitCategory": "Country",
+  "GeographicalUnitName": "Japan",
+  "GeographicalUnitShortName": "Japan",
+  "HierarchyLevel": 30,
+  "IsPartOf": 11
+ }
+},
+{
+ "model": "locations.geographicalunit",
+ "pk": 155,
+ "fields": {
+  "GeographicalUnitId": "Country_JM",
+  "GeographicalUnitCategory": "Country",
+  "GeographicalUnitName": "Jamaica",
+  "GeographicalUnitShortName": "Jamaica",
+  "HierarchyLevel": 30,
+  "IsPartOf": 13
+ }
+},
+{
+ "model": "locations.geographicalunit",
+ "pk": 156,
+ "fields": {
+  "GeographicalUnitId": "Country_IT",
+  "GeographicalUnitCategory": "Country",
+  "GeographicalUnitName": "Italy",
+  "GeographicalUnitShortName": "Italy",
+  "HierarchyLevel": 30,
+  "IsPartOf": 8
+ }
+},
+{
+ "model": "locations.geographicalunit",
+ "pk": 157,
+ "fields": {
+  "GeographicalUnitId": "Country_IL",
+  "GeographicalUnitCategory": "Country",
+  "GeographicalUnitName": "Israel",
+  "GeographicalUnitShortName": "Israel",
+  "HierarchyLevel": 30,
+  "IsPartOf": 11
+ }
+},
+{
+ "model": "locations.geographicalunit",
+ "pk": 158,
+ "fields": {
+  "GeographicalUnitId": "Country_IM",
+  "GeographicalUnitCategory": "Country",
+  "GeographicalUnitName": "Isle of Man",
+  "GeographicalUnitShortName": "Isle of Man",
+  "HierarchyLevel": 30,
+  "IsPartOf": 8
+ }
+},
+{
+ "model": "locations.geographicalunit",
+ "pk": 159,
+ "fields": {
+  "GeographicalUnitId": "Country_IE",
+  "GeographicalUnitCategory": "Country",
+  "GeographicalUnitName": "Ireland",
+  "GeographicalUnitShortName": "Ireland",
+  "HierarchyLevel": 30,
+  "IsPartOf": 8
+ }
+},
+{
+ "model": "locations.geographicalunit",
+ "pk": 160,
+ "fields": {
+  "GeographicalUnitId": "Country_IQ",
+  "GeographicalUnitCategory": "Country",
+  "GeographicalUnitName": "Iraq",
+  "GeographicalUnitShortName": "Iraq",
+  "HierarchyLevel": 30,
+  "IsPartOf": 11
+ }
+},
+{
+ "model": "locations.geographicalunit",
+ "pk": 161,
+ "fields": {
+  "GeographicalUnitId": "Country_IR",
+  "GeographicalUnitCategory": "Country",
+  "GeographicalUnitName": "Iran (Islamic Republic of)",
+  "GeographicalUnitShortName": "Iran (Islamic Republic of)",
+  "HierarchyLevel": 30,
+  "IsPartOf": 11
+ }
+},
+{
+ "model": "locations.geographicalunit",
+ "pk": 162,
+ "fields": {
+  "GeographicalUnitId": "Country_ID",
+  "GeographicalUnitCategory": "Country",
+  "GeographicalUnitName": "Indonesia",
+  "GeographicalUnitShortName": "Indonesia",
+  "HierarchyLevel": 30,
+  "IsPartOf": 11
+ }
+},
+{
+ "model": "locations.geographicalunit",
+ "pk": 163,
+ "fields": {
+  "GeographicalUnitId": "Country_IN",
+  "GeographicalUnitCategory": "Country",
+  "GeographicalUnitName": "India",
+  "GeographicalUnitShortName": "India",
+  "HierarchyLevel": 30,
+  "IsPartOf": 11
+ }
+},
+{
+ "model": "locations.geographicalunit",
+ "pk": 164,
+ "fields": {
+  "GeographicalUnitId": "Country_IS",
+  "GeographicalUnitCategory": "Country",
+  "GeographicalUnitName": "Iceland",
+  "GeographicalUnitShortName": "Iceland",
+  "HierarchyLevel": 30,
+  "IsPartOf": 8
+ }
+},
+{
+ "model": "locations.geographicalunit",
+ "pk": 165,
+ "fields": {
+  "GeographicalUnitId": "Country_HU",
+  "GeographicalUnitCategory": "Country",
+  "GeographicalUnitName": "Hungary",
+  "GeographicalUnitShortName": "Hungary",
+  "HierarchyLevel": 30,
+  "IsPartOf": 8
+ }
+},
+{
+ "model": "locations.geographicalunit",
+ "pk": 166,
+ "fields": {
+  "GeographicalUnitId": "Country_HK",
+  "GeographicalUnitCategory": "Country",
+  "GeographicalUnitName": "Hong Kong",
+  "GeographicalUnitShortName": "Hong Kong",
+  "HierarchyLevel": 30,
+  "IsPartOf": 11
+ }
+},
+{
+ "model": "locations.geographicalunit",
+ "pk": 167,
+ "fields": {
+  "GeographicalUnitId": "Country_HN",
+  "GeographicalUnitCategory": "Country",
+  "GeographicalUnitName": "Honduras",
+  "GeographicalUnitShortName": "Honduras",
+  "HierarchyLevel": 30,
+  "IsPartOf": 13
+ }
+},
+{
+ "model": "locations.geographicalunit",
+ "pk": 168,
+ "fields": {
+  "GeographicalUnitId": "Country_VA",
+  "GeographicalUnitCategory": "Country",
+  "GeographicalUnitName": "Holy See (the)",
+  "GeographicalUnitShortName": "Holy See (the)",
+  "HierarchyLevel": 30,
+  "IsPartOf": 8
+ }
+},
+{
+ "model": "locations.geographicalunit",
+ "pk": 169,
+ "fields": {
+  "GeographicalUnitId": "Country_HM",
+  "GeographicalUnitCategory": "Country",
+  "GeographicalUnitName": "Heard Island and McDonald Islands",
+  "GeographicalUnitShortName": "Heard Island and McDonald Islands",
+  "HierarchyLevel": 30,
+  "IsPartOf": 10
+ }
+},
+{
+ "model": "locations.geographicalunit",
+ "pk": 170,
+ "fields": {
+  "GeographicalUnitId": "Country_HT",
+  "GeographicalUnitCategory": "Country",
+  "GeographicalUnitName": "Haiti",
+  "GeographicalUnitShortName": "Haiti",
+  "HierarchyLevel": 30,
+  "IsPartOf": 13
+ }
+},
+{
+ "model": "locations.geographicalunit",
+ "pk": 171,
+ "fields": {
+  "GeographicalUnitId": "Country_GY",
+  "GeographicalUnitCategory": "Country",
+  "GeographicalUnitName": "Guyana",
+  "GeographicalUnitShortName": "Guyana",
+  "HierarchyLevel": 30,
+  "IsPartOf": 14
+ }
+},
+{
+ "model": "locations.geographicalunit",
+ "pk": 172,
+ "fields": {
+  "GeographicalUnitId": "Country_GW",
+  "GeographicalUnitCategory": "Country",
+  "GeographicalUnitName": "Guinea-Bissau",
+  "GeographicalUnitShortName": "Guinea-Bissau",
+  "HierarchyLevel": 30,
+  "IsPartOf": 9
+ }
+},
+{
+ "model": "locations.geographicalunit",
+ "pk": 173,
+ "fields": {
+  "GeographicalUnitId": "Country_GN",
+  "GeographicalUnitCategory": "Country",
+  "GeographicalUnitName": "Guinea",
+  "GeographicalUnitShortName": "Guinea",
+  "HierarchyLevel": 30,
+  "IsPartOf": 9
+ }
+},
+{
+ "model": "locations.geographicalunit",
+ "pk": 174,
+ "fields": {
+  "GeographicalUnitId": "Country_GG",
+  "GeographicalUnitCategory": "Country",
+  "GeographicalUnitName": "Guernsey",
+  "GeographicalUnitShortName": "Guernsey",
+  "HierarchyLevel": 30,
+  "IsPartOf": 8
+ }
+},
+{
+ "model": "locations.geographicalunit",
+ "pk": 175,
+ "fields": {
+  "GeographicalUnitId": "Country_GT",
+  "GeographicalUnitCategory": "Country",
+  "GeographicalUnitName": "Guatemala",
+  "GeographicalUnitShortName": "Guatemala",
+  "HierarchyLevel": 30,
+  "IsPartOf": 13
+ }
+},
+{
+ "model": "locations.geographicalunit",
+ "pk": 176,
+ "fields": {
+  "GeographicalUnitId": "Country_GU",
+  "GeographicalUnitCategory": "Country",
+  "GeographicalUnitName": "Guam",
+  "GeographicalUnitShortName": "Guam",
+  "HierarchyLevel": 30,
+  "IsPartOf": 12
+ }
+},
+{
+ "model": "locations.geographicalunit",
+ "pk": 177,
+ "fields": {
+  "GeographicalUnitId": "Country_GP",
+  "GeographicalUnitCategory": "Country",
+  "GeographicalUnitName": "Guadeloupe",
+  "GeographicalUnitShortName": "Guadeloupe",
+  "HierarchyLevel": 30,
+  "IsPartOf": 13
+ }
+},
+{
+ "model": "locations.geographicalunit",
+ "pk": 178,
+ "fields": {
+  "GeographicalUnitId": "Country_GD",
+  "GeographicalUnitCategory": "Country",
+  "GeographicalUnitName": "Grenada",
+  "GeographicalUnitShortName": "Grenada",
+  "HierarchyLevel": 30,
+  "IsPartOf": 13
+ }
+},
+{
+ "model": "locations.geographicalunit",
+ "pk": 179,
+ "fields": {
+  "GeographicalUnitId": "Country_GL",
+  "GeographicalUnitCategory": "Country",
+  "GeographicalUnitName": "Greenland",
+  "GeographicalUnitShortName": "Greenland",
+  "HierarchyLevel": 30,
+  "IsPartOf": 13
+ }
+},
+{
+ "model": "locations.geographicalunit",
+ "pk": 180,
+ "fields": {
+  "GeographicalUnitId": "Country_GR",
+  "GeographicalUnitCategory": "Country",
+  "GeographicalUnitName": "Greece",
+  "GeographicalUnitShortName": "Greece",
+  "HierarchyLevel": 30,
+  "IsPartOf": 8
+ }
+},
+{
+ "model": "locations.geographicalunit",
+ "pk": 181,
+ "fields": {
+  "GeographicalUnitId": "Country_GI",
+  "GeographicalUnitCategory": "Country",
+  "GeographicalUnitName": "Gibraltar",
+  "GeographicalUnitShortName": "Gibraltar",
+  "HierarchyLevel": 30,
+  "IsPartOf": 8
+ }
+},
+{
+ "model": "locations.geographicalunit",
+ "pk": 182,
+ "fields": {
+  "GeographicalUnitId": "Country_GH",
+  "GeographicalUnitCategory": "Country",
+  "GeographicalUnitName": "Ghana",
+  "GeographicalUnitShortName": "Ghana",
+  "HierarchyLevel": 30,
+  "IsPartOf": 9
+ }
+},
+{
+ "model": "locations.geographicalunit",
+ "pk": 183,
+ "fields": {
+  "GeographicalUnitId": "Country_DE",
+  "GeographicalUnitCategory": "Country",
+  "GeographicalUnitName": "Germany",
+  "GeographicalUnitShortName": "Germany",
+  "HierarchyLevel": 30,
+  "IsPartOf": 8
+ }
+},
+{
+ "model": "locations.geographicalunit",
+ "pk": 184,
+ "fields": {
+  "GeographicalUnitId": "Country_GE",
+  "GeographicalUnitCategory": "Country",
+  "GeographicalUnitName": "Georgia",
+  "GeographicalUnitShortName": "Georgia",
+  "HierarchyLevel": 30,
+  "IsPartOf": 8
+ }
+},
+{
+ "model": "locations.geographicalunit",
+ "pk": 185,
+ "fields": {
+  "GeographicalUnitId": "Country_GM",
+  "GeographicalUnitCategory": "Country",
+  "GeographicalUnitName": "Gambia (the)",
+  "GeographicalUnitShortName": "Gambia",
+  "HierarchyLevel": 30,
+  "IsPartOf": 9
+ }
+},
+{
+ "model": "locations.geographicalunit",
+ "pk": 186,
+ "fields": {
+  "GeographicalUnitId": "Country_GA",
+  "GeographicalUnitCategory": "Country",
+  "GeographicalUnitName": "Gabon",
+  "GeographicalUnitShortName": "Gabon",
+  "HierarchyLevel": 30,
+  "IsPartOf": 9
+ }
+},
+{
+ "model": "locations.geographicalunit",
+ "pk": 187,
+ "fields": {
+  "GeographicalUnitId": "Country_TF",
+  "GeographicalUnitCategory": "Country",
+  "GeographicalUnitName": "French Southern Territories (the)",
+  "GeographicalUnitShortName": "French Southern Territories",
+  "HierarchyLevel": 30,
+  "IsPartOf": 10
+ }
+},
+{
+ "model": "locations.geographicalunit",
+ "pk": 188,
+ "fields": {
+  "GeographicalUnitId": "Country_PF",
+  "GeographicalUnitCategory": "Country",
+  "GeographicalUnitName": "French Polynesia",
+  "GeographicalUnitShortName": "French Polynesia",
+  "HierarchyLevel": 30,
+  "IsPartOf": 12
+ }
+},
+{
+ "model": "locations.geographicalunit",
+ "pk": 189,
+ "fields": {
+  "GeographicalUnitId": "Country_GF",
+  "GeographicalUnitCategory": "Country",
+  "GeographicalUnitName": "French Guiana",
+  "GeographicalUnitShortName": "French Guiana",
+  "HierarchyLevel": 30,
+  "IsPartOf": 14
+ }
+},
+{
+ "model": "locations.geographicalunit",
+ "pk": 190,
+ "fields": {
+  "GeographicalUnitId": "Country_FI",
+  "GeographicalUnitCategory": "Country",
+  "GeographicalUnitName": "Finland",
+  "GeographicalUnitShortName": "Finland",
+  "HierarchyLevel": 30,
+  "IsPartOf": 8
+ }
+},
+{
+ "model": "locations.geographicalunit",
+ "pk": 191,
+ "fields": {
+  "GeographicalUnitId": "Country_FJ",
+  "GeographicalUnitCategory": "Country",
+  "GeographicalUnitName": "Fiji",
+  "GeographicalUnitShortName": "Fiji",
+  "HierarchyLevel": 30,
+  "IsPartOf": 12
+ }
+},
+{
+ "model": "locations.geographicalunit",
+ "pk": 192,
+ "fields": {
+  "GeographicalUnitId": "Country_FO",
+  "GeographicalUnitCategory": "Country",
+  "GeographicalUnitName": "Faroe Islands (the)",
+  "GeographicalUnitShortName": "Faroe Islands",
+  "HierarchyLevel": 30,
+  "IsPartOf": 8
+ }
+},
+{
+ "model": "locations.geographicalunit",
+ "pk": 193,
+ "fields": {
+  "GeographicalUnitId": "Country_FK",
+  "GeographicalUnitCategory": "Country",
+  "GeographicalUnitName": "Falkland Islands (the) [Malvinas]",
+  "GeographicalUnitShortName": "Falkland Islands",
+  "HierarchyLevel": 30,
+  "IsPartOf": 14
+ }
+},
+{
+ "model": "locations.geographicalunit",
+ "pk": 194,
+ "fields": {
+  "GeographicalUnitId": "Country_ET",
+  "GeographicalUnitCategory": "Country",
+  "GeographicalUnitName": "Ethiopia",
+  "GeographicalUnitShortName": "Ethiopia",
+  "HierarchyLevel": 30,
+  "IsPartOf": 9
+ }
+},
+{
+ "model": "locations.geographicalunit",
+ "pk": 195,
+ "fields": {
+  "GeographicalUnitId": "Country_SZ",
+  "GeographicalUnitCategory": "Country",
+  "GeographicalUnitName": "Eswatini",
+  "GeographicalUnitShortName": "Eswatini",
+  "HierarchyLevel": 30,
+  "IsPartOf": 9
+ }
+},
+{
+ "model": "locations.geographicalunit",
+ "pk": 196,
+ "fields": {
+  "GeographicalUnitId": "Country_EE",
+  "GeographicalUnitCategory": "Country",
+  "GeographicalUnitName": "Estonia",
+  "GeographicalUnitShortName": "Estonia",
+  "HierarchyLevel": 30,
+  "IsPartOf": 8
+ }
+},
+{
+ "model": "locations.geographicalunit",
+ "pk": 197,
+ "fields": {
+  "GeographicalUnitId": "Country_ER",
+  "GeographicalUnitCategory": "Country",
+  "GeographicalUnitName": "Eritrea",
+  "GeographicalUnitShortName": "Eritrea",
+  "HierarchyLevel": 30,
+  "IsPartOf": 9
+ }
+},
+{
+ "model": "locations.geographicalunit",
+ "pk": 198,
+ "fields": {
+  "GeographicalUnitId": "Country_GQ",
+  "GeographicalUnitCategory": "Country",
+  "GeographicalUnitName": "Equatorial Guinea",
+  "GeographicalUnitShortName": "Equatorial Guinea",
+  "HierarchyLevel": 30,
+  "IsPartOf": 9
+ }
+},
+{
+ "model": "locations.geographicalunit",
+ "pk": 199,
+ "fields": {
+  "GeographicalUnitId": "Country_SV",
+  "GeographicalUnitCategory": "Country",
+  "GeographicalUnitName": "El Salvador",
+  "GeographicalUnitShortName": "El Salvador",
+  "HierarchyLevel": 30,
+  "IsPartOf": 13
+ }
+},
+{
+ "model": "locations.geographicalunit",
+ "pk": 200,
+ "fields": {
+  "GeographicalUnitId": "Country_EG",
+  "GeographicalUnitCategory": "Country",
+  "GeographicalUnitName": "Egypt",
+  "GeographicalUnitShortName": "Egypt",
+  "HierarchyLevel": 30,
+  "IsPartOf": 9
+ }
+},
+{
+ "model": "locations.geographicalunit",
+ "pk": 201,
+ "fields": {
+  "GeographicalUnitId": "Country_EC",
+  "GeographicalUnitCategory": "Country",
+  "GeographicalUnitName": "Ecuador",
+  "GeographicalUnitShortName": "Ecuador",
+  "HierarchyLevel": 30,
+  "IsPartOf": 14
+ }
+},
+{
+ "model": "locations.geographicalunit",
+ "pk": 202,
+ "fields": {
+  "GeographicalUnitId": "Country_DO",
+  "GeographicalUnitCategory": "Country",
+  "GeographicalUnitName": "Dominican Republic (the)",
+  "GeographicalUnitShortName": "Dominican Republic",
+  "HierarchyLevel": 30,
+  "IsPartOf": 13
+ }
+},
+{
+ "model": "locations.geographicalunit",
+ "pk": 203,
+ "fields": {
+  "GeographicalUnitId": "Country_DM",
+  "GeographicalUnitCategory": "Country",
+  "GeographicalUnitName": "Dominica",
+  "GeographicalUnitShortName": "Dominica",
+  "HierarchyLevel": 30,
+  "IsPartOf": 13
+ }
+},
+{
+ "model": "locations.geographicalunit",
+ "pk": 204,
+ "fields": {
+  "GeographicalUnitId": "Country_DJ",
+  "GeographicalUnitCategory": "Country",
+  "GeographicalUnitName": "Djibouti",
+  "GeographicalUnitShortName": "Djibouti",
+  "HierarchyLevel": 30,
+  "IsPartOf": 9
+ }
+},
+{
+ "model": "locations.geographicalunit",
+ "pk": 205,
+ "fields": {
+  "GeographicalUnitId": "Country_DK",
+  "GeographicalUnitCategory": "Country",
+  "GeographicalUnitName": "Denmark",
+  "GeographicalUnitShortName": "Denmark",
+  "HierarchyLevel": 30,
+  "IsPartOf": 8
+ }
+},
+{
+ "model": "locations.geographicalunit",
+ "pk": 206,
+ "fields": {
+  "GeographicalUnitId": "Country_CI",
+  "GeographicalUnitCategory": "Country",
+  "GeographicalUnitName": "Côte d'Ivoire",
+  "GeographicalUnitShortName": "Côte d'Ivoire",
+  "HierarchyLevel": 30,
+  "IsPartOf": 9
+ }
+},
+{
+ "model": "locations.geographicalunit",
+ "pk": 207,
+ "fields": {
+  "GeographicalUnitId": "Country_CZ",
+  "GeographicalUnitCategory": "Country",
+  "GeographicalUnitName": "Czechia",
+  "GeographicalUnitShortName": "Czechia",
+  "HierarchyLevel": 30,
+  "IsPartOf": 8
+ }
+},
+{
+ "model": "locations.geographicalunit",
+ "pk": 208,
+ "fields": {
+  "GeographicalUnitId": "Country_CY",
+  "GeographicalUnitCategory": "Country",
+  "GeographicalUnitName": "Cyprus",
+  "GeographicalUnitShortName": "Cyprus",
+  "HierarchyLevel": 30,
+  "IsPartOf": 8
+ }
+},
+{
+ "model": "locations.geographicalunit",
+ "pk": 209,
+ "fields": {
+  "GeographicalUnitId": "Country_CW",
+  "GeographicalUnitCategory": "Country",
+  "GeographicalUnitName": "Curacao",
+  "GeographicalUnitShortName": "Curacao",
+  "HierarchyLevel": 30,
+  "IsPartOf": 13
+ }
+},
+{
+ "model": "locations.geographicalunit",
+ "pk": 210,
+ "fields": {
+  "GeographicalUnitId": "Country_CU",
+  "GeographicalUnitCategory": "Country",
+  "GeographicalUnitName": "Cuba",
+  "GeographicalUnitShortName": "Cuba",
+  "HierarchyLevel": 30,
+  "IsPartOf": 13
+ }
+},
+{
+ "model": "locations.geographicalunit",
+ "pk": 211,
+ "fields": {
+  "GeographicalUnitId": "Country_HR",
+  "GeographicalUnitCategory": "Country",
+  "GeographicalUnitName": "Croatia",
+  "GeographicalUnitShortName": "Croatia",
+  "HierarchyLevel": 30,
+  "IsPartOf": 8
+ }
+},
+{
+ "model": "locations.geographicalunit",
+ "pk": 212,
+ "fields": {
+  "GeographicalUnitId": "Country_CR",
+  "GeographicalUnitCategory": "Country",
+  "GeographicalUnitName": "Costa Rica",
+  "GeographicalUnitShortName": "Costa Rica",
+  "HierarchyLevel": 30,
+  "IsPartOf": 13
+ }
+},
+{
+ "model": "locations.geographicalunit",
+ "pk": 213,
+ "fields": {
+  "GeographicalUnitId": "Country_CK",
+  "GeographicalUnitCategory": "Country",
+  "GeographicalUnitName": "Cook Islands (the)",
+  "GeographicalUnitShortName": "Cook Islands",
+  "HierarchyLevel": 30,
+  "IsPartOf": 12
+ }
+},
+{
+ "model": "locations.geographicalunit",
+ "pk": 214,
+ "fields": {
+  "GeographicalUnitId": "Country_CG",
+  "GeographicalUnitCategory": "Country",
+  "GeographicalUnitName": "Congo, Republic of the",
+  "GeographicalUnitShortName": "Congo Brazzaville",
+  "HierarchyLevel": 30,
+  "IsPartOf": 9
+ }
+},
+{
+ "model": "locations.geographicalunit",
+ "pk": 215,
+ "fields": {
+  "GeographicalUnitId": "Country_CD",
+  "GeographicalUnitCategory": "Country",
+  "GeographicalUnitName": "Congo, Democratic Republic of the",
+  "GeographicalUnitShortName": "Congo, Democratic Republic of the",
+  "HierarchyLevel": 30,
+  "IsPartOf": 9
+ }
+},
+{
+ "model": "locations.geographicalunit",
+ "pk": 216,
+ "fields": {
+  "GeographicalUnitId": "Country_KM",
+  "GeographicalUnitCategory": "Country",
+  "GeographicalUnitName": "Comoros (the)",
+  "GeographicalUnitShortName": "Comoros ",
+  "HierarchyLevel": 30,
+  "IsPartOf": 9
+ }
+},
+{
+ "model": "locations.geographicalunit",
+ "pk": 217,
+ "fields": {
+  "GeographicalUnitId": "Country_CO",
+  "GeographicalUnitCategory": "Country",
+  "GeographicalUnitName": "Colombia",
+  "GeographicalUnitShortName": "Colombia",
+  "HierarchyLevel": 30,
+  "IsPartOf": 14
+ }
+},
+{
+ "model": "locations.geographicalunit",
+ "pk": 218,
+ "fields": {
+  "GeographicalUnitId": "Country_CC",
+  "GeographicalUnitCategory": "Country",
+  "GeographicalUnitName": "Cocos (Keeling) Islands (the)",
+  "GeographicalUnitShortName": "Cocos Islands ",
+  "HierarchyLevel": 30,
+  "IsPartOf": 11
+ }
+},
+{
+ "model": "locations.geographicalunit",
+ "pk": 219,
+ "fields": {
+  "GeographicalUnitId": "Country_CX",
+  "GeographicalUnitCategory": "Country",
+  "GeographicalUnitName": "Christmas Island",
+  "GeographicalUnitShortName": "Christmas Island",
+  "HierarchyLevel": 30,
+  "IsPartOf": 11
+ }
+},
+{
+ "model": "locations.geographicalunit",
+ "pk": 220,
+ "fields": {
+  "GeographicalUnitId": "Country_CN",
+  "GeographicalUnitCategory": "Country",
+  "GeographicalUnitName": "China",
+  "GeographicalUnitShortName": "China",
+  "HierarchyLevel": 30,
+  "IsPartOf": 11
+ }
+},
+{
+ "model": "locations.geographicalunit",
+ "pk": 221,
+ "fields": {
+  "GeographicalUnitId": "Country_CL",
+  "GeographicalUnitCategory": "Country",
+  "GeographicalUnitName": "Chile",
+  "GeographicalUnitShortName": "Chile",
+  "HierarchyLevel": 30,
+  "IsPartOf": 14
+ }
+},
+{
+ "model": "locations.geographicalunit",
+ "pk": 222,
+ "fields": {
+  "GeographicalUnitId": "Country_TD",
+  "GeographicalUnitCategory": "Country",
+  "GeographicalUnitName": "Chad",
+  "GeographicalUnitShortName": "Chad",
+  "HierarchyLevel": 30,
+  "IsPartOf": 9
+ }
+},
+{
+ "model": "locations.geographicalunit",
+ "pk": 223,
+ "fields": {
+  "GeographicalUnitId": "Country_CF",
+  "GeographicalUnitCategory": "Country",
+  "GeographicalUnitName": "Central African Republic (the)",
+  "GeographicalUnitShortName": "Central African Republic",
+  "HierarchyLevel": 30,
+  "IsPartOf": 9
+ }
+},
+{
+ "model": "locations.geographicalunit",
+ "pk": 224,
+ "fields": {
+  "GeographicalUnitId": "Country_KY",
+  "GeographicalUnitCategory": "Country",
+  "GeographicalUnitName": "Cayman Islands (the)",
+  "GeographicalUnitShortName": "Cayman Islands",
+  "HierarchyLevel": 30,
+  "IsPartOf": 13
+ }
+},
+{
+ "model": "locations.geographicalunit",
+ "pk": 225,
+ "fields": {
+  "GeographicalUnitId": "Country_CA",
+  "GeographicalUnitCategory": "Country",
+  "GeographicalUnitName": "Canada",
+  "GeographicalUnitShortName": "Canada",
+  "HierarchyLevel": 30,
+  "IsPartOf": 13
+ }
+},
+{
+ "model": "locations.geographicalunit",
+ "pk": 226,
+ "fields": {
+  "GeographicalUnitId": "Country_CM",
+  "GeographicalUnitCategory": "Country",
+  "GeographicalUnitName": "Cameroon",
+  "GeographicalUnitShortName": "Cameroon",
+  "HierarchyLevel": 30,
+  "IsPartOf": 9
+ }
+},
+{
+ "model": "locations.geographicalunit",
+ "pk": 227,
+ "fields": {
+  "GeographicalUnitId": "Country_KH",
+  "GeographicalUnitCategory": "Country",
+  "GeographicalUnitName": "Cambodia",
+  "GeographicalUnitShortName": "Cambodia",
+  "HierarchyLevel": 30,
+  "IsPartOf": 11
+ }
+},
+{
+ "model": "locations.geographicalunit",
+ "pk": 228,
+ "fields": {
+  "GeographicalUnitId": "Country_CV",
+  "GeographicalUnitCategory": "Country",
+  "GeographicalUnitName": "Cabo Verde",
+  "GeographicalUnitShortName": "Cabo Verde",
+  "HierarchyLevel": 30,
+  "IsPartOf": 9
+ }
+},
+{
+ "model": "locations.geographicalunit",
+ "pk": 229,
+ "fields": {
+  "GeographicalUnitId": "Country_BI",
+  "GeographicalUnitCategory": "Country",
+  "GeographicalUnitName": "Burundi",
+  "GeographicalUnitShortName": "Burundi",
+  "HierarchyLevel": 30,
+  "IsPartOf": 9
+ }
+},
+{
+ "model": "locations.geographicalunit",
+ "pk": 230,
+ "fields": {
+  "GeographicalUnitId": "Country_BF",
+  "GeographicalUnitCategory": "Country",
+  "GeographicalUnitName": "Burkina Faso",
+  "GeographicalUnitShortName": "Burkina Faso",
+  "HierarchyLevel": 30,
+  "IsPartOf": 9
+ }
+},
+{
+ "model": "locations.geographicalunit",
+ "pk": 231,
+ "fields": {
+  "GeographicalUnitId": "Country_BG",
+  "GeographicalUnitCategory": "Country",
+  "GeographicalUnitName": "Bulgaria",
+  "GeographicalUnitShortName": "Bulgaria",
+  "HierarchyLevel": 30,
+  "IsPartOf": 8
+ }
+},
+{
+ "model": "locations.geographicalunit",
+ "pk": 232,
+ "fields": {
+  "GeographicalUnitId": "Country_BN",
+  "GeographicalUnitCategory": "Country",
+  "GeographicalUnitName": "Brunei Darussalam",
+  "GeographicalUnitShortName": "Brunei Darussalam",
+  "HierarchyLevel": 30,
+  "IsPartOf": 11
+ }
+},
+{
+ "model": "locations.geographicalunit",
+ "pk": 233,
+ "fields": {
+  "GeographicalUnitId": "Country_IO",
+  "GeographicalUnitCategory": "Country",
+  "GeographicalUnitName": "British Indian Ocean Territory (the)",
+  "GeographicalUnitShortName": "British Indian Ocean Territory",
+  "HierarchyLevel": 30,
+  "IsPartOf": 11
+ }
+},
+{
+ "model": "locations.geographicalunit",
+ "pk": 234,
+ "fields": {
+  "GeographicalUnitId": "Country_BR",
+  "GeographicalUnitCategory": "Country",
+  "GeographicalUnitName": "Brazil",
+  "GeographicalUnitShortName": "Brazil",
+  "HierarchyLevel": 30,
+  "IsPartOf": 14
+ }
+},
+{
+ "model": "locations.geographicalunit",
+ "pk": 235,
+ "fields": {
+  "GeographicalUnitId": "Country_BV",
+  "GeographicalUnitCategory": "Country",
+  "GeographicalUnitName": "Bouvet Island",
+  "GeographicalUnitShortName": "Bouvet Island",
+  "HierarchyLevel": 30,
+  "IsPartOf": 10
+ }
+},
+{
+ "model": "locations.geographicalunit",
+ "pk": 236,
+ "fields": {
+  "GeographicalUnitId": "Country_BW",
+  "GeographicalUnitCategory": "Country",
+  "GeographicalUnitName": "Botswana",
+  "GeographicalUnitShortName": "Botswana",
+  "HierarchyLevel": 30,
+  "IsPartOf": 9
+ }
+},
+{
+ "model": "locations.geographicalunit",
+ "pk": 237,
+ "fields": {
+  "GeographicalUnitId": "Country_BA",
+  "GeographicalUnitCategory": "Country",
+  "GeographicalUnitName": "Bosnia and Herzegovina",
+  "GeographicalUnitShortName": "Bosnia and Herzegovina",
+  "HierarchyLevel": 30,
+  "IsPartOf": 8
+ }
+},
+{
+ "model": "locations.geographicalunit",
+ "pk": 238,
+ "fields": {
+  "GeographicalUnitId": "Country_BQ",
+  "GeographicalUnitCategory": "Country",
+  "GeographicalUnitName": "Bonaire, Sint Eustatius and Saba",
+  "GeographicalUnitShortName": "Bonaire, Sint Eustatius and Saba",
+  "HierarchyLevel": 30,
+  "IsPartOf": 13
+ }
+},
+{
+ "model": "locations.geographicalunit",
+ "pk": 239,
+ "fields": {
+  "GeographicalUnitId": "Country_BO",
+  "GeographicalUnitCategory": "Country",
+  "GeographicalUnitName": "Bolivia (Plurinational State of)",
+  "GeographicalUnitShortName": "Bolivia",
+  "HierarchyLevel": 30,
+  "IsPartOf": 14
+ }
+},
+{
+ "model": "locations.geographicalunit",
+ "pk": 240,
+ "fields": {
+  "GeographicalUnitId": "Country_BT",
+  "GeographicalUnitCategory": "Country",
+  "GeographicalUnitName": "Bhutan",
+  "GeographicalUnitShortName": "Bhutan",
+  "HierarchyLevel": 30,
+  "IsPartOf": 11
+ }
+},
+{
+ "model": "locations.geographicalunit",
+ "pk": 241,
+ "fields": {
+  "GeographicalUnitId": "Country_BM",
+  "GeographicalUnitCategory": "Country",
+  "GeographicalUnitName": "Bermuda",
+  "GeographicalUnitShortName": "Bermuda",
+  "HierarchyLevel": 30,
+  "IsPartOf": 13
+ }
+},
+{
+ "model": "locations.geographicalunit",
+ "pk": 242,
+ "fields": {
+  "GeographicalUnitId": "Country_BJ",
+  "GeographicalUnitCategory": "Country",
+  "GeographicalUnitName": "Benin",
+  "GeographicalUnitShortName": "Benin",
+  "HierarchyLevel": 30,
+  "IsPartOf": 9
+ }
+},
+{
+ "model": "locations.geographicalunit",
+ "pk": 243,
+ "fields": {
+  "GeographicalUnitId": "Country_BZ",
+  "GeographicalUnitCategory": "Country",
+  "GeographicalUnitName": "Belize",
+  "GeographicalUnitShortName": "Belize",
+  "HierarchyLevel": 30,
+  "IsPartOf": 13
+ }
+},
+{
+ "model": "locations.geographicalunit",
+ "pk": 244,
+ "fields": {
+  "GeographicalUnitId": "Country_BY",
+  "GeographicalUnitCategory": "Country",
+  "GeographicalUnitName": "Belarus",
+  "GeographicalUnitShortName": "Belarus",
+  "HierarchyLevel": 30,
+  "IsPartOf": 8
+ }
+},
+{
+ "model": "locations.geographicalunit",
+ "pk": 245,
+ "fields": {
+  "GeographicalUnitId": "Country_BB",
+  "GeographicalUnitCategory": "Country",
+  "GeographicalUnitName": "Barbados",
+  "GeographicalUnitShortName": "Barbados",
+  "HierarchyLevel": 30,
+  "IsPartOf": 13
+ }
+},
+{
+ "model": "locations.geographicalunit",
+ "pk": 246,
+ "fields": {
+  "GeographicalUnitId": "Country_BD",
+  "GeographicalUnitCategory": "Country",
+  "GeographicalUnitName": "Bangladesh",
+  "GeographicalUnitShortName": "Bangladesh",
+  "HierarchyLevel": 30,
+  "IsPartOf": 11
+ }
+},
+{
+ "model": "locations.geographicalunit",
+ "pk": 247,
+ "fields": {
+  "GeographicalUnitId": "Country_BH",
+  "GeographicalUnitCategory": "Country",
+  "GeographicalUnitName": "Bahrain",
+  "GeographicalUnitShortName": "Bahrain",
+  "HierarchyLevel": 30,
+  "IsPartOf": 11
+ }
+},
+{
+ "model": "locations.geographicalunit",
+ "pk": 248,
+ "fields": {
+  "GeographicalUnitId": "Country_BS",
+  "GeographicalUnitCategory": "Country",
+  "GeographicalUnitName": "Bahamas (the)",
+  "GeographicalUnitShortName": "Bahamas",
+  "HierarchyLevel": 30,
+  "IsPartOf": 13
+ }
+},
+{
+ "model": "locations.geographicalunit",
+ "pk": 249,
+ "fields": {
+  "GeographicalUnitId": "Country_AZ",
+  "GeographicalUnitCategory": "Country",
+  "GeographicalUnitName": "Azerbaijan",
+  "GeographicalUnitShortName": "Azerbaijan",
+  "HierarchyLevel": 30,
+  "IsPartOf": 8
+ }
+},
+{
+ "model": "locations.geographicalunit",
+ "pk": 250,
+ "fields": {
+  "GeographicalUnitId": "Country_AT",
+  "GeographicalUnitCategory": "Country",
+  "GeographicalUnitName": "Austria",
+  "GeographicalUnitShortName": "Austria",
+  "HierarchyLevel": 30,
+  "IsPartOf": 8
+ }
+},
+{
+ "model": "locations.geographicalunit",
+ "pk": 251,
+ "fields": {
+  "GeographicalUnitId": "Country_AU",
+  "GeographicalUnitCategory": "Country",
+  "GeographicalUnitName": "Australia",
+  "GeographicalUnitShortName": "Australia",
+  "HierarchyLevel": 30,
+  "IsPartOf": 12
+ }
+},
+{
+ "model": "locations.geographicalunit",
+ "pk": 252,
+ "fields": {
+  "GeographicalUnitId": "Country_AW",
+  "GeographicalUnitCategory": "Country",
+  "GeographicalUnitName": "Aruba",
+  "GeographicalUnitShortName": "Aruba",
+  "HierarchyLevel": 30,
+  "IsPartOf": 13
+ }
+},
+{
+ "model": "locations.geographicalunit",
+ "pk": 253,
+ "fields": {
+  "GeographicalUnitId": "Country_AM",
+  "GeographicalUnitCategory": "Country",
+  "GeographicalUnitName": "Armenia",
+  "GeographicalUnitShortName": "Armenia",
+  "HierarchyLevel": 30,
+  "IsPartOf": 8
+ }
+},
+{
+ "model": "locations.geographicalunit",
+ "pk": 254,
+ "fields": {
+  "GeographicalUnitId": "Country_AR",
+  "GeographicalUnitCategory": "Country",
+  "GeographicalUnitName": "Argentina",
+  "GeographicalUnitShortName": "Argentina",
+  "HierarchyLevel": 30,
+  "IsPartOf": 14
+ }
+},
+{
+ "model": "locations.geographicalunit",
+ "pk": 255,
+ "fields": {
+  "GeographicalUnitId": "Country_AG",
+  "GeographicalUnitCategory": "Country",
+  "GeographicalUnitName": "Antigua and Barbuda",
+  "GeographicalUnitShortName": "Antigua and Barbuda",
+  "HierarchyLevel": 30,
+  "IsPartOf": 13
+ }
+},
+{
+ "model": "locations.geographicalunit",
+ "pk": 256,
+ "fields": {
+  "GeographicalUnitId": "Country_AQ",
+  "GeographicalUnitCategory": "Country",
+  "GeographicalUnitName": "Antarctica",
+  "GeographicalUnitShortName": "Antarctica",
+  "HierarchyLevel": 30,
+  "IsPartOf": 10
+ }
+},
+{
+ "model": "locations.geographicalunit",
+ "pk": 257,
+ "fields": {
+  "GeographicalUnitId": "Country_AI",
+  "GeographicalUnitCategory": "Country",
+  "GeographicalUnitName": "Anguilla",
+  "GeographicalUnitShortName": "Anguilla",
+  "HierarchyLevel": 30,
+  "IsPartOf": 13
+ }
+},
+{
+ "model": "locations.geographicalunit",
+ "pk": 258,
+ "fields": {
+  "GeographicalUnitId": "Country_AO",
+  "GeographicalUnitCategory": "Country",
+  "GeographicalUnitName": "Angola",
+  "GeographicalUnitShortName": "Angola",
+  "HierarchyLevel": 30,
+  "IsPartOf": 9
+ }
+},
+{
+ "model": "locations.geographicalunit",
+ "pk": 259,
+ "fields": {
+  "GeographicalUnitId": "Country_AD",
+  "GeographicalUnitCategory": "Country",
+  "GeographicalUnitName": "Andorra",
+  "GeographicalUnitShortName": "Andorra",
+  "HierarchyLevel": 30,
+  "IsPartOf": 8
+ }
+},
+{
+ "model": "locations.geographicalunit",
+ "pk": 260,
+ "fields": {
+  "GeographicalUnitId": "Country_AS",
+  "GeographicalUnitCategory": "Country",
+  "GeographicalUnitName": "American Samoa",
+  "GeographicalUnitShortName": "American Samoa",
+  "HierarchyLevel": 30,
+  "IsPartOf": 12
+ }
+},
+{
+ "model": "locations.geographicalunit",
+ "pk": 261,
+ "fields": {
+  "GeographicalUnitId": "Country_DZ",
+  "GeographicalUnitCategory": "Country",
+  "GeographicalUnitName": "Algeria",
+  "GeographicalUnitShortName": "Algeria",
+  "HierarchyLevel": 30,
+  "IsPartOf": 9
+ }
+},
+{
+ "model": "locations.geographicalunit",
+ "pk": 262,
+ "fields": {
+  "GeographicalUnitId": "Country_AL",
+  "GeographicalUnitCategory": "Country",
+  "GeographicalUnitName": "Albania",
+  "GeographicalUnitShortName": "Albania",
+  "HierarchyLevel": 30,
+  "IsPartOf": 8
+ }
+},
+{
+ "model": "locations.geographicalunit",
+ "pk": 263,
+ "fields": {
+  "GeographicalUnitId": "Country_AF",
+  "GeographicalUnitCategory": "Country",
+  "GeographicalUnitName": "Afghanistan",
+  "GeographicalUnitShortName": "Afghanistan",
+  "HierarchyLevel": 30,
+  "IsPartOf": 11
+ }
+},
+{
+ "model": "locations.geographicalunit",
+ "pk": 264,
+ "fields": {
+  "GeographicalUnitId": "Country_AN",
+  "GeographicalUnitCategory": "Country",
+  "GeographicalUnitName": "Antilles Neerlandaises",
+  "GeographicalUnitShortName": "Antilles Neerlandaises",
+  "HierarchyLevel": 30,
+  "IsPartOf": 13
+ }
+},
+{
+ "model": "locations.continent",
+ "pk": "AF",
+ "fields": {
+  "geographicalunit_ptr": 9
+ }
+},
+{
+ "model": "locations.continent",
+ "pk": "AN",
+ "fields": {
+  "geographicalunit_ptr": 10
+ }
+},
+{
+ "model": "locations.continent",
+ "pk": "AS",
+ "fields": {
+  "geographicalunit_ptr": 11
+ }
+},
+{
+ "model": "locations.continent",
+ "pk": "EU",
+ "fields": {
+  "geographicalunit_ptr": 8
+ }
+},
+{
+ "model": "locations.continent",
+ "pk": "NA",
+ "fields": {
+  "geographicalunit_ptr": 13
+ }
+},
+{
+ "model": "locations.continent",
+ "pk": "OC",
+ "fields": {
+  "geographicalunit_ptr": 12
+ }
+},
+{
+ "model": "locations.continent",
+ "pk": "SA",
+ "fields": {
+  "geographicalunit_ptr": 14
+ }
+},
+{
+ "model": "locations.country",
+ "pk": "AD",
+ "fields": {
+  "geographicalunit_ptr": 259,
+  "ISO3CountryCode": "AND",
+  "PhonePrefix": "1-684",
+  "InternetSuffix": ".ad",
+  "ISO3166Country": "20"
+ }
+},
+{
+ "model": "locations.country",
+ "pk": "AE",
+ "fields": {
+  "geographicalunit_ptr": 33,
+  "ISO3CountryCode": "ARE",
+  "PhonePrefix": "380",
+  "InternetSuffix": ".ae",
+  "ISO3166Country": "784"
+ }
+},
+{
+ "model": "locations.country",
+ "pk": "AF",
+ "fields": {
+  "geographicalunit_ptr": 263,
+  "ISO3CountryCode": "AFG",
+  "PhonePrefix": "599",
+  "InternetSuffix": ".af",
+  "ISO3166Country": "4"
+ }
+},
+{
+ "model": "locations.country",
+ "pk": "AG",
+ "fields": {
+  "geographicalunit_ptr": 255,
+  "ISO3CountryCode": "ATG",
+  "PhonePrefix": "672",
+  "InternetSuffix": ".ag",
+  "ISO3166Country": "28"
+ }
+},
+{
+ "model": "locations.country",
+ "pk": "AI",
+ "fields": {
+  "geographicalunit_ptr": 257,
+  "ISO3CountryCode": "AIA",
+  "PhonePrefix": "244",
+  "InternetSuffix": ".ai",
+  "ISO3166Country": "660"
+ }
+},
+{
+ "model": "locations.country",
+ "pk": "AL",
+ "fields": {
+  "geographicalunit_ptr": 262,
+  "ISO3CountryCode": "ALB",
+  "PhonePrefix": "93",
+  "InternetSuffix": ".al",
+  "ISO3166Country": "8"
+ }
+},
+{
+ "model": "locations.country",
+ "pk": "AM",
+ "fields": {
+  "geographicalunit_ptr": 253,
+  "ISO3CountryCode": "ARM",
+  "PhonePrefix": "54",
+  "InternetSuffix": ".am",
+  "ISO3166Country": "51"
+ }
+},
+{
+ "model": "locations.country",
+ "pk": "AN",
+ "fields": {
+  "geographicalunit_ptr": 264,
+  "ISO3CountryCode": "ANT",
+  "PhonePrefix": null,
+  "InternetSuffix": ".an",
+  "ISO3166Country": "530"
+ }
+},
+{
+ "model": "locations.country",
+ "pk": "AO",
+ "fields": {
+  "geographicalunit_ptr": 258,
+  "ISO3CountryCode": "AGO",
+  "PhonePrefix": "376",
+  "InternetSuffix": ".ao",
+  "ISO3166Country": "24"
+ }
+},
+{
+ "model": "locations.country",
+ "pk": "AQ",
+ "fields": {
+  "geographicalunit_ptr": 256,
+  "ISO3CountryCode": "ATA",
+  "PhonePrefix": "1-264",
+  "InternetSuffix": ".aq",
+  "ISO3166Country": "10"
+ }
+},
+{
+ "model": "locations.country",
+ "pk": "AR",
+ "fields": {
+  "geographicalunit_ptr": 254,
+  "ISO3CountryCode": "ARG",
+  "PhonePrefix": "1-268",
+  "InternetSuffix": ".ar",
+  "ISO3166Country": "32"
+ }
+},
+{
+ "model": "locations.country",
+ "pk": "AS",
+ "fields": {
+  "geographicalunit_ptr": 260,
+  "ISO3CountryCode": "ASM",
+  "PhonePrefix": "213",
+  "InternetSuffix": ".as",
+  "ISO3166Country": "16"
+ }
+},
+{
+ "model": "locations.country",
+ "pk": "AT",
+ "fields": {
+  "geographicalunit_ptr": 250,
+  "ISO3CountryCode": "AUT",
+  "PhonePrefix": "61",
+  "InternetSuffix": ".at",
+  "ISO3166Country": "40"
+ }
+},
+{
+ "model": "locations.country",
+ "pk": "AU",
+ "fields": {
+  "geographicalunit_ptr": 251,
+  "ISO3CountryCode": "AUS",
+  "PhonePrefix": "297",
+  "InternetSuffix": ".au",
+  "ISO3166Country": "36"
+ }
+},
+{
+ "model": "locations.country",
+ "pk": "AW",
+ "fields": {
+  "geographicalunit_ptr": 252,
+  "ISO3CountryCode": "ABW",
+  "PhonePrefix": "374",
+  "InternetSuffix": ".aw",
+  "ISO3166Country": "533"
+ }
+},
+{
+ "model": "locations.country",
+ "pk": "AX",
+ "fields": {
+  "geographicalunit_ptr": 18,
+  "ISO3CountryCode": "ALA",
+  "PhonePrefix": "263",
+  "InternetSuffix": " .ax",
+  "ISO3166Country": "248"
+ }
+},
+{
+ "model": "locations.country",
+ "pk": "AZ",
+ "fields": {
+  "geographicalunit_ptr": 249,
+  "ISO3CountryCode": "AZE",
+  "PhonePrefix": "43",
+  "InternetSuffix": ".az",
+  "ISO3166Country": "31"
+ }
+},
+{
+ "model": "locations.country",
+ "pk": "BA",
+ "fields": {
+  "geographicalunit_ptr": 237,
+  "ISO3CountryCode": "BIH",
+  "PhonePrefix": null,
+  "InternetSuffix": ".ba",
+  "ISO3166Country": "70"
+ }
+},
+{
+ "model": "locations.country",
+ "pk": "BB",
+ "fields": {
+  "geographicalunit_ptr": 245,
+  "ISO3CountryCode": "BRB",
+  "PhonePrefix": "880",
+  "InternetSuffix": ".bb",
+  "ISO3166Country": "52"
+ }
+},
+{
+ "model": "locations.country",
+ "pk": "BD",
+ "fields": {
+  "geographicalunit_ptr": 246,
+  "ISO3CountryCode": "BGD",
+  "PhonePrefix": "973",
+  "InternetSuffix": ".bd",
+  "ISO3166Country": "50"
+ }
+},
+{
+ "model": "locations.country",
+ "pk": "BE",
+ "fields": {
+  "geographicalunit_ptr": 15,
+  "ISO3CountryCode": "BEL",
+  "PhonePrefix": "375",
+  "InternetSuffix": ".be",
+  "ISO3166Country": "56"
+ }
+},
+{
+ "model": "locations.country",
+ "pk": "BF",
+ "fields": {
+  "geographicalunit_ptr": 230,
+  "ISO3CountryCode": "BFA",
+  "PhonePrefix": "359",
+  "InternetSuffix": ".bf",
+  "ISO3166Country": "854"
+ }
+},
+{
+ "model": "locations.country",
+ "pk": "BG",
+ "fields": {
+  "geographicalunit_ptr": 231,
+  "ISO3CountryCode": "BGR",
+  "PhonePrefix": "673",
+  "InternetSuffix": ".bg",
+  "ISO3166Country": "100"
+ }
+},
+{
+ "model": "locations.country",
+ "pk": "BH",
+ "fields": {
+  "geographicalunit_ptr": 247,
+  "ISO3CountryCode": "BHR",
+  "PhonePrefix": "1-242",
+  "InternetSuffix": ".bh",
+  "ISO3166Country": "48"
+ }
+},
+{
+ "model": "locations.country",
+ "pk": "BI",
+ "fields": {
+  "geographicalunit_ptr": 229,
+  "ISO3CountryCode": "BDI",
+  "PhonePrefix": "226",
+  "InternetSuffix": ".bi",
+  "ISO3166Country": "108"
+ }
+},
+{
+ "model": "locations.country",
+ "pk": "BJ",
+ "fields": {
+  "geographicalunit_ptr": 242,
+  "ISO3CountryCode": "BEN",
+  "PhonePrefix": "501",
+  "InternetSuffix": ".bj",
+  "ISO3166Country": "204"
+ }
+},
+{
+ "model": "locations.country",
+ "pk": "BL",
+ "fields": {
+  "geographicalunit_ptr": 81,
+  "ISO3CountryCode": "BLM",
+  "PhonePrefix": "262",
+  "InternetSuffix": ".bl",
+  "ISO3166Country": "652"
+ }
+},
+{
+ "model": "locations.country",
+ "pk": "BM",
+ "fields": {
+  "geographicalunit_ptr": 241,
+  "ISO3CountryCode": "BMU",
+  "PhonePrefix": "229",
+  "InternetSuffix": ".bm",
+  "ISO3166Country": "60"
+ }
+},
+{
+ "model": "locations.country",
+ "pk": "BN",
+ "fields": {
+  "geographicalunit_ptr": 232,
+  "ISO3CountryCode": "BRN",
+  "PhonePrefix": "246",
+  "InternetSuffix": ".bn",
+  "ISO3166Country": "96"
+ }
+},
+{
+ "model": "locations.country",
+ "pk": "BO",
+ "fields": {
+  "geographicalunit_ptr": 239,
+  "ISO3CountryCode": "BOL",
+  "PhonePrefix": "975",
+  "InternetSuffix": ".bo",
+  "ISO3166Country": "68"
+ }
+},
+{
+ "model": "locations.country",
+ "pk": "BQ",
+ "fields": {
+  "geographicalunit_ptr": 238,
+  "ISO3CountryCode": "BES",
+  "PhonePrefix": "591",
+  "InternetSuffix": ".bq",
+  "ISO3166Country": "535"
+ }
+},
+{
+ "model": "locations.country",
+ "pk": "BR",
+ "fields": {
+  "geographicalunit_ptr": 234,
+  "ISO3CountryCode": "BRA",
+  "PhonePrefix": null,
+  "InternetSuffix": ".br",
+  "ISO3166Country": "76"
+ }
+},
+{
+ "model": "locations.country",
+ "pk": "BS",
+ "fields": {
+  "geographicalunit_ptr": 248,
+  "ISO3CountryCode": "BHS",
+  "PhonePrefix": "994",
+  "InternetSuffix": ".bs",
+  "ISO3166Country": "44"
+ }
+},
+{
+ "model": "locations.country",
+ "pk": "BT",
+ "fields": {
+  "geographicalunit_ptr": 240,
+  "ISO3CountryCode": "BTN",
+  "PhonePrefix": "1-441",
+  "InternetSuffix": ".bt",
+  "ISO3166Country": "64"
+ }
+},
+{
+ "model": "locations.country",
+ "pk": "BV",
+ "fields": {
+  "geographicalunit_ptr": 235,
+  "ISO3CountryCode": "BVT",
+  "PhonePrefix": "267",
+  "InternetSuffix": ".bv",
+  "ISO3166Country": "74"
+ }
+},
+{
+ "model": "locations.country",
+ "pk": "BW",
+ "fields": {
+  "geographicalunit_ptr": 236,
+  "ISO3CountryCode": "BWA",
+  "PhonePrefix": "387",
+  "InternetSuffix": ".bw",
+  "ISO3166Country": "72"
+ }
+},
+{
+ "model": "locations.country",
+ "pk": "BY",
+ "fields": {
+  "geographicalunit_ptr": 244,
+  "ISO3CountryCode": "BLR",
+  "PhonePrefix": "1-246",
+  "InternetSuffix": ".by",
+  "ISO3166Country": "112"
+ }
+},
+{
+ "model": "locations.country",
+ "pk": "BZ",
+ "fields": {
+  "geographicalunit_ptr": 243,
+  "ISO3CountryCode": "BLZ",
+  "PhonePrefix": "32",
+  "InternetSuffix": ".bz",
+  "ISO3166Country": "84"
+ }
+},
+{
+ "model": "locations.country",
+ "pk": "CA",
+ "fields": {
+  "geographicalunit_ptr": 225,
+  "ISO3CountryCode": "CAN",
+  "PhonePrefix": "237",
+  "InternetSuffix": ".ca",
+  "ISO3166Country": "124"
+ }
+},
+{
+ "model": "locations.country",
+ "pk": "CC",
+ "fields": {
+  "geographicalunit_ptr": 218,
+  "ISO3CountryCode": "CCK",
+  "PhonePrefix": "61",
+  "InternetSuffix": ".cf",
+  "ISO3166Country": "166"
+ }
+},
+{
+ "model": "locations.country",
+ "pk": "CD",
+ "fields": {
+  "geographicalunit_ptr": 215,
+  "ISO3CountryCode": "COD",
+  "PhonePrefix": "269",
+  "InternetSuffix": ".cd",
+  "ISO3166Country": "180"
+ }
+},
+{
+ "model": "locations.country",
+ "pk": "CF",
+ "fields": {
+  "geographicalunit_ptr": 223,
+  "ISO3CountryCode": "CAF",
+  "PhonePrefix": "1-345",
+  "InternetSuffix": ".cf",
+  "ISO3166Country": "140"
+ }
+},
+{
+ "model": "locations.country",
+ "pk": "CG",
+ "fields": {
+  "geographicalunit_ptr": 214,
+  "ISO3CountryCode": "COG",
+  "PhonePrefix": "243",
+  "InternetSuffix": ".cg",
+  "ISO3166Country": "178"
+ }
+},
+{
+ "model": "locations.country",
+ "pk": "CH",
+ "fields": {
+  "geographicalunit_ptr": 51,
+  "ISO3CountryCode": "CHE",
+  "PhonePrefix": "46",
+  "InternetSuffix": ".ch",
+  "ISO3166Country": "756"
+ }
+},
+{
+ "model": "locations.country",
+ "pk": "CI",
+ "fields": {
+  "geographicalunit_ptr": 206,
+  "ISO3CountryCode": "CIV",
+  "PhonePrefix": "420",
+  "InternetSuffix": ".ci",
+  "ISO3166Country": "384"
+ }
+},
+{
+ "model": "locations.country",
+ "pk": "CK",
+ "fields": {
+  "geographicalunit_ptr": 213,
+  "ISO3CountryCode": "COK",
+  "PhonePrefix": "242",
+  "InternetSuffix": ".ck",
+  "ISO3166Country": "184"
+ }
+},
+{
+ "model": "locations.country",
+ "pk": "CL",
+ "fields": {
+  "geographicalunit_ptr": 221,
+  "ISO3CountryCode": "CHL",
+  "PhonePrefix": "235",
+  "InternetSuffix": ".cl",
+  "ISO3166Country": "152"
+ }
+},
+{
+ "model": "locations.country",
+ "pk": "CM",
+ "fields": {
+  "geographicalunit_ptr": 226,
+  "ISO3CountryCode": "CMR",
+  "PhonePrefix": "855",
+  "InternetSuffix": ".cm",
+  "ISO3166Country": "120"
+ }
+},
+{
+ "model": "locations.country",
+ "pk": "CN",
+ "fields": {
+  "geographicalunit_ptr": 220,
+  "ISO3CountryCode": "CHN",
+  "PhonePrefix": "56",
+  "InternetSuffix": ".cn",
+  "ISO3166Country": "156"
+ }
+},
+{
+ "model": "locations.country",
+ "pk": "CO",
+ "fields": {
+  "geographicalunit_ptr": 217,
+  "ISO3CountryCode": "COL",
+  "PhonePrefix": "61",
+  "InternetSuffix": ".co",
+  "ISO3166Country": "170"
+ }
+},
+{
+ "model": "locations.country",
+ "pk": "CR",
+ "fields": {
+  "geographicalunit_ptr": 212,
+  "ISO3CountryCode": "CRI",
+  "PhonePrefix": "682",
+  "InternetSuffix": ".cr",
+  "ISO3166Country": "188"
+ }
+},
+{
+ "model": "locations.country",
+ "pk": "CU",
+ "fields": {
+  "geographicalunit_ptr": 210,
+  "ISO3CountryCode": "CUB",
+  "PhonePrefix": "385",
+  "InternetSuffix": ".cu",
+  "ISO3166Country": "192"
+ }
+},
+{
+ "model": "locations.country",
+ "pk": "CV",
+ "fields": {
+  "geographicalunit_ptr": 228,
+  "ISO3CountryCode": "CPV",
+  "PhonePrefix": "257",
+  "InternetSuffix": ".cv",
+  "ISO3166Country": "132"
+ }
+},
+{
+ "model": "locations.country",
+ "pk": "CW",
+ "fields": {
+  "geographicalunit_ptr": 209,
+  "ISO3CountryCode": "CUW",
+  "PhonePrefix": "53",
+  "InternetSuffix": ".cw",
+  "ISO3166Country": "531"
+ }
+},
+{
+ "model": "locations.country",
+ "pk": "CX",
+ "fields": {
+  "geographicalunit_ptr": 219,
+  "ISO3CountryCode": "CXR",
+  "PhonePrefix": "86",
+  "InternetSuffix": ".cx",
+  "ISO3166Country": "162"
+ }
+},
+{
+ "model": "locations.country",
+ "pk": "CY",
+ "fields": {
+  "geographicalunit_ptr": 208,
+  "ISO3CountryCode": "CYP",
+  "PhonePrefix": "599",
+  "InternetSuffix": ".cy",
+  "ISO3166Country": "196"
+ }
+},
+{
+ "model": "locations.country",
+ "pk": "CZ",
+ "fields": {
+  "geographicalunit_ptr": 207,
+  "ISO3CountryCode": "CZE",
+  "PhonePrefix": "357",
+  "InternetSuffix": ".cz",
+  "ISO3166Country": "203"
+ }
+},
+{
+ "model": "locations.country",
+ "pk": "DE",
+ "fields": {
+  "geographicalunit_ptr": 183,
+  "ISO3CountryCode": "DEU",
+  "PhonePrefix": "995",
+  "InternetSuffix": ".de",
+  "ISO3166Country": "276"
+ }
+},
+{
+ "model": "locations.country",
+ "pk": "DJ",
+ "fields": {
+  "geographicalunit_ptr": 204,
+  "ISO3CountryCode": "DJI",
+  "PhonePrefix": "45",
+  "InternetSuffix": ".dj",
+  "ISO3166Country": "262"
+ }
+},
+{
+ "model": "locations.country",
+ "pk": "DK",
+ "fields": {
+  "geographicalunit_ptr": 205,
+  "ISO3CountryCode": "DNK",
+  "PhonePrefix": "225",
+  "InternetSuffix": ".dk",
+  "ISO3166Country": "208"
+ }
+},
+{
+ "model": "locations.country",
+ "pk": "DM",
+ "fields": {
+  "geographicalunit_ptr": 203,
+  "ISO3CountryCode": "DMA",
+  "PhonePrefix": "253",
+  "InternetSuffix": ".dm",
+  "ISO3166Country": "212"
+ }
+},
+{
+ "model": "locations.country",
+ "pk": "DO",
+ "fields": {
+  "geographicalunit_ptr": 202,
+  "ISO3CountryCode": "DOM",
+  "PhonePrefix": "1-767",
+  "InternetSuffix": ".do",
+  "ISO3166Country": "214"
+ }
+},
+{
+ "model": "locations.country",
+ "pk": "DZ",
+ "fields": {
+  "geographicalunit_ptr": 261,
+  "ISO3CountryCode": "DZA",
+  "PhonePrefix": "355",
+  "InternetSuffix": ".dz",
+  "ISO3166Country": "12"
+ }
+},
+{
+ "model": "locations.country",
+ "pk": "EC",
+ "fields": {
+  "geographicalunit_ptr": 201,
+  "ISO3CountryCode": "ECU",
+  "PhonePrefix": "1-809, 1-829, 1-849",
+  "InternetSuffix": ".ec",
+  "ISO3166Country": "218"
+ }
+},
+{
+ "model": "locations.country",
+ "pk": "EE",
+ "fields": {
+  "geographicalunit_ptr": 196,
+  "ISO3CountryCode": "EST",
+  "PhonePrefix": "291",
+  "InternetSuffix": ".ee",
+  "ISO3166Country": "233"
+ }
+},
+{
+ "model": "locations.country",
+ "pk": "EG",
+ "fields": {
+  "geographicalunit_ptr": 200,
+  "ISO3CountryCode": "EGY",
+  "PhonePrefix": "593",
+  "InternetSuffix": ".eg",
+  "ISO3166Country": "818"
+ }
+},
+{
+ "model": "locations.country",
+ "pk": "EH",
+ "fields": {
+  "geographicalunit_ptr": 21,
+  "ISO3CountryCode": "ESH",
+  "PhonePrefix": "681",
+  "InternetSuffix": ".eh",
+  "ISO3166Country": "732"
+ }
+},
+{
+ "model": "locations.country",
+ "pk": "ER",
+ "fields": {
+  "geographicalunit_ptr": 197,
+  "ISO3CountryCode": "ERI",
+  "PhonePrefix": "240",
+  "InternetSuffix": ".er",
+  "ISO3166Country": "232"
+ }
+},
+{
+ "model": "locations.country",
+ "pk": "ES",
+ "fields": {
+  "geographicalunit_ptr": 57,
+  "ISO3CountryCode": "ESP",
+  "PhonePrefix": "211",
+  "InternetSuffix": ".es",
+  "ISO3166Country": "724"
+ }
+},
+{
+ "model": "locations.country",
+ "pk": "ET",
+ "fields": {
+  "geographicalunit_ptr": 194,
+  "ISO3CountryCode": "ETH",
+  "PhonePrefix": "268",
+  "InternetSuffix": ".et",
+  "ISO3166Country": "231"
+ }
+},
+{
+ "model": "locations.country",
+ "pk": "FI",
+ "fields": {
+  "geographicalunit_ptr": 190,
+  "ISO3CountryCode": "FIN",
+  "PhonePrefix": "679",
+  "InternetSuffix": ".fi",
+  "ISO3166Country": "246"
+ }
+},
+{
+ "model": "locations.country",
+ "pk": "FJ",
+ "fields": {
+  "geographicalunit_ptr": 191,
+  "ISO3CountryCode": "FJI",
+  "PhonePrefix": "298",
+  "InternetSuffix": ".fj",
+  "ISO3166Country": "242"
+ }
+},
+{
+ "model": "locations.country",
+ "pk": "FK",
+ "fields": {
+  "geographicalunit_ptr": 193,
+  "ISO3CountryCode": "FLK",
+  "PhonePrefix": "251",
+  "InternetSuffix": ".fk",
+  "ISO3166Country": "238"
+ }
+},
+{
+ "model": "locations.country",
+ "pk": "FM",
+ "fields": {
+  "geographicalunit_ptr": 122,
+  "ISO3CountryCode": "FSM",
+  "PhonePrefix": "52",
+  "InternetSuffix": ".fm",
+  "ISO3166Country": "583"
+ }
+},
+{
+ "model": "locations.country",
+ "pk": "FO",
+ "fields": {
+  "geographicalunit_ptr": 192,
+  "ISO3CountryCode": "FRO",
+  "PhonePrefix": "500",
+  "InternetSuffix": ".fo",
+  "ISO3166Country": "234"
+ }
+},
+{
+ "model": "locations.country",
+ "pk": "FR",
+ "fields": {
+  "geographicalunit_ptr": 6,
+  "ISO3CountryCode": "FRA",
+  "PhonePrefix": "358",
+  "InternetSuffix": ".fr",
+  "ISO3166Country": "250"
+ }
+},
+{
+ "model": "locations.country",
+ "pk": "GA",
+ "fields": {
+  "geographicalunit_ptr": 186,
+  "ISO3CountryCode": "GAB",
+  "PhonePrefix": null,
+  "InternetSuffix": ".ga",
+  "ISO3166Country": "266"
+ }
+},
+{
+ "model": "locations.country",
+ "pk": "GB",
+ "fields": {
+  "geographicalunit_ptr": 32,
+  "ISO3CountryCode": "GBR",
+  "PhonePrefix": "971",
+  "InternetSuffix": ".uk",
+  "ISO3166Country": "826"
+ }
+},
+{
+ "model": "locations.country",
+ "pk": "GD",
+ "fields": {
+  "geographicalunit_ptr": 178,
+  "ISO3CountryCode": "GRD",
+  "PhonePrefix": "299",
+  "InternetSuffix": ".gd",
+  "ISO3166Country": "308"
+ }
+},
+{
+ "model": "locations.country",
+ "pk": "GE",
+ "fields": {
+  "geographicalunit_ptr": 184,
+  "ISO3CountryCode": "GEO",
+  "PhonePrefix": "220",
+  "InternetSuffix": ".ge",
+  "ISO3166Country": "268"
+ }
+},
+{
+ "model": "locations.country",
+ "pk": "GF",
+ "fields": {
+  "geographicalunit_ptr": 189,
+  "ISO3CountryCode": "GUF",
+  "PhonePrefix": "33",
+  "InternetSuffix": ".fr",
+  "ISO3166Country": "254"
+ }
+},
+{
+ "model": "locations.country",
+ "pk": "GG",
+ "fields": {
+  "geographicalunit_ptr": 174,
+  "ISO3CountryCode": "GGY",
+  "PhonePrefix": "502",
+  "InternetSuffix": ".gg",
+  "ISO3166Country": "831"
+ }
+},
+{
+ "model": "locations.country",
+ "pk": "GH",
+ "fields": {
+  "geographicalunit_ptr": 182,
+  "ISO3CountryCode": "GHA",
+  "PhonePrefix": "49",
+  "InternetSuffix": ".gh",
+  "ISO3166Country": "288"
+ }
+},
+{
+ "model": "locations.country",
+ "pk": "GI",
+ "fields": {
+  "geographicalunit_ptr": 181,
+  "ISO3CountryCode": "GIB",
+  "PhonePrefix": "233",
+  "InternetSuffix": ".gi",
+  "ISO3166Country": "292"
+ }
+},
+{
+ "model": "locations.country",
+ "pk": "GL",
+ "fields": {
+  "geographicalunit_ptr": 179,
+  "ISO3CountryCode": "GRL",
+  "PhonePrefix": "30",
+  "InternetSuffix": ".gl",
+  "ISO3166Country": "304"
+ }
+},
+{
+ "model": "locations.country",
+ "pk": "GM",
+ "fields": {
+  "geographicalunit_ptr": 185,
+  "ISO3CountryCode": "GMB",
+  "PhonePrefix": "241",
+  "InternetSuffix": ".gm",
+  "ISO3166Country": "270"
+ }
+},
+{
+ "model": "locations.country",
+ "pk": "GN",
+ "fields": {
+  "geographicalunit_ptr": 173,
+  "ISO3CountryCode": "GIN",
+  "PhonePrefix": "44-1481",
+  "InternetSuffix": ".gn",
+  "ISO3166Country": "324"
+ }
+},
+{
+ "model": "locations.country",
+ "pk": "GP",
+ "fields": {
+  "geographicalunit_ptr": 177,
+  "ISO3CountryCode": "GLP",
+  "PhonePrefix": "1-473",
+  "InternetSuffix": ".gp",
+  "ISO3166Country": "312"
+ }
+},
+{
+ "model": "locations.country",
+ "pk": "GQ",
+ "fields": {
+  "geographicalunit_ptr": 198,
+  "ISO3CountryCode": "GNQ",
+  "PhonePrefix": "503",
+  "InternetSuffix": ".gq",
+  "ISO3166Country": "226"
+ }
+},
+{
+ "model": "locations.country",
+ "pk": "GR",
+ "fields": {
+  "geographicalunit_ptr": 180,
+  "ISO3CountryCode": "GRC",
+  "PhonePrefix": "350",
+  "InternetSuffix": ".gr",
+  "ISO3166Country": "300"
+ }
+},
+{
+ "model": "locations.country",
+ "pk": "GS",
+ "fields": {
+  "geographicalunit_ptr": 59,
+  "ISO3CountryCode": "SGS",
+  "PhonePrefix": "27",
+  "InternetSuffix": ".gs",
+  "ISO3166Country": "239"
+ }
+},
+{
+ "model": "locations.country",
+ "pk": "GT",
+ "fields": {
+  "geographicalunit_ptr": 175,
+  "ISO3CountryCode": "GTM",
+  "PhonePrefix": "1-671",
+  "InternetSuffix": ".gt",
+  "ISO3166Country": "320"
+ }
+},
+{
+ "model": "locations.country",
+ "pk": "GU",
+ "fields": {
+  "geographicalunit_ptr": 176,
+  "ISO3CountryCode": "GUM",
+  "PhonePrefix": null,
+  "InternetSuffix": ".gu",
+  "ISO3166Country": "316"
+ }
+},
+{
+ "model": "locations.country",
+ "pk": "GW",
+ "fields": {
+  "geographicalunit_ptr": 172,
+  "ISO3CountryCode": "GNB",
+  "PhonePrefix": "224",
+  "InternetSuffix": ".gw",
+  "ISO3166Country": "624"
+ }
+},
+{
+ "model": "locations.country",
+ "pk": "GY",
+ "fields": {
+  "geographicalunit_ptr": 171,
+  "ISO3CountryCode": "GUY",
+  "PhonePrefix": "245",
+  "InternetSuffix": ".gy",
+  "ISO3166Country": "328"
+ }
+},
+{
+ "model": "locations.country",
+ "pk": "HK",
+ "fields": {
+  "geographicalunit_ptr": 166,
+  "ISO3CountryCode": "HKG",
+  "PhonePrefix": "504",
+  "InternetSuffix": ".hk",
+  "ISO3166Country": "344"
+ }
+},
+{
+ "model": "locations.country",
+ "pk": "HM",
+ "fields": {
+  "geographicalunit_ptr": 169,
+  "ISO3CountryCode": "HMD",
+  "PhonePrefix": "509",
+  "InternetSuffix": ".hm",
+  "ISO3166Country": "334"
+ }
+},
+{
+ "model": "locations.country",
+ "pk": "HN",
+ "fields": {
+  "geographicalunit_ptr": 167,
+  "ISO3CountryCode": "HND",
+  "PhonePrefix": "379",
+  "InternetSuffix": ".hn",
+  "ISO3166Country": "340"
+ }
+},
+{
+ "model": "locations.country",
+ "pk": "HR",
+ "fields": {
+  "geographicalunit_ptr": 211,
+  "ISO3CountryCode": "HRV",
+  "PhonePrefix": "506",
+  "InternetSuffix": ".hr",
+  "ISO3166Country": "191"
+ }
+},
+{
+ "model": "locations.country",
+ "pk": "HT",
+ "fields": {
+  "geographicalunit_ptr": 170,
+  "ISO3CountryCode": "HTI",
+  "PhonePrefix": "592",
+  "InternetSuffix": ".ht",
+  "ISO3166Country": "332"
+ }
+},
+{
+ "model": "locations.country",
+ "pk": "HU",
+ "fields": {
+  "geographicalunit_ptr": 165,
+  "ISO3CountryCode": "HUN",
+  "PhonePrefix": "852",
+  "InternetSuffix": ".hu",
+  "ISO3166Country": "348"
+ }
+},
+{
+ "model": "locations.country",
+ "pk": "ID",
+ "fields": {
+  "geographicalunit_ptr": 162,
+  "ISO3CountryCode": "IDN",
+  "PhonePrefix": "91",
+  "InternetSuffix": ".id",
+  "ISO3166Country": "360"
+ }
+},
+{
+ "model": "locations.country",
+ "pk": "IE",
+ "fields": {
+  "geographicalunit_ptr": 159,
+  "ISO3CountryCode": "IRL",
+  "PhonePrefix": "964",
+  "InternetSuffix": ".ie",
+  "ISO3166Country": "372"
+ }
+},
+{
+ "model": "locations.country",
+ "pk": "IL",
+ "fields": {
+  "geographicalunit_ptr": 157,
+  "ISO3CountryCode": "ISR",
+  "PhonePrefix": "44-1624",
+  "InternetSuffix": ".il",
+  "ISO3166Country": "376"
+ }
+},
+{
+ "model": "locations.country",
+ "pk": "IM",
+ "fields": {
+  "geographicalunit_ptr": 158,
+  "ISO3CountryCode": "IMN",
+  "PhonePrefix": "353",
+  "InternetSuffix": ".im",
+  "ISO3166Country": "833"
+ }
+},
+{
+ "model": "locations.country",
+ "pk": "IN",
+ "fields": {
+  "geographicalunit_ptr": 163,
+  "ISO3CountryCode": "IND",
+  "PhonePrefix": "354",
+  "InternetSuffix": ".in",
+  "ISO3166Country": "356"
+ }
+},
+{
+ "model": "locations.country",
+ "pk": "IO",
+ "fields": {
+  "geographicalunit_ptr": 233,
+  "ISO3CountryCode": "IOT",
+  "PhonePrefix": "55",
+  "InternetSuffix": ".io",
+  "ISO3166Country": "86"
+ }
+},
+{
+ "model": "locations.country",
+ "pk": "IQ",
+ "fields": {
+  "geographicalunit_ptr": 160,
+  "ISO3CountryCode": "IRQ",
+  "PhonePrefix": "98",
+  "InternetSuffix": ".iq",
+  "ISO3166Country": "368"
+ }
+},
+{
+ "model": "locations.country",
+ "pk": "IR",
+ "fields": {
+  "geographicalunit_ptr": 161,
+  "ISO3CountryCode": "IRN",
+  "PhonePrefix": "62",
+  "InternetSuffix": ".ir",
+  "ISO3166Country": "364"
+ }
+},
+{
+ "model": "locations.country",
+ "pk": "IS",
+ "fields": {
+  "geographicalunit_ptr": 164,
+  "ISO3CountryCode": "ISL",
+  "PhonePrefix": "36",
+  "InternetSuffix": ".is",
+  "ISO3166Country": "352"
+ }
+},
+{
+ "model": "locations.country",
+ "pk": "IT",
+ "fields": {
+  "geographicalunit_ptr": 156,
+  "ISO3CountryCode": "ITA",
+  "PhonePrefix": "972",
+  "InternetSuffix": ".it",
+  "ISO3166Country": "380"
+ }
+},
+{
+ "model": "locations.country",
+ "pk": "JE",
+ "fields": {
+  "geographicalunit_ptr": 153,
+  "ISO3CountryCode": "JEY",
+  "PhonePrefix": "81",
+  "InternetSuffix": ".je",
+  "ISO3166Country": "832"
+ }
+},
+{
+ "model": "locations.country",
+ "pk": "JM",
+ "fields": {
+  "geographicalunit_ptr": 155,
+  "ISO3CountryCode": "JAM",
+  "PhonePrefix": "39",
+  "InternetSuffix": ".jm",
+  "ISO3166Country": "388"
+ }
+},
+{
+ "model": "locations.country",
+ "pk": "JO",
+ "fields": {
+  "geographicalunit_ptr": 152,
+  "ISO3CountryCode": "JOR",
+  "PhonePrefix": "44-1534",
+  "InternetSuffix": ".jo",
+  "ISO3166Country": "400"
+ }
+},
+{
+ "model": "locations.country",
+ "pk": "JP",
+ "fields": {
+  "geographicalunit_ptr": 154,
+  "ISO3CountryCode": "JPN",
+  "PhonePrefix": "1-876",
+  "InternetSuffix": ".jp",
+  "ISO3166Country": "392"
+ }
+},
+{
+ "model": "locations.country",
+ "pk": "KE",
+ "fields": {
+  "geographicalunit_ptr": 150,
+  "ISO3CountryCode": "KEN",
+  "PhonePrefix": "7",
+  "InternetSuffix": ".ke",
+  "ISO3166Country": "404"
+ }
+},
+{
+ "model": "locations.country",
+ "pk": "KG",
+ "fields": {
+  "geographicalunit_ptr": 145,
+  "ISO3CountryCode": "KGZ",
+  "PhonePrefix": "965",
+  "InternetSuffix": ".kg",
+  "ISO3166Country": "417"
+ }
+},
+{
+ "model": "locations.country",
+ "pk": "KH",
+ "fields": {
+  "geographicalunit_ptr": 227,
+  "ISO3CountryCode": "KHM",
+  "PhonePrefix": "238",
+  "InternetSuffix": ".kh",
+  "ISO3166Country": "116"
+ }
+},
+{
+ "model": "locations.country",
+ "pk": "KI",
+ "fields": {
+  "geographicalunit_ptr": 149,
+  "ISO3CountryCode": "KIR",
+  "PhonePrefix": "254",
+  "InternetSuffix": ".ki",
+  "ISO3166Country": "296"
+ }
+},
+{
+ "model": "locations.country",
+ "pk": "KM",
+ "fields": {
+  "geographicalunit_ptr": 216,
+  "ISO3CountryCode": "COM",
+  "PhonePrefix": "57",
+  "InternetSuffix": ".km",
+  "ISO3166Country": "174"
+ }
+},
+{
+ "model": "locations.country",
+ "pk": "KN",
+ "fields": {
+  "geographicalunit_ptr": 79,
+  "ISO3CountryCode": "KNA",
+  "PhonePrefix": "290",
+  "InternetSuffix": ".kn",
+  "ISO3166Country": "659"
+ }
+},
+{
+ "model": "locations.country",
+ "pk": "KP",
+ "fields": {
+  "geographicalunit_ptr": 148,
+  "ISO3CountryCode": "PRK",
+  "PhonePrefix": "686",
+  "InternetSuffix": ".kp",
+  "ISO3166Country": "408"
+ }
+},
+{
+ "model": "locations.country",
+ "pk": "KR",
+ "fields": {
+  "geographicalunit_ptr": 147,
+  "ISO3CountryCode": "KOR",
+  "PhonePrefix": "850",
+  "InternetSuffix": ".kr",
+  "ISO3166Country": "410"
+ }
+},
+{
+ "model": "locations.country",
+ "pk": "KW",
+ "fields": {
+  "geographicalunit_ptr": 146,
+  "ISO3CountryCode": "KWT",
+  "PhonePrefix": "82",
+  "InternetSuffix": ".kw",
+  "ISO3166Country": "414"
+ }
+},
+{
+ "model": "locations.country",
+ "pk": "KY",
+ "fields": {
+  "geographicalunit_ptr": 224,
+  "ISO3CountryCode": "CYM",
+  "PhonePrefix": "1",
+  "InternetSuffix": ".ky",
+  "ISO3166Country": "136"
+ }
+},
+{
+ "model": "locations.country",
+ "pk": "KZ",
+ "fields": {
+  "geographicalunit_ptr": 151,
+  "ISO3CountryCode": "KAZ",
+  "PhonePrefix": "962",
+  "InternetSuffix": ".kz",
+  "ISO3166Country": "398"
+ }
+},
+{
+ "model": "locations.country",
+ "pk": "LA",
+ "fields": {
+  "geographicalunit_ptr": 144,
+  "ISO3CountryCode": "LAO",
+  "PhonePrefix": "996",
+  "InternetSuffix": ".la",
+  "ISO3166Country": "418"
+ }
+},
+{
+ "model": "locations.country",
+ "pk": "LB",
+ "fields": {
+  "geographicalunit_ptr": 142,
+  "ISO3CountryCode": "LBN",
+  "PhonePrefix": "371",
+  "InternetSuffix": ".lb",
+  "ISO3166Country": "422"
+ }
+},
+{
+ "model": "locations.country",
+ "pk": "LC",
+ "fields": {
+  "geographicalunit_ptr": 78,
+  "ISO3CountryCode": "LCA",
+  "PhonePrefix": "1-869",
+  "InternetSuffix": ".lc",
+  "ISO3166Country": "662"
+ }
+},
+{
+ "model": "locations.country",
+ "pk": "LI",
+ "fields": {
+  "geographicalunit_ptr": 138,
+  "ISO3CountryCode": "LIE",
+  "PhonePrefix": "218",
+  "InternetSuffix": ".li",
+  "ISO3166Country": "438"
+ }
+},
+{
+ "model": "locations.country",
+ "pk": "LK",
+ "fields": {
+  "geographicalunit_ptr": 56,
+  "ISO3CountryCode": "LKA",
+  "PhonePrefix": "34",
+  "InternetSuffix": ".lk",
+  "ISO3166Country": "144"
+ }
+},
+{
+ "model": "locations.country",
+ "pk": "LR",
+ "fields": {
+  "geographicalunit_ptr": 140,
+  "ISO3CountryCode": "LBR",
+  "PhonePrefix": "266",
+  "InternetSuffix": ".lr",
+  "ISO3166Country": "430"
+ }
+},
+{
+ "model": "locations.country",
+ "pk": "LS",
+ "fields": {
+  "geographicalunit_ptr": 141,
+  "ISO3CountryCode": "LSO",
+  "PhonePrefix": "961",
+  "InternetSuffix": ".ls",
+  "ISO3166Country": "426"
+ }
+},
+{
+ "model": "locations.country",
+ "pk": "LT",
+ "fields": {
+  "geographicalunit_ptr": 137,
+  "ISO3CountryCode": "LTU",
+  "PhonePrefix": "423",
+  "InternetSuffix": ".lt",
+  "ISO3166Country": "440"
+ }
+},
+{
+ "model": "locations.country",
+ "pk": "LU",
+ "fields": {
+  "geographicalunit_ptr": 136,
+  "ISO3CountryCode": "LUX",
+  "PhonePrefix": "370",
+  "InternetSuffix": ".lu",
+  "ISO3166Country": "442"
+ }
+},
+{
+ "model": "locations.country",
+ "pk": "LV",
+ "fields": {
+  "geographicalunit_ptr": 143,
+  "ISO3CountryCode": "LVA",
+  "PhonePrefix": "856",
+  "InternetSuffix": ".lv",
+  "ISO3166Country": "428"
+ }
+},
+{
+ "model": "locations.country",
+ "pk": "LY",
+ "fields": {
+  "geographicalunit_ptr": 139,
+  "ISO3CountryCode": "LBY",
+  "PhonePrefix": "231",
+  "InternetSuffix": ".ly",
+  "ISO3166Country": "434"
+ }
+},
+{
+ "model": "locations.country",
+ "pk": "MA",
+ "fields": {
+  "geographicalunit_ptr": 116,
+  "ISO3CountryCode": "MAR",
+  "PhonePrefix": "1-664",
+  "InternetSuffix": ".ma",
+  "ISO3166Country": "504"
+ }
+},
+{
+ "model": "locations.country",
+ "pk": "MC",
+ "fields": {
+  "geographicalunit_ptr": 120,
+  "ISO3CountryCode": "MCO",
+  "PhonePrefix": "373",
+  "InternetSuffix": ".mc",
+  "ISO3166Country": "492"
+ }
+},
+{
+ "model": "locations.country",
+ "pk": "MD",
+ "fields": {
+  "geographicalunit_ptr": 121,
+  "ISO3CountryCode": "MDA",
+  "PhonePrefix": "691",
+  "InternetSuffix": ".md",
+  "ISO3166Country": "498"
+ }
+},
+{
+ "model": "locations.country",
+ "pk": "ME",
+ "fields": {
+  "geographicalunit_ptr": 118,
+  "ISO3CountryCode": "MNE",
+  "PhonePrefix": "976",
+  "InternetSuffix": ".me",
+  "ISO3166Country": "499"
+ }
+},
+{
+ "model": "locations.country",
+ "pk": "MF",
+ "fields": {
+  "geographicalunit_ptr": 77,
+  "ISO3CountryCode": "MAF",
+  "PhonePrefix": "1-758",
+  "InternetSuffix": ".mf",
+  "ISO3166Country": "663"
+ }
+},
+{
+ "model": "locations.country",
+ "pk": "MG",
+ "fields": {
+  "geographicalunit_ptr": 134,
+  "ISO3CountryCode": "MDG",
+  "PhonePrefix": "853",
+  "InternetSuffix": ".mg",
+  "ISO3166Country": "450"
+ }
+},
+{
+ "model": "locations.country",
+ "pk": "MH",
+ "fields": {
+  "geographicalunit_ptr": 128,
+  "ISO3CountryCode": "MHL",
+  "PhonePrefix": "356",
+  "InternetSuffix": ".mh",
+  "ISO3166Country": "584"
+ }
+},
+{
+ "model": "locations.country",
+ "pk": "MK",
+ "fields": {
+  "geographicalunit_ptr": 86,
+  "ISO3CountryCode": "MKD",
+  "PhonePrefix": "974",
+  "InternetSuffix": ".mk",
+  "ISO3166Country": "807"
+ }
+},
+{
+ "model": "locations.country",
+ "pk": "ML",
+ "fields": {
+  "geographicalunit_ptr": 130,
+  "ISO3CountryCode": "MLI",
+  "PhonePrefix": "960",
+  "InternetSuffix": ".ml",
+  "ISO3166Country": "466"
+ }
+},
+{
+ "model": "locations.country",
+ "pk": "MM",
+ "fields": {
+  "geographicalunit_ptr": 114,
+  "ISO3CountryCode": "MMR",
+  "PhonePrefix": "258",
+  "InternetSuffix": ".mm",
+  "ISO3166Country": "104"
+ }
+},
+{
+ "model": "locations.country",
+ "pk": "MN",
+ "fields": {
+  "geographicalunit_ptr": 119,
+  "ISO3CountryCode": "MNG",
+  "PhonePrefix": "377",
+  "InternetSuffix": ".mn",
+  "ISO3166Country": "496"
+ }
+},
+{
+ "model": "locations.country",
+ "pk": "MO",
+ "fields": {
+  "geographicalunit_ptr": 135,
+  "ISO3CountryCode": "MAC",
+  "PhonePrefix": "352",
+  "InternetSuffix": ".mo",
+  "ISO3166Country": "446"
+ }
+},
+{
+ "model": "locations.country",
+ "pk": "MP",
+ "fields": {
+  "geographicalunit_ptr": 102,
+  "ISO3CountryCode": "MNP",
+  "PhonePrefix": null,
+  "InternetSuffix": ".mp",
+  "ISO3166Country": "580"
+ }
+},
+{
+ "model": "locations.country",
+ "pk": "MQ",
+ "fields": {
+  "geographicalunit_ptr": 127,
+  "ISO3CountryCode": "MTQ",
+  "PhonePrefix": "692",
+  "InternetSuffix": ".mq",
+  "ISO3166Country": "474"
+ }
+},
+{
+ "model": "locations.country",
+ "pk": "MR",
+ "fields": {
+  "geographicalunit_ptr": 126,
+  "ISO3CountryCode": "MRT",
+  "PhonePrefix": null,
+  "InternetSuffix": ".mr",
+  "ISO3166Country": "478"
+ }
+},
+{
+ "model": "locations.country",
+ "pk": "MS",
+ "fields": {
+  "geographicalunit_ptr": 117,
+  "ISO3CountryCode": "MSR",
+  "PhonePrefix": "382",
+  "InternetSuffix": ".ms",
+  "ISO3166Country": "500"
+ }
+},
+{
+ "model": "locations.country",
+ "pk": "MT",
+ "fields": {
+  "geographicalunit_ptr": 129,
+  "ISO3CountryCode": "MLT",
+  "PhonePrefix": "223",
+  "InternetSuffix": ".mt",
+  "ISO3166Country": "470"
+ }
+},
+{
+ "model": "locations.country",
+ "pk": "MU",
+ "fields": {
+  "geographicalunit_ptr": 125,
+  "ISO3CountryCode": "MUS",
+  "PhonePrefix": "222",
+  "InternetSuffix": ".mu",
+  "ISO3166Country": "480"
+ }
+},
+{
+ "model": "locations.country",
+ "pk": "MV",
+ "fields": {
+  "geographicalunit_ptr": 131,
+  "ISO3CountryCode": "MDV",
+  "PhonePrefix": "60",
+  "InternetSuffix": ".mv",
+  "ISO3166Country": "462"
+ }
+},
+{
+ "model": "locations.country",
+ "pk": "MW",
+ "fields": {
+  "geographicalunit_ptr": 133,
+  "ISO3CountryCode": "MWI",
+  "PhonePrefix": "261",
+  "InternetSuffix": ".mw",
+  "ISO3166Country": "454"
+ }
+},
+{
+ "model": "locations.country",
+ "pk": "MX",
+ "fields": {
+  "geographicalunit_ptr": 123,
+  "ISO3CountryCode": "MEX",
+  "PhonePrefix": "262",
+  "InternetSuffix": ".mx",
+  "ISO3166Country": "484"
+ }
+},
+{
+ "model": "locations.country",
+ "pk": "MY",
+ "fields": {
+  "geographicalunit_ptr": 132,
+  "ISO3CountryCode": "MYS",
+  "PhonePrefix": "265",
+  "InternetSuffix": ".my",
+  "ISO3166Country": "458"
+ }
+},
+{
+ "model": "locations.country",
+ "pk": "MZ",
+ "fields": {
+  "geographicalunit_ptr": 115,
+  "ISO3CountryCode": "MOZ",
+  "PhonePrefix": "212",
+  "InternetSuffix": ".mz",
+  "ISO3166Country": "508"
+ }
+},
+{
+ "model": "locations.country",
+ "pk": "NA",
+ "fields": {
+  "geographicalunit_ptr": 113,
+  "ISO3CountryCode": "NAM",
+  "PhonePrefix": "95",
+  "InternetSuffix": ".na",
+  "ISO3166Country": "516"
+ }
+},
+{
+ "model": "locations.country",
+ "pk": "NC",
+ "fields": {
+  "geographicalunit_ptr": 109,
+  "ISO3CountryCode": "NCL",
+  "PhonePrefix": "31",
+  "InternetSuffix": ".nc",
+  "ISO3166Country": "540"
+ }
+},
+{
+ "model": "locations.country",
+ "pk": "NE",
+ "fields": {
+  "geographicalunit_ptr": 106,
+  "ISO3CountryCode": "NER",
+  "PhonePrefix": "505",
+  "InternetSuffix": ".ne",
+  "ISO3166Country": "562"
+ }
+},
+{
+ "model": "locations.country",
+ "pk": "NF",
+ "fields": {
+  "geographicalunit_ptr": 103,
+  "ISO3CountryCode": "NFK",
+  "PhonePrefix": "683",
+  "InternetSuffix": ".nf",
+  "ISO3166Country": "574"
+ }
+},
+{
+ "model": "locations.country",
+ "pk": "NG",
+ "fields": {
+  "geographicalunit_ptr": 105,
+  "ISO3CountryCode": "NGA",
+  "PhonePrefix": "227",
+  "InternetSuffix": ".ng",
+  "ISO3166Country": "566"
+ }
+},
+{
+ "model": "locations.country",
+ "pk": "NI",
+ "fields": {
+  "geographicalunit_ptr": 107,
+  "ISO3CountryCode": "NIC",
+  "PhonePrefix": "64",
+  "InternetSuffix": ".ni",
+  "ISO3166Country": "558"
+ }
+},
+{
+ "model": "locations.country",
+ "pk": "NL",
+ "fields": {
+  "geographicalunit_ptr": 110,
+  "ISO3CountryCode": "NLD",
+  "PhonePrefix": "977",
+  "InternetSuffix": ".nl",
+  "ISO3166Country": "528"
+ }
+},
+{
+ "model": "locations.country",
+ "pk": "NO",
+ "fields": {
+  "geographicalunit_ptr": 101,
+  "ISO3CountryCode": "NOR",
+  "PhonePrefix": "1-670",
+  "InternetSuffix": ".no",
+  "ISO3166Country": "578"
+ }
+},
+{
+ "model": "locations.country",
+ "pk": "NP",
+ "fields": {
+  "geographicalunit_ptr": 111,
+  "ISO3CountryCode": "NPL",
+  "PhonePrefix": "674",
+  "InternetSuffix": ".np",
+  "ISO3166Country": "524"
+ }
+},
+{
+ "model": "locations.country",
+ "pk": "NR",
+ "fields": {
+  "geographicalunit_ptr": 112,
+  "ISO3CountryCode": "NRU",
+  "PhonePrefix": "264",
+  "InternetSuffix": ".nr",
+  "ISO3166Country": "520"
+ }
+},
+{
+ "model": "locations.country",
+ "pk": "NU",
+ "fields": {
+  "geographicalunit_ptr": 104,
+  "ISO3CountryCode": "NIU",
+  "PhonePrefix": "234",
+  "InternetSuffix": ".nu",
+  "ISO3166Country": "570"
+ }
+},
+{
+ "model": "locations.country",
+ "pk": "NZ",
+ "fields": {
+  "geographicalunit_ptr": 108,
+  "ISO3CountryCode": "NZL",
+  "PhonePrefix": "687",
+  "InternetSuffix": ".nz",
+  "ISO3166Country": "554"
+ }
+},
+{
+ "model": "locations.country",
+ "pk": "OM",
+ "fields": {
+  "geographicalunit_ptr": 100,
+  "ISO3CountryCode": "OMN",
+  "PhonePrefix": "47",
+  "InternetSuffix": ".om",
+  "ISO3166Country": "512"
+ }
+},
+{
+ "model": "locations.country",
+ "pk": "PA",
+ "fields": {
+  "geographicalunit_ptr": 96,
+  "ISO3CountryCode": "PAN",
+  "PhonePrefix": "970",
+  "InternetSuffix": ".pa",
+  "ISO3166Country": "591"
+ }
+},
+{
+ "model": "locations.country",
+ "pk": "PE",
+ "fields": {
+  "geographicalunit_ptr": 93,
+  "ISO3CountryCode": "PER",
+  "PhonePrefix": "595",
+  "InternetSuffix": ".pe",
+  "ISO3166Country": "604"
+ }
+},
+{
+ "model": "locations.country",
+ "pk": "PF",
+ "fields": {
+  "geographicalunit_ptr": 188,
+  "ISO3CountryCode": "PYF",
+  "PhonePrefix": null,
+  "InternetSuffix": ".pf",
+  "ISO3166Country": "258"
+ }
+},
+{
+ "model": "locations.country",
+ "pk": "PG",
+ "fields": {
+  "geographicalunit_ptr": 95,
+  "ISO3CountryCode": "PNG",
+  "PhonePrefix": "507",
+  "InternetSuffix": ".pg",
+  "ISO3166Country": "598"
+ }
+},
+{
+ "model": "locations.country",
+ "pk": "PH",
+ "fields": {
+  "geographicalunit_ptr": 92,
+  "ISO3CountryCode": "PHL",
+  "PhonePrefix": "51",
+  "InternetSuffix": ".ph",
+  "ISO3166Country": "608"
+ }
+},
+{
+ "model": "locations.country",
+ "pk": "PK",
+ "fields": {
+  "geographicalunit_ptr": 99,
+  "ISO3CountryCode": "PAK",
+  "PhonePrefix": "968",
+  "InternetSuffix": ".pk",
+  "ISO3166Country": "586"
+ }
+},
+{
+ "model": "locations.country",
+ "pk": "PL",
+ "fields": {
+  "geographicalunit_ptr": 90,
+  "ISO3CountryCode": "POL",
+  "PhonePrefix": "64",
+  "InternetSuffix": ".pl",
+  "ISO3166Country": "616"
+ }
+},
+{
+ "model": "locations.country",
+ "pk": "PM",
+ "fields": {
+  "geographicalunit_ptr": 76,
+  "ISO3CountryCode": "SPM",
+  "PhonePrefix": "590",
+  "InternetSuffix": ".pm",
+  "ISO3166Country": "666"
+ }
+},
+{
+ "model": "locations.country",
+ "pk": "PN",
+ "fields": {
+  "geographicalunit_ptr": 91,
+  "ISO3CountryCode": "PCN",
+  "PhonePrefix": "63",
+  "InternetSuffix": ".pn",
+  "ISO3166Country": "612"
+ }
+},
+{
+ "model": "locations.country",
+ "pk": "PR",
+ "fields": {
+  "geographicalunit_ptr": 88,
+  "ISO3CountryCode": "PRI",
+  "PhonePrefix": "351",
+  "InternetSuffix": ".pr",
+  "ISO3166Country": "630"
+ }
+},
+{
+ "model": "locations.country",
+ "pk": "PS",
+ "fields": {
+  "geographicalunit_ptr": 97,
+  "ISO3CountryCode": "PSE",
+  "PhonePrefix": "680",
+  "InternetSuffix": ".ps",
+  "ISO3166Country": "275"
+ }
+},
+{
+ "model": "locations.country",
+ "pk": "PT",
+ "fields": {
+  "geographicalunit_ptr": 89,
+  "ISO3CountryCode": "PRT",
+  "PhonePrefix": "48",
+  "InternetSuffix": ".pt",
+  "ISO3166Country": "620"
+ }
+},
+{
+ "model": "locations.country",
+ "pk": "PW",
+ "fields": {
+  "geographicalunit_ptr": 98,
+  "ISO3CountryCode": "PLW",
+  "PhonePrefix": "92",
+  "InternetSuffix": ".pw",
+  "ISO3166Country": "585"
+ }
+},
+{
+ "model": "locations.country",
+ "pk": "PY",
+ "fields": {
+  "geographicalunit_ptr": 94,
+  "ISO3CountryCode": "PRY",
+  "PhonePrefix": "675",
+  "InternetSuffix": ".py",
+  "ISO3166Country": "600"
+ }
+},
+{
+ "model": "locations.country",
+ "pk": "QA",
+ "fields": {
+  "geographicalunit_ptr": 87,
+  "ISO3CountryCode": "QAT",
+  "PhonePrefix": "1-787, 1-939",
+  "InternetSuffix": ".qa",
+  "ISO3166Country": "634"
+ }
+},
+{
+ "model": "locations.country",
+ "pk": "RE",
+ "fields": {
+  "geographicalunit_ptr": 82,
+  "ISO3CountryCode": "REU",
+  "PhonePrefix": "250",
+  "InternetSuffix": ".re",
+  "ISO3166Country": "638"
+ }
+},
+{
+ "model": "locations.country",
+ "pk": "RO",
+ "fields": {
+  "geographicalunit_ptr": 85,
+  "ISO3CountryCode": "ROU",
+  "PhonePrefix": "389",
+  "InternetSuffix": ".ro",
+  "ISO3166Country": "642"
+ }
+},
+{
+ "model": "locations.country",
+ "pk": "RS",
+ "fields": {
+  "geographicalunit_ptr": 69,
+  "ISO3CountryCode": "SRB",
+  "PhonePrefix": "221",
+  "InternetSuffix": ".rs",
+  "ISO3166Country": "688"
+ }
+},
+{
+ "model": "locations.country",
+ "pk": "RU",
+ "fields": {
+  "geographicalunit_ptr": 84,
+  "ISO3CountryCode": "RUS",
+  "PhonePrefix": "40",
+  "InternetSuffix": ".ru",
+  "ISO3166Country": "643"
+ }
+},
+{
+ "model": "locations.country",
+ "pk": "RW",
+ "fields": {
+  "geographicalunit_ptr": 83,
+  "ISO3CountryCode": "RWA",
+  "PhonePrefix": "7",
+  "InternetSuffix": ".rw",
+  "ISO3166Country": "646"
+ }
+},
+{
+ "model": "locations.country",
+ "pk": "SA",
+ "fields": {
+  "geographicalunit_ptr": 71,
+  "ISO3CountryCode": "SAU",
+  "PhonePrefix": "239",
+  "InternetSuffix": ".sa",
+  "ISO3166Country": "682"
+ }
+},
+{
+ "model": "locations.country",
+ "pk": "SB",
+ "fields": {
+  "geographicalunit_ptr": 62,
+  "ISO3CountryCode": "SLB",
+  "PhonePrefix": "386",
+  "InternetSuffix": ".sb",
+  "ISO3166Country": "90"
+ }
+},
+{
+ "model": "locations.country",
+ "pk": "SC",
+ "fields": {
+  "geographicalunit_ptr": 68,
+  "ISO3CountryCode": "SYC",
+  "PhonePrefix": "381",
+  "InternetSuffix": ".sc",
+  "ISO3166Country": "690"
+ }
+},
+{
+ "model": "locations.country",
+ "pk": "SD",
+ "fields": {
+  "geographicalunit_ptr": 55,
+  "ISO3CountryCode": "SDN",
+  "PhonePrefix": "94",
+  "InternetSuffix": ".sd",
+  "ISO3166Country": "729"
+ }
+},
+{
+ "model": "locations.country",
+ "pk": "SE",
+ "fields": {
+  "geographicalunit_ptr": 52,
+  "ISO3CountryCode": "SWE",
+  "PhonePrefix": "47",
+  "InternetSuffix": ".se",
+  "ISO3166Country": "752"
+ }
+},
+{
+ "model": "locations.country",
+ "pk": "SG",
+ "fields": {
+  "geographicalunit_ptr": 66,
+  "ISO3CountryCode": "SGP",
+  "PhonePrefix": "232",
+  "InternetSuffix": ".sg",
+  "ISO3166Country": "702"
+ }
+},
+{
+ "model": "locations.country",
+ "pk": "SH",
+ "fields": {
+  "geographicalunit_ptr": 80,
+  "ISO3CountryCode": "SHN",
+  "PhonePrefix": "590",
+  "InternetSuffix": ".sh",
+  "ISO3166Country": "654"
+ }
+},
+{
+ "model": "locations.country",
+ "pk": "SI",
+ "fields": {
+  "geographicalunit_ptr": 63,
+  "ISO3CountryCode": "SVN",
+  "PhonePrefix": "421",
+  "InternetSuffix": ".si",
+  "ISO3166Country": "705"
+ }
+},
+{
+ "model": "locations.country",
+ "pk": "SJ",
+ "fields": {
+  "geographicalunit_ptr": 53,
+  "ISO3CountryCode": "SJM",
+  "PhonePrefix": "597",
+  "InternetSuffix": ".sj",
+  "ISO3166Country": "744"
+ }
+},
+{
+ "model": "locations.country",
+ "pk": "SK",
+ "fields": {
+  "geographicalunit_ptr": 64,
+  "ISO3CountryCode": "SVK",
+  "PhonePrefix": "1-721",
+  "InternetSuffix": ".sk",
+  "ISO3166Country": "703"
+ }
+},
+{
+ "model": "locations.country",
+ "pk": "SL",
+ "fields": {
+  "geographicalunit_ptr": 67,
+  "ISO3CountryCode": "SLE",
+  "PhonePrefix": "248",
+  "InternetSuffix": ".sl",
+  "ISO3166Country": "694"
+ }
+},
+{
+ "model": "locations.country",
+ "pk": "SM",
+ "fields": {
+  "geographicalunit_ptr": 73,
+  "ISO3CountryCode": "SMR",
+  "PhonePrefix": "685",
+  "InternetSuffix": ".sm",
+  "ISO3166Country": "674"
+ }
+},
+{
+ "model": "locations.country",
+ "pk": "SN",
+ "fields": {
+  "geographicalunit_ptr": 70,
+  "ISO3CountryCode": "SEN",
+  "PhonePrefix": "966",
+  "InternetSuffix": ".sn",
+  "ISO3166Country": "686"
+ }
+},
+{
+ "model": "locations.country",
+ "pk": "SO",
+ "fields": {
+  "geographicalunit_ptr": 61,
+  "ISO3CountryCode": "SOM",
+  "PhonePrefix": "677",
+  "InternetSuffix": ".so",
+  "ISO3166Country": "706"
+ }
+},
+{
+ "model": "locations.country",
+ "pk": "SR",
+ "fields": {
+  "geographicalunit_ptr": 54,
+  "ISO3CountryCode": "SUR",
+  "PhonePrefix": "249",
+  "InternetSuffix": ".sr",
+  "ISO3166Country": "740"
+ }
+},
+{
+ "model": "locations.country",
+ "pk": "SS",
+ "fields": {
+  "geographicalunit_ptr": 58,
+  "ISO3CountryCode": "SSD",
+  "PhonePrefix": null,
+  "InternetSuffix": ".ss",
+  "ISO3166Country": "728"
+ }
+},
+{
+ "model": "locations.country",
+ "pk": "ST",
+ "fields": {
+  "geographicalunit_ptr": 72,
+  "ISO3CountryCode": "STP",
+  "PhonePrefix": "378",
+  "InternetSuffix": ".st",
+  "ISO3166Country": "678"
+ }
+},
+{
+ "model": "locations.country",
+ "pk": "SV",
+ "fields": {
+  "geographicalunit_ptr": 199,
+  "ISO3CountryCode": "SLV",
+  "PhonePrefix": "20",
+  "InternetSuffix": ".sv",
+  "ISO3166Country": "222"
+ }
+},
+{
+ "model": "locations.country",
+ "pk": "SX",
+ "fields": {
+  "geographicalunit_ptr": 65,
+  "ISO3CountryCode": "SXM",
+  "PhonePrefix": "65",
+  "InternetSuffix": ".sx",
+  "ISO3166Country": "534"
+ }
+},
+{
+ "model": "locations.country",
+ "pk": "SY",
+ "fields": {
+  "geographicalunit_ptr": 50,
+  "ISO3CountryCode": "SYR",
+  "PhonePrefix": "41",
+  "InternetSuffix": ".sy",
+  "ISO3166Country": "760"
+ }
+},
+{
+ "model": "locations.country",
+ "pk": "SZ",
+ "fields": {
+  "geographicalunit_ptr": 195,
+  "ISO3CountryCode": "SWZ",
+  "PhonePrefix": "372",
+  "InternetSuffix": ".sz",
+  "ISO3166Country": "748"
+ }
+},
+{
+ "model": "locations.country",
+ "pk": "TC",
+ "fields": {
+  "geographicalunit_ptr": 37,
+  "ISO3CountryCode": "TCA",
+  "PhonePrefix": "993",
+  "InternetSuffix": ".tc",
+  "ISO3166Country": "796"
+ }
+},
+{
+ "model": "locations.country",
+ "pk": "TD",
+ "fields": {
+  "geographicalunit_ptr": 222,
+  "ISO3CountryCode": "TCD",
+  "PhonePrefix": "236",
+  "InternetSuffix": ".td",
+  "ISO3166Country": "148"
+ }
+},
+{
+ "model": "locations.country",
+ "pk": "TF",
+ "fields": {
+  "geographicalunit_ptr": 187,
+  "ISO3CountryCode": "ATF",
+  "PhonePrefix": "689",
+  "InternetSuffix": ".tf",
+  "ISO3166Country": "260"
+ }
+},
+{
+ "model": "locations.country",
+ "pk": "TG",
+ "fields": {
+  "geographicalunit_ptr": 44,
+  "ISO3CountryCode": "TGO",
+  "PhonePrefix": "670",
+  "InternetSuffix": ".tg",
+  "ISO3166Country": "768"
+ }
+},
+{
+ "model": "locations.country",
+ "pk": "TH",
+ "fields": {
+  "geographicalunit_ptr": 46,
+  "ISO3CountryCode": "THA",
+  "PhonePrefix": "255",
+  "InternetSuffix": ".th",
+  "ISO3166Country": "764"
+ }
+},
+{
+ "model": "locations.country",
+ "pk": "TJ",
+ "fields": {
+  "geographicalunit_ptr": 48,
+  "ISO3CountryCode": "TJK",
+  "PhonePrefix": "886",
+  "InternetSuffix": ".tj",
+  "ISO3166Country": "762"
+ }
+},
+{
+ "model": "locations.country",
+ "pk": "TK",
+ "fields": {
+  "geographicalunit_ptr": 43,
+  "ISO3CountryCode": "TKL",
+  "PhonePrefix": "228",
+  "InternetSuffix": ".tk",
+  "ISO3166Country": "772"
+ }
+},
+{
+ "model": "locations.country",
+ "pk": "TL",
+ "fields": {
+  "geographicalunit_ptr": 45,
+  "ISO3CountryCode": "TLS",
+  "PhonePrefix": "66",
+  "InternetSuffix": ".tl",
+  "ISO3166Country": "626"
+ }
+},
+{
+ "model": "locations.country",
+ "pk": "TM",
+ "fields": {
+  "geographicalunit_ptr": 38,
+  "ISO3CountryCode": "TKM",
+  "PhonePrefix": "90",
+  "InternetSuffix": ".tm",
+  "ISO3166Country": "795"
+ }
+},
+{
+ "model": "locations.country",
+ "pk": "TN",
+ "fields": {
+  "geographicalunit_ptr": 40,
+  "ISO3CountryCode": "TUN",
+  "PhonePrefix": "1-868",
+  "InternetSuffix": ".tn",
+  "ISO3166Country": "788"
+ }
+},
+{
+ "model": "locations.country",
+ "pk": "TO",
+ "fields": {
+  "geographicalunit_ptr": 42,
+  "ISO3CountryCode": "TON",
+  "PhonePrefix": "690",
+  "InternetSuffix": ".to",
+  "ISO3166Country": "776"
+ }
+},
+{
+ "model": "locations.country",
+ "pk": "TR",
+ "fields": {
+  "geographicalunit_ptr": 39,
+  "ISO3CountryCode": "TUR",
+  "PhonePrefix": "216",
+  "InternetSuffix": ".tr",
+  "ISO3166Country": "792"
+ }
+},
+{
+ "model": "locations.country",
+ "pk": "TT",
+ "fields": {
+  "geographicalunit_ptr": 41,
+  "ISO3CountryCode": "TTO",
+  "PhonePrefix": "676",
+  "InternetSuffix": ".tt",
+  "ISO3166Country": "780"
+ }
+},
+{
+ "model": "locations.country",
+ "pk": "TV",
+ "fields": {
+  "geographicalunit_ptr": 36,
+  "ISO3CountryCode": "TUV",
+  "PhonePrefix": "1-649",
+  "InternetSuffix": ".tv",
+  "ISO3166Country": "798"
+ }
+},
+{
+ "model": "locations.country",
+ "pk": "TW",
+ "fields": {
+  "geographicalunit_ptr": 49,
+  "ISO3CountryCode": "TWN",
+  "PhonePrefix": "963",
+  "InternetSuffix": ".tw",
+  "ISO3166Country": "158"
+ }
+},
+{
+ "model": "locations.country",
+ "pk": "TZ",
+ "fields": {
+  "geographicalunit_ptr": 47,
+  "ISO3CountryCode": "TZA",
+  "PhonePrefix": "992",
+  "InternetSuffix": ".tz",
+  "ISO3166Country": "834"
+ }
+},
+{
+ "model": "locations.country",
+ "pk": "UA",
+ "fields": {
+  "geographicalunit_ptr": 34,
+  "ISO3CountryCode": "UKR",
+  "PhonePrefix": "256",
+  "InternetSuffix": ".ua",
+  "ISO3166Country": "804"
+ }
+},
+{
+ "model": "locations.country",
+ "pk": "UG",
+ "fields": {
+  "geographicalunit_ptr": 35,
+  "ISO3CountryCode": "UGA",
+  "PhonePrefix": "688",
+  "InternetSuffix": ".ug",
+  "ISO3166Country": "800"
+ }
+},
+{
+ "model": "locations.country",
+ "pk": "UM",
+ "fields": {
+  "geographicalunit_ptr": 31,
+  "ISO3CountryCode": "UMI",
+  "PhonePrefix": "44",
+  "InternetSuffix": ".um",
+  "ISO3166Country": "581"
+ }
+},
+{
+ "model": "locations.country",
+ "pk": "US",
+ "fields": {
+  "geographicalunit_ptr": 30,
+  "ISO3CountryCode": "USA",
+  "PhonePrefix": "1",
+  "InternetSuffix": ".us",
+  "ISO3166Country": "840"
+ }
+},
+{
+ "model": "locations.country",
+ "pk": "UY",
+ "fields": {
+  "geographicalunit_ptr": 29,
+  "ISO3CountryCode": "URY",
+  "PhonePrefix": "598",
+  "InternetSuffix": ".uy",
+  "ISO3166Country": "858"
+ }
+},
+{
+ "model": "locations.country",
+ "pk": "UZ",
+ "fields": {
+  "geographicalunit_ptr": 28,
+  "ISO3CountryCode": "UZB",
+  "PhonePrefix": "598",
+  "InternetSuffix": ".uz",
+  "ISO3166Country": "860"
+ }
+},
+{
+ "model": "locations.country",
+ "pk": "VA",
+ "fields": {
+  "geographicalunit_ptr": 168,
+  "ISO3CountryCode": "VAT",
+  "PhonePrefix": null,
+  "InternetSuffix": ".va",
+  "ISO3166Country": "336"
+ }
+},
+{
+ "model": "locations.country",
+ "pk": "VC",
+ "fields": {
+  "geographicalunit_ptr": 75,
+  "ISO3CountryCode": "VCT",
+  "PhonePrefix": "508",
+  "InternetSuffix": ".vc",
+  "ISO3166Country": "670"
+ }
+},
+{
+ "model": "locations.country",
+ "pk": "VE",
+ "fields": {
+  "geographicalunit_ptr": 26,
+  "ISO3CountryCode": "VEN",
+  "PhonePrefix": "678",
+  "InternetSuffix": ".ve",
+  "ISO3166Country": "862"
+ }
+},
+{
+ "model": "locations.country",
+ "pk": "VG",
+ "fields": {
+  "geographicalunit_ptr": 24,
+  "ISO3CountryCode": "VGB",
+  "PhonePrefix": "84",
+  "InternetSuffix": ".vg",
+  "ISO3166Country": "92"
+ }
+},
+{
+ "model": "locations.country",
+ "pk": "VI",
+ "fields": {
+  "geographicalunit_ptr": 23,
+  "ISO3CountryCode": "VIR",
+  "PhonePrefix": "1-284",
+  "InternetSuffix": ".vi",
+  "ISO3166Country": "850"
+ }
+},
+{
+ "model": "locations.country",
+ "pk": "VN",
+ "fields": {
+  "geographicalunit_ptr": 25,
+  "ISO3CountryCode": "VNM",
+  "PhonePrefix": "58",
+  "InternetSuffix": ".vn",
+  "ISO3166Country": "704"
+ }
+},
+{
+ "model": "locations.country",
+ "pk": "VU",
+ "fields": {
+  "geographicalunit_ptr": 27,
+  "ISO3CountryCode": "VUT",
+  "PhonePrefix": "998",
+  "InternetSuffix": ".vu",
+  "ISO3166Country": "548"
+ }
+},
+{
+ "model": "locations.country",
+ "pk": "WF",
+ "fields": {
+  "geographicalunit_ptr": 22,
+  "ISO3CountryCode": "WLF",
+  "PhonePrefix": "1-340",
+  "InternetSuffix": ".wf",
+  "ISO3166Country": "876"
+ }
+},
+{
+ "model": "locations.country",
+ "pk": "WS",
+ "fields": {
+  "geographicalunit_ptr": 74,
+  "ISO3CountryCode": "WSM",
+  "PhonePrefix": "1-784",
+  "InternetSuffix": ".ws",
+  "ISO3166Country": "882"
+ }
+},
+{
+ "model": "locations.country",
+ "pk": "YE",
+ "fields": {
+  "geographicalunit_ptr": 20,
+  "ISO3CountryCode": "YEM",
+  "PhonePrefix": "212",
+  "InternetSuffix": ".ye",
+  "ISO3166Country": "887"
+ }
+},
+{
+ "model": "locations.country",
+ "pk": "YT",
+ "fields": {
+  "geographicalunit_ptr": 124,
+  "ISO3CountryCode": "MYT",
+  "PhonePrefix": "230",
+  "InternetSuffix": ".yt",
+  "ISO3166Country": "175"
+ }
+},
+{
+ "model": "locations.country",
+ "pk": "ZA",
+ "fields": {
+  "geographicalunit_ptr": 60,
+  "ISO3CountryCode": "ZAF",
+  "PhonePrefix": "252",
+  "InternetSuffix": ".za",
+  "ISO3166Country": "710"
+ }
+},
+{
+ "model": "locations.country",
+ "pk": "ZM",
+ "fields": {
+  "geographicalunit_ptr": 19,
+  "ISO3CountryCode": "ZMB",
+  "PhonePrefix": "967",
+  "InternetSuffix": ".zm",
+  "ISO3166Country": "894"
+ }
+},
+{
+ "model": "locations.city",
+ "pk": 16,
+ "fields": {
+  "CityCode": "PARIS"
+ }
+},
+{
+ "model": "locations.city",
+ "pk": 17,
+ "fields": {
+  "CityCode": "MONTARGIS"
+ }
+},
+{
+ "model": "partners.businesspartner",
+ "pk": 1,
+ "fields": {
+  "BusinessPartnerId": "aaa6782f-4033-4e53-8c62-fe84642558dd",
+  "BusinessPartnerclass": "IndividualPerson",
+  "ConsumerStatus": "Open"
+ }
+},
+{
+ "model": "partners.businesspartner",
+ "pk": 2,
+ "fields": {
+  "BusinessPartnerId": "5cb0a39b-9460-44a0-9bde-d55bf1d6fa4f",
+  "BusinessPartnerclass": "Organization",
+  "ConsumerStatus": "Open"
+ }
+},
+{
+ "model": "partners.individualperson",
+ "pk": 1,
+ "fields": {
+  "GivenName": "Bob",
+  "LastName": "Luck",
+  "Title": "Mr",
+  "Consultation": "Your Highness",
+  "Gender": "M",
+  "NameAtBirth": "",
+  "DateOfBirth": null,
+  "PlaceOfBirth": 16,
+  "MaritalStatus": "Single",
+  "EducationLevel": "",
+  "CountryOfBirth": "FR",
+  "Nationality": "FR",
+  "SecondNationality": ""
+ }
+},
+{
+ "model": "partners.organization",
+ "pk": 2,
+ "fields": {
+  "Name": "Valentin",
+  "LegalForm": "1L24",
+  "DateOfIncorporation": "2000-12-06",
+  "CountryOfIncorporation": "FR",
+  "Register": "123456",
+  "PlaceOfRegister": "",
+  "RoleInClearing": ""
+ }
+},
+{
+ "model": "profiles.profile",
+ "pk": 1,
+ "fields": {
+  "user": 2,
+  "RelatedToBusinesspartner": 1,
+  "avatar": "avatar.png",
+  "updated": "2023-01-24T22:21:30.087Z",
+  "created": "2023-01-24T19:20:54.788Z"
+ }
+}
+]

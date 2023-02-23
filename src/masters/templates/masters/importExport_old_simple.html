@@ -1,0 +1,31 @@
+{% extends 'base_simple.html' %}
+
+{% block content %}
+<h1>Load or export Data</h1>
+<form method="post">
+    {% csrf_token %} 
+    {{ appform.as_p }}
+    <input type="{{submitAppForm}}" class="btn btn-primary" name="getApp" style="background:green" value="Enter App"> 
+</form>
+
+<form method="post">
+    {% csrf_token %} 
+    {{ getModelForm.as_p }}
+    <input type={{ submitGetModelForm}} class="btn btn-primary" name="Model" style="background:magenta" value="Model">
+
+</form>
+
+<form method="post">
+
+    {% csrf_token %} 
+    {{ modelFieldListForm.as_table }}
+    <input type="{{submitModelFieldListForm}}" class="btn btn-primary" name="Export" style="background:yellow" value="Export">
+    <input type="{{submitModelFieldListForm}}" class="btn btn-primary" name="Import" style="background:red" value="Import">
+
+</form>
+
+
+
+{{ message }}
+
+{% endblock %}

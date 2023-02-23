@@ -1,0 +1,94 @@
+{% extends 'base_simple.html' %}
+
+{% block content %}
+<h1>Load or export Data</h1>
+<form method="post">
+    {% csrf_token %} 
+    {{ appform.as_p }}
+    <button type="{{submitlist}}" class="btn btn-primary" name="getApp" style="background:orange" value="get App"> Allign app with model </button> <br>
+    {%  if submitDisplayTable != 'none'%}
+        <button type="submit" class="btn btn-primary" name="displayTable" style="{background-color:magenta,display:{{submitDisplayTable}}" value="DisplayTable"> Display Table</button> 
+        <p> Occurrences in model:{{occurrencecount}} </p>
+
+    {% else %}
+
+
+    {% endif %}
+    
+</form>
+
+{% if mapper %}
+<form method="post">
+    {% csrf_token %} 
+    <p>  {{ mapper.appName.as_hidden }}  {{ mapper.modelName.as_hidden }} </p>
+    <table>
+        <tr>
+            <th>FieldName</th>
+            <th>Mapped To</th>
+            <th>Foreign Key App </th>
+            <th>Foreign Key Model </th>
+            <th>Foreign Key Field</th>
+            <th>Not to be exported</th>
+        </tr>
+   {% for f in mapper %} 
+        {%if forloop.counter0 > 1  %}
+                {% if forloop.counter0|add:-2|divisibleby:"6" %}
+                    <tr>
+                {% endif %}
+            <td>
+                {{ f }}
+            </td>
+                {% if forloop.counter0|add:-1|divisibleby:"6" %}
+                    </tr>
+                {% endif %}
+        {% endif %}
+    {% endfor %}
+    </table>
+    <button type="submit" class="btn btn-primary" name="Mapper" style="background:mediumslateblue" value="Map it e"> Map it </button> <br>    
+    <button type="{{submitImportExport}}"" class="btn btn-primary" name="Import" style="background:lightcyan" >Import</button> 
+    <button type="{{submitImportExport}}" class="btn btn-primary" name="Export" style="background:yellow" value="Export">Export</button> 
+    <button type="{{submitImportExport}}" class="btn btn-primary" name="Backup" style="background:greenyellow" value="Backup">Backup import and replace with last export</button> 
+    
+</form>
+{% endif %}
+
+
+
+
+{{ message }}
+
+
+{% if fieldlist %}
+    <table>
+            <tr>
+                <th>Index</th>
+                <th>FieldName</th>
+                <th>class</th>
+                <th>attribute </th>
+                <th>max length </th>
+                <th>relation type </th>
+                <th>target  </th>
+                <th>Unique</th>
+                <th>required</th>
+                
+            </tr>
+        {% for fld in fieldlist %}
+            <tr>
+                <td>{{fld.0}}</th>
+                <td>{{fld.1}}</th>
+                <td>{{fld.2}}</th>
+                <td>{{fld.3}}</th>
+                <td>{{fld.4}}</th>
+                <td>{{fld.5}}</th>
+                <td>{{fld.6}}</th>
+                <td>{{fld.7}}</th>
+                <td>{{fld.8}}</th>
+                   
+                        </tr>      
+        {% endfor %}
+    </table>
+
+{% endif %}
+
+
+{% endblock %}

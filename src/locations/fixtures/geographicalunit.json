@@ -1,0 +1,179 @@
+[
+{
+  "model": "locations.geographicalunit",
+  "pk": 6,
+  "fields": {
+    "GeographicalUnitId": "Country_FR",
+    "GeographicalUnitCategory": "Country",
+    "GeographicalUnitName": "Republique Francaise",
+    "GeographicalUnitShortName": "France",
+    "HierarchyLevel": 30,
+    "IsPartOf": 8
+  }
+},
+{
+  "model": "locations.geographicalunit",
+  "pk": 8,
+  "fields": {
+    "GeographicalUnitId": "Continent_EU",
+    "GeographicalUnitCategory": "Continent",
+    "GeographicalUnitName": "Europe",
+    "GeographicalUnitShortName": "Europe",
+    "HierarchyLevel": 20,
+    "IsPartOf": null
+  }
+},
+{
+  "model": "locations.geographicalunit",
+  "pk": 9,
+  "fields": {
+    "GeographicalUnitId": "Continent_AF",
+    "GeographicalUnitCategory": "Continent",
+    "GeographicalUnitName": "Africa",
+    "GeographicalUnitShortName": "Africa",
+    "HierarchyLevel": 20,
+    "IsPartOf": null
+  }
+},
+{
+  "model": "locations.geographicalunit",
+  "pk": 10,
+  "fields": {
+    "GeographicalUnitId": "Continent_AN",
+    "GeographicalUnitCategory": "Continent",
+    "GeographicalUnitName": "Antartica",
+    "GeographicalUnitShortName": "Antartica",
+    "HierarchyLevel": 20,
+    "IsPartOf": null
+  }
+},
+{
+  "model": "locations.geographicalunit",
+  "pk": 11,
+  "fields": {
+    "GeographicalUnitId": "Continent_AS",
+    "GeographicalUnitCategory": "Continent",
+    "GeographicalUnitName": "Asia",
+    "GeographicalUnitShortName": "Asia",
+    "HierarchyLevel": 20,
+    "IsPartOf": null
+  }
+},
+{
+  "model": "locations.geographicalunit",
+  "pk": 12,
+  "fields": {
+    "GeographicalUnitId": "Continent_OC",
+    "GeographicalUnitCategory": "Continent",
+    "GeographicalUnitName": "Oceania",
+    "GeographicalUnitShortName": "Oceania",
+    "HierarchyLevel": 20,
+    "IsPartOf": null
+  }
+},
+{
+  "model": "locations.geographicalunit",
+  "pk": 13,
+  "fields": {
+    "GeographicalUnitId": "Continent_NA",
+    "GeographicalUnitCategory": "Continent",
+    "GeographicalUnitName": "North America",
+    "GeographicalUnitShortName": "North America",
+    "HierarchyLevel": 20,
+    "IsPartOf": null
+  }
+},
+{
+  "model": "locations.geographicalunit",
+  "pk": 14,
+  "fields": {
+    "GeographicalUnitId": "Continent_SA",
+    "GeographicalUnitCategory": "Continent",
+    "GeographicalUnitName": "South America",
+    "GeographicalUnitShortName": "South America",
+    "HierarchyLevel": 20,
+    "IsPartOf": null
+  }
+},
+{
+  "model": "locations.geographicalunit",
+  "pk": 15,
+  "fields": {
+    "GeographicalUnitId": "Country_BE",
+    "GeographicalUnitCategory": "Country",
+    "GeographicalUnitName": "Belgium",
+    "GeographicalUnitShortName": "BEL",
+    "HierarchyLevel": 30,
+    "IsPartOf": 8
+  }
+},
+{
+  "model": "locations.continent",
+  "pk": "AF",
+  "fields": {
+    "geographicalunit_ptr": 9
+  }
+},
+{
+  "model": "locations.continent",
+  "pk": "AN",
+  "fields": {
+    "geographicalunit_ptr": 10
+  }
+},
+{
+  "model": "locations.continent",
+  "pk": "AS",
+  "fields": {
+    "geographicalunit_ptr": 11
+  }
+},
+{
+  "model": "locations.continent",
+  "pk": "EU",
+  "fields": {
+    "geographicalunit_ptr": 8
+  }
+},
+{
+  "model": "locations.continent",
+  "pk": "NA",
+  "fields": {
+    "geographicalunit_ptr": 13
+  }
+},
+{
+  "model": "locations.continent",
+  "pk": "OC",
+  "fields": {
+    "geographicalunit_ptr": 12
+  }
+},
+{
+  "model": "locations.continent",
+  "pk": "SA",
+  "fields": {
+    "geographicalunit_ptr": 14
+  }
+},
+{
+  "model": "locations.country",
+  "pk": "BE",
+  "fields": {
+    "geographicalunit_ptr": 15,
+    "ISO3CountryCode": "BE",
+    "PhonePrefix": "32",
+    "InternetSuffix": ""
+  }
+},
+{
+  "model": "locations.country",
+  "pk": "FR",
+  "fields": {
+    "geographicalunit_ptr": 6,
+    "ISO3CountryCode": "FRA",
+    "PhonePrefix": "33",
+    "InternetSuffix": ""
+  }
+}
+]
