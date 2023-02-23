@@ -6,7 +6,7 @@ from locations.models import Address
 
 
 class Asset(models.Model):
-    AssetId = models.CharField(max_length=20,help_text='Identifies the asset:')
+    AssetId = models.CharField(unique=True,max_length=20,help_text='Identifies the asset:')
     COMPLETION_STATES=(
     ('ReadyForUse','Ready for use'),
     ('ReadyForOperation','Ready for Operation'),
@@ -36,7 +36,7 @@ class RealEstateProperty(Asset):
         ('SecialUse','Special Use'),
     )
     UsageType = models.CharField(max_length=20,help_text='Qualifies the nature of the realEstate', default='SubRentalCluster',choices=USAGE_TYPES)
-    LocationOfPhysicalAsset = models.OneToOneField(Address,on_delete=models.SET_NULL,null=True)
+    LocationOfPhysicalAsset = models.ForeignKey(Address,on_delete=models.SET_NULL,null=True)
 
 class Box(Asset):
     BelongsTo = models.ForeignKey(RealEstateProperty,on_delete=models.CASCADE)

@@ -20,6 +20,11 @@ class GeographicalUnit(models.Model):
     IsPartOf = models.ForeignKey("self",on_delete=models.SET_NULL,#related_name='composition',
     blank=True, null=True,
     help_text='Select a the geographical Unit it belogs to')
+    ENTRY_STATUS_CHOICES = (
+       ('T', 'Geo Location can change'),
+        ('D', 'Geo Location Official')
+    )
+    EntryStatus= models.CharField(max_length=15,choices=ENTRY_STATUS_CHOICES, default='D')
 
     def __str__(self):
         return f'{self.GeographicalUnitCategory} - {self.GeographicalUnitName}'
@@ -95,7 +100,7 @@ class Country(GeographicalUnit):
         del self.GeographicalUnitShortName
 
     def __str__(self):
-        return f'{self.id} {self.CountryShortName} ({self.CountryCode})'
+        return f'{self.CountryShortName} ({self.CountryCode})'
     def save(self,*args,**kwargs):
         self.GeographicalUnitCategory = 'Country'
         self.CountryCode = self.CountryCode.upper()
@@ -141,6 +146,7 @@ class City(GeographicalUnit):
 
 
 class Address(models.Model):
+
     ADDRESS_TYPES = (
     ('MainResidentialAddress', 'Residential address of Person'),
     ('BoxMainAccessPlace', 'Place where the boxes are located'),
@@ -151,14 +157,14 @@ class Address(models.Model):
     SequenceNumber = models.IntegerField()
     Street = models.CharField(max_length=256,help_text='Street :')
     HouseNumber = models.CharField(max_length=10, help_text= 'House number :')
-    PostBoxNumber = models.CharField(max_length=40, help_text= 'Post Box Number :')
-    AdditionalAddressLine = models.CharField(max_length=60, help_text='Additional Address Line :')
+    PostBoxNumber = models.CharField(blank=True,max_length=40, help_text= 'Post Box Number :')
+    AdditionalAddressLine = models.CharField(blank=True,max_length=60, help_text='Additional Address Line :')
     PostalCode = models.CharField(max_length=10,help_text='Postal Code:')
-    City = models.CharField(max_length=256,help_text = 'City:')
-    Region = models.CharField(max_length=20,help_text ='Postal Code:')
-    Country = models.ForeignKey(Country,on_delete=models.DO_NOTHING,blank=True,null=True,help_text = 'Select a country:')
-    Latitude = models.DecimalField(max_digits=9, decimal_places=6,help_text='Latitude (parallel to equator):')
-    Longitude = models.DecimalField(max_digits=9, decimal_places=6,help_text='Longitude (Through Nord and south Pole)):')    
+    City = models.CharField(null=True,blank=True,max_length=256,help_text = 'City:')
+    Region = models.CharField(null=True,max_length=20,help_text ='Postal Code:')
+    Country = models.ForeignKey(Country,on_delete=models.DO_NOTHING,blank=True,null=True,help_text = 'Enter a country:')
+    Latitude = models.DecimalField(null=True,max_digits=20, decimal_places=6,help_text='Latitude (parallel to equator):')
+    Longitude = models.DecimalField(null=True,max_digits=20, decimal_places=6,help_text='Longitude (Through Nord and south Pole)):')    
 
     @property
     def GPSCoordinate(self):
