@@ -1,0 +1,61 @@
+{% extends 'base_simple.html' %}
+
+{% comment %} {% block scripts %}
+
+{% endblock scripts %} {% endcomment %}
+
+{% block content %}
+<form method="post">
+{% csrf_token %} 
+
+<fieldset>
+
+{{ addressform.non_field_errors }}
+<h1> Address Creation </h1>
+<span class='form-group'>
+<div class="fieldWrapper">
+    <span class='form-control'>    
+	{{ addressform.AddressType.errors }}
+        {{ addressform.AddressType.label_tag }}
+    {{ addressform.AddressType }}
+        <td>{{ addressform.SequenceNumbers.errors }}
+        {{ addressform.SequenceNumber.label_tag }}
+        {{ addressform.SequenceNumber }}
+
+    </span>
+</div></span>
+<hr>
+<span class='form-group'>
+<div class="fieldWrapper">
+    <span class='form-control'>
+ 	 {{ addressform.Street.errors }}
+        {{ addressform.Street.label_tag }}
+       {{ addressform.Street }}</td>
+       {{ addressform.HouseNumber.errors }}
+        {{ addressform.HouseNumber.label_tag }}    
+        {{ addressform.HouseNumber }}
+ 
+    </span>
+</div>
+</span>
+<hr>
+<span class='form-group'>
+    <div class="fieldWrapper">
+        <span class='form-control'>
+            {{ addressform.AdditionalAddressLine.errors }}
+            {{ addressform.AdditionalAddressLine.label_tag }}
+        <tr>    {{ addressform.AdditionalAddressLine }}</tr>
+        </span>
+    </div>
+    </span>
+    <hr>
+
+</fieldset>
+{% comment %} {%for field in addressform%}
+{% endfor%} {% endcomment %}
+
+<button type="submit" class="btn btn-primary" name="Save" style="background:mediumslateblue" value="Save"> Save </button> 
+</form>
+
+{% comment %} {{ message}} {% endcomment %}
+{% endblock %}

@@ -153,8 +153,8 @@ class Address(models.Model):
     ('AddressOfHeadquarters', 'Addess of headquarter'),
     ('Other','Other type of address')
 )
-    AddressType = models.CharField(max_length=40,default = 'BoxMainAccessPlace',choices=ADDRESS_TYPES)
-    SequenceNumber = models.IntegerField()
+    AddressType = models.CharField(max_length=40,default = 'BoxMainAccessPlace',choices=ADDRESS_TYPES,help_text='Enter selection:')
+    SequenceNumber = models.IntegerField(help_text='address sequence number')
     Street = models.CharField(max_length=256,help_text='Street :')
     HouseNumber = models.CharField(max_length=10, help_text= 'House number :')
     PostBoxNumber = models.CharField(blank=True,max_length=40, help_text= 'Post Box Number :')
