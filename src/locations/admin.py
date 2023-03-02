@@ -1,6 +1,6 @@
 from django.contrib import admin
 from django.contrib.admin.options import TabularInline
-from .models import Address,GeographicalUnit,City,Country,Continent
+from .models import Address,Box,LivingUnit,GeographicalUnit,City,Country,Continent
 
 # Register your models here.
 
@@ -99,9 +99,45 @@ class GeographicalUnitAdmin(admin.ModelAdmin):
     def ispartof(self,obj):
         return f'{obj.IsPartOf.GeographicalUnitName}'
 
+@admin.register(Box)
+class BoxAdmin(admin.ModelAdmin):
+    pass
+    fields = ('AddressId','IsPartOf','BoxReference'
+        ('BoxDepth','BoxEntryWidth','BoxEntryHeight')
+        ,'BoxDescription'
+        ,('created_by','updated_by')
+        ,('updated','created')
+    )
+    list_display = ('AddressId','IsPartOf','BoxReference'
+        ,'BoxDepth','BoxEntryWidth','BoxEntryHeight'
+        ,'created_by','updated_by'
+        ,'updated','created'
+    )
+  
+@admin.register(LivingUnit)
+class LivingUnitAdmin(admin.ModelAdmin):
+    fields = ('AddressId','IsPartOf','BoxReference'
+        ,('Buidling','Floor','AppartmentReference')
+        ,('created_by','updated_by')
+        ,('updated','created')
+    )
+    list_display= ('AddressId','IsPartOf','BoxReference'
+        ,'BoxDepth','BoxEntryWidth','BoxEntryHeight'
+        ,'created_by','updated_by'
+        ,'updated','created'
+    )
+
+class LivingUnitInline(TabularInline):
+    model= LivingUnit
+
+class BoxInline(TabularInline):
+    # extra = 1
+    model = Box
+
 @admin.register(Address)
 class AddressAdmin(admin.ModelAdmin):
-    fields = (
+    inlines = [BoxInline,LivingUnitInline]
+    fields = ('AddressId','Addresstype'
         ('AddressType','SequenceNumber')
         ,('Street','HouseNumber')
         ,'AdditionalAddressLine'
@@ -109,6 +145,8 @@ class AddressAdmin(admin.ModelAdmin):
         ,('City','Region')
         ,'Country'
         ,('Latitude','Longitude')
+        ,('updated','created')
+        ,('created_by','updated_by')
     )
     list_display= [
         'AddressType','SequenceNumber'
@@ -117,4 +155,6 @@ class AddressAdmin(admin.ModelAdmin):
         ,'City'
         ,'Country'
         ,'Latitude','Longitude'   
+        ,'updated','created'
+        ,'created_by','updated_by'
     ]
