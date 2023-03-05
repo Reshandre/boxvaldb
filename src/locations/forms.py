@@ -11,5 +11,28 @@ class CountryForm(forms.ModelForm):
 class AddressForm(forms.ModelForm):
     class Meta:
         model= Address
-        fields='__all__'
+        fields=['AddressType','SequenceNumber'
+        ,'Street','HouseNumber'
+        ,'AdditionalAddressLine'
+        ,'City'
+        ,'Country'
+        ,'Latitude','Longitude'
+        ,'created_by','updated_by']
+        
+    def __init__(self,*args,**kwargs):
+        super(AddressForm,self).__init__(*args,**kwargs)
+        readOnlyFields = [ 'created_by','updated_by']
+        for visible in self.visible_fields():
+            if visible.field.label not in readOnlyFields:
+                visible.field.widget.attrs['class'] = 'form-control'
+                visible.field.widget.attrs['placeholder'] = visible.field.label
+            else:
+                visible.field.widget.attrs['class'] = 'form-control-plaintext'
+                # visible.field.widget.attrs['placeholder'] = visible.field.label
+                
+        
+    def save(self):
+        pass
+        super(AddressForm,self).save()
+
         

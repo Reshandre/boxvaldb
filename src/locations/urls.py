@@ -1,5 +1,5 @@
 from django.urls import path
-from .views import (viewLocation, index, 
+from .views import (viewLocation, index, viewAddress
 
 )
 
@@ -8,5 +8,6 @@ from .views import (viewLocation, index,
 app_name = 'locations'
 urlpatterns = [
     path('', index, name='index'),
-    path ('api/searchplace/<what>/<place>',viewLocation,name='api-place')
+    path ('api/searchplace/<what>/<place>',viewLocation,name='api-place'),
+    path ('managedata/address', viewAddress,name='manage-adddress')
 ]

@@ -1,61 +1,130 @@
 {% extends 'base_simple.html' %}
 
-{% comment %} {% block scripts %}
-
-{% endblock scripts %} {% endcomment %}
+{% block scripts %}
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+{% endblock scripts %}
 
 {% block content %}
-<form method="post">
-{% csrf_token %} 
+<div class="container">
+    <form method="post" ">
+        {% csrf_token %} 
+        <div class="row">
+            <div class="col-md-4">
+                {{ addressform.AddressType.errors }}
+                {{ addressform.AddressType.label_tag }}
+                {{ addressform.AddressType }}
+                {{ addressform.AddressType.help_text }}
 
-<fieldset>
-
-{{ addressform.non_field_errors }}
-<h1> Address Creation </h1>
-<span class='form-group'>
-<div class="fieldWrapper">
-    <span class='form-control'>    
-	{{ addressform.AddressType.errors }}
-        {{ addressform.AddressType.label_tag }}
-    {{ addressform.AddressType }}
-        <td>{{ addressform.SequenceNumbers.errors }}
-        {{ addressform.SequenceNumber.label_tag }}
-        {{ addressform.SequenceNumber }}
-
-    </span>
-</div></span>
-<hr>
-<span class='form-group'>
-<div class="fieldWrapper">
-    <span class='form-control'>
- 	 {{ addressform.Street.errors }}
-        {{ addressform.Street.label_tag }}
-       {{ addressform.Street }}</td>
-       {{ addressform.HouseNumber.errors }}
-        {{ addressform.HouseNumber.label_tag }}    
-        {{ addressform.HouseNumber }}
+            </div>
+            <div class="col-md-4">
+                {{ addressform.SequenceNumbers.errors }}
+               {{ addressform.SequenceNumber.label_tag }}
+                {{ addressform.SequenceNumber }}
+                {{ addressform.SequenceNumber.help_text }}
  
-    </span>
-</div>
-</span>
-<hr>
-<span class='form-group'>
-    <div class="fieldWrapper">
-        <span class='form-control'>
-            {{ addressform.AdditionalAddressLine.errors }}
-            {{ addressform.AdditionalAddressLine.label_tag }}
-        <tr>    {{ addressform.AdditionalAddressLine }}</tr>
-        </span>
-    </div>
-    </span>
-    <hr>
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-md-6">
+                {{ addressform.Street.errors }}
+                {{ addressform.Street.label_tag }}
+                {{ addressform.Street }}
+                {{ addressform.Street.help_text }}
 
-</fieldset>
-{% comment %} {%for field in addressform%}
-{% endfor%} {% endcomment %}
+            </div>
+            <div class="col-md-6">
+                {{ addressform.HouseNumber.errors }}
+                {{ addressform.HouseNumber.label_tag }}
+                {{ addressform.HouseNumber }}
+                {{ addressform.help_text }}
 
-<button type="submit" class="btn btn-primary" name="Save" style="background:mediumslateblue" value="Save"> Save </button> 
-</form>
+            </div>
+        </div>
+        <div class="col">
+        {{ addressform.AdditionalAddressLine.errors }}
+        {{ addressform.AdditionalAddressLine.label_tag }}
+        {{ addressform.AdditionalAddressLine }}      
+        {{ addressform.AdditionalAddressLine.help_text }}      
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                {{ addressform.PostalCode.errors }}
+                {{ addressform.PostalCode.label_tag }}
+                {{ addressform.PostalCode }}
+                {{ addressform.PostalCode.help_text }}
+            </div>
+            <div class="col-md-6">
+                {{ addressform.PostBoxNumber.errors }}
+                {{ addressform.PostBoxNumber.label_tag }}
+                {{ addressform.PostBoxNumber }}
+                {{ addressform.PostBoxNumber.help_text }}
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                {{ addressform.City.errors }}
+                {{ addressform.City.label_tag }}
+                {{ addressform.City }}
+                {{addressform.City.help_text}}
+                <a onclick="cityLocateChange()" class="link-primary" id="change_id_City"  data-popup="yes" title="Change selected city" href="/admin/locations/city/257/change/?_to_field=geographicalunit_ptr&amp;_popup=1"><img src="/static/admin/img/icon-changelink.svg" alt="Change"></a>
+                <a class="link-secondary" id="add_id_City" data-popup="yes" href="/admin/locations/city/add/?_to_field=geographicalunit_ptr&amp;_popup=1" title="Add another city"><img src="/static/admin/img/icon-addlink.svg" alt="Add"></a>
+                <a class="link-dark" id="delete_id_City"  data-popup="yes" title="Delete selected city" href="/admin/locations/city/257/delete/?_to_field=geographicalunit_ptr&amp;_popup=1"><img src="/static/admin/img/icon-deletelink.svg" alt="Delete"></a>
+                <a class="link-primary" id="view_id_City" data-href-template="/admin/locations/city/__fk__/change/?_to_field=geographicalunit_ptr" title="View selected city" href="/admin/locations/city/257/change/?_to_field=geographicalunit_ptr"><img src="/static/admin/img/icon-viewlink.svg" alt="View"></a>
+                <script>
+                    function cityLocateChange(){
+                        const opt = document.getElementById("id_City").value
+                        console.log(opt)
+                        document.getElementById("change_id_City").href = "/admin/locations/city/"+opt+"/change/?_to_field=geographicalunit_ptr&amp;_popup=1";
+                    }
+                </script>
+            </div>
+            <div class="col-md-6">
+                {{ addressform.Region.errors }}
+                {{ addressform.Region.label_tag }}
+                {{ addressform.Region }}
+                {{ addressform.Region.help_text }}
 
-{% comment %} {{ message}} {% endcomment %}
+            </div>
+        </div>    
+        <div class="col-md-6">
+            {{ addressform.Country.errors }}
+            {{ addressform.Country.label_tag }}
+            {{ addressform.Country }}
+            {{ addressform.Country.help_text }}
+
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                {{ addressform.Longitude.errors }}
+                {{ addressform.Longitude.label_tag }}
+                {{ addressform.Longitude }}
+                {{ addressform.Longitude.help_text }}
+
+            </div>
+            <div class="col-md-6">
+                {{ addressform.Latitude.errors }}
+                {{ addressform.Latitude.label_tag }}
+                {{ addressform.Latitude }}
+                {{ addressform.Latitude.help_text }}
+           </div>
+        </div>    
+        <div class="row">
+            <div class="col-md-6">
+                {{ addressform.created_by.errors }}
+                {{ addressform.created_by.label_tag }}
+                {{ addressform.created_by }}
+            </div>
+            <div class="col-md-6">
+                {{ addressform.updated_by.errors }}
+                {{ addressform.updated_by.label_tag }}
+                {{ addressform.updated_by }}
+            </div>
+        </div>    
+        <button type="submit" class="btn btn-primary" name="Save" style="background:mediumslateblue" value="Save"> Save </button> 
+    </form>
+<div>
+    {{message}}
 {% endblock %}

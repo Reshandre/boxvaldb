@@ -102,29 +102,31 @@ class GeographicalUnitAdmin(admin.ModelAdmin):
 @admin.register(Box)
 class BoxAdmin(admin.ModelAdmin):
     pass
-    fields = ('AddressId','IsPartOf','BoxReference'
+    fields = ('AddressId','IsPartOf','BoxReference',
         ('BoxDepth','BoxEntryWidth','BoxEntryHeight')
         ,'BoxDescription'
         ,('created_by','updated_by')
-        ,('updated','created')
+        # ,('updated','created')
     )
     list_display = ('AddressId','IsPartOf','BoxReference'
         ,'BoxDepth','BoxEntryWidth','BoxEntryHeight'
         ,'created_by','updated_by'
         ,'updated','created'
+        ,'id'
     )
   
 @admin.register(LivingUnit)
 class LivingUnitAdmin(admin.ModelAdmin):
-    fields = ('AddressId','IsPartOf','BoxReference'
+    fields = ('AddressId','IsPartOf'
         ,('Buidling','Floor','AppartmentReference')
         ,('created_by','updated_by')
-        ,('updated','created')
+        # ,('updated','created')
     )
-    list_display= ('AddressId','IsPartOf','BoxReference'
-        ,'BoxDepth','BoxEntryWidth','BoxEntryHeight'
+    list_display= ('AddressId','IsPartOf'
+        ,'Building','Floor','AppartmentReference'
         ,'created_by','updated_by'
         ,'updated','created'
+        ,'id'
     )
 
 class LivingUnitInline(TabularInline):
@@ -136,25 +138,26 @@ class BoxInline(TabularInline):
 
 @admin.register(Address)
 class AddressAdmin(admin.ModelAdmin):
-    inlines = [BoxInline,LivingUnitInline]
-    fields = ('AddressId','Addresstype'
-        ('AddressType','SequenceNumber')
+    # inlines = [BoxInline,LivingUnitInline]
+    fields = ('AddressId'
+        ,('AddressType','SequenceNumber')
         ,('Street','HouseNumber')
         ,'AdditionalAddressLine'
         ,('PostalCode','PostBoxNumber')
         ,('City','Region')
         ,'Country'
         ,('Latitude','Longitude')
-        ,('updated','created')
+        # ,('updated','created')
         ,('created_by','updated_by')
     )
-    list_display= [
-        'AddressType','SequenceNumber'
+    list_display= ('AddressId','AddressType','SequenceNumber'
         ,'Street','HouseNumber'
         ,'AdditionalAddressLine'
         ,'City'
         ,'Country'
         ,'Latitude','Longitude'   
         ,'updated','created'
-        ,'created_by','updated_by'
-    ]
+        ,'created_by','updated_by',
+        ,'id'
+    )
+    

@@ -2,6 +2,8 @@ import json
 from django.http import JsonResponse
 from django.shortcuts import render
 from django.db.models import Q
+from locations.forms import AddressForm
+from locations.settings import APP_NAME
 
 # from tools.script_tools import 
 
@@ -18,10 +20,6 @@ from param.tools import buildModelOutput
 def index(request):
     message = "Locations"
     return render (request, 'locations/index_simple.html', {'message':message})
-
-
-
-
 
 
 def viewLocation(request,what,place):
@@ -83,6 +81,29 @@ def viewLocation(request,what,place):
         
     
     return JsonResponse(data=collectContinent,safe=False)
+
+def get_initialSet(user):
+    return {"created_by":user,
+            "updated_by":user}
+
+
+def viewAddress(request):
+    
+    if request.method == "POST":
+        addressForm = AddressForm(request.POST)
+        if addressForm.is_valid():
+            addressForm.save()
+    else:
+        addressForm = AddressForm(initial=get_initialSet(request.user))
+    message = addressForm.errors
+    templateName= f"{APP_NAME}/getAddress.html"
+    context = {
+        "addressform": addressForm,
+        "message": message,
+    }
+    
+    return render(request,templateName,context)
+            
                 
                 
     

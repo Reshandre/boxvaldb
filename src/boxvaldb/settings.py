@@ -155,6 +155,8 @@ DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 PROJECT_ROOT = os.path.realpath(os.path.dirname(__file__))
 PROJECT_NAME = os.path.basename(PROJECT_ROOT)
 
+# AUTH_USER_MODEL = 'profiles.Profile'
+
 
 
 

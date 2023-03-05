@@ -1,3 +1,6 @@
+# from django.contrib.auth.models import User
+from django.contrib.auth import get_user_model
+User=get_user_model()
 from django.db import models
 import uuid
 
@@ -27,9 +30,8 @@ class GeographicalUnit(models.Model):
     GeographicalUnitShortName = models.CharField(max_length=100)
     HierarchyLevel= models.IntegerField(default=0)
     IsPartOf = models.ForeignKey("self",on_delete=models.SET_NULL,
-    blank=True, null=True,
-    help_text='Select a the geographical Unit it belogs to')
-    EntryStatus= models.CharField(max_length=15,choices=ENTRY_STATUS_CHOICES, default='D')
+    blank=True, null=True, help_text='Select a the geographical Unit it belogs to')
+    EntryStatus= models.CharField(max_length=15,choices=ENTRY_STATUS_CHOICES, default='T')
 
     def __str__(self):
         return f'{self.GeographicalUnitCategory} - {self.GeographicalUnitName}'
@@ -120,7 +122,7 @@ class City(GeographicalUnit):
     
     
     def __str__(self):
-        return f'{self.id} {self.CityName} {self.CityCode}'
+        return f'{self.CityName} {self.CityCode}'
     
     @property
     def CityName(self):
@@ -151,9 +153,9 @@ class City(GeographicalUnit):
 
 
 class GeneralAddress(models.Model):
-    AddressId = models.CharField(unique=True,max_length=128,#default=uuid.uuid4,
+    AddressId = models.CharField(unique=True,max_length=128,default=uuid.uuid4,
                                  help_text= 'Unique visible number location')
-    SequenceNumber = models.IntegerField(help_text='address sequence number')
+    SequenceNumber = models.IntegerField(default=1,help_text='address sequence number')
     ADDRESS_CATEGORIES = (
         ('Address','Address as managed by postal service'),
         ('box','Place of a box in an address'),
@@ -167,6 +169,8 @@ class GeneralAddress(models.Model):
     class Meta:
         abstract = True
     
+
+    
 class Address(GeneralAddress):
     ADDRESS_TYPES = (
         ('UnSpecified', 'The type of address is not specified'),
@@ -178,16 +182,16 @@ class Address(GeneralAddress):
     AddressType = models.CharField(max_length=40,default = 'UnSpecified', choices=ADDRESS_TYPES,help_text='Enter selection:')
     Street = models.CharField(max_length=256,help_text='Street :')
     HouseNumber = models.CharField(max_length=10, help_text= 'House number :')
-    PostBoxNumber = models.CharField(blank=True,max_length=40, help_text= 'Post Box Number :')
+    PostBoxNumber = models.CharField(max_length=40, help_text= 'Post Box Number :',blank=True)
     AdditionalAddressLine = models.CharField(blank=True,max_length=60, help_text='Additional Address Line :')
-    PostalCode = models.CharField(max_length=10,help_text='Postal Code:')
-    City = models.CharField(null=True,blank=True,max_length=256,help_text = 'City:')
-    Region = models.CharField(null=True,max_length=20,help_text ='Postal Code:')
+    PostalCode = models.CharField(max_length=10,help_text='Postal Code:',blank=True)
+    City = models.ForeignKey(City,on_delete=models.DO_NOTHING,blank=True,null=True,help_text = 'Select a city or add one:')
+    Region = models.CharField(null=True,blank=True,max_length=20,help_text ='Postal Code:')
     Country = models.ForeignKey(Country,on_delete=models.DO_NOTHING,blank=True,null=True,help_text = 'Enter a country:')
-    Latitude = models.DecimalField(null=True,max_digits=20, decimal_places=6,help_text='Latitude (parallel to equator):')
-    Longitude = models.DecimalField(null=True,max_digits=20, decimal_places=6,help_text='Longitude (Through Nord and south Pole)):')    
-    created_by = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE, null=False, related_name= 'addressCreated_by')
-    updated_by = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE, null=False) 
+    Latitude = models.DecimalField(null=True,blank=True,max_digits=20, decimal_places=6,help_text='Latitude (parallel to equator):')
+    Longitude = models.DecimalField(null=True,blank=True,max_digits=20, decimal_places=6,help_text='Longitude (Through Nord and south Pole)):')    
+    created_by = models.ForeignKey(User, on_delete=models.CASCADE, null=False, related_name= 'addressCreated_by')
+    updated_by = models.ForeignKey(User, on_delete=models.CASCADE, null=False) 
     @property
     def GPSCoordinate(self):
         return f"{self.Latitude}, {self.Longitude}"
@@ -210,7 +214,7 @@ class Address(GeneralAddress):
     def save(self,*args,**kwargs):
         pass
         self.AddressCategory ='Address'
-        self.AddressId = "Address_"+uuid.uuid4
+        self.AddressId = f"{self.AddressCategory}_{uuid.uuid4()}"
         return super(Address,self).save(*args,**kwargs)
     
 class Box(GeneralAddress):
@@ -222,16 +226,16 @@ class Box(GeneralAddress):
     BoxEntryWidth = models.DecimalField(max_digits=8,decimal_places=2,help_text='The width of the box')
     BoxEntryHeight = models.DecimalField(max_digits=8,decimal_places=2,help_text='The height of the box')
     BoxDescription = models.TextField()
-    created_by = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE, null=False, related_name= 'boxCreated_by')
-    updated_by = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE, null=False) 
+    created_by = models.ForeignKey(User, on_delete=models.CASCADE, null=False, related_name= 'boxCreated_by')
+    updated_by = models.ForeignKey(User, on_delete=models.CASCADE, null=False) 
 
     def __str__(self):
-        return f'{self.AddressId} - {self.BoxReference} - {self.IsPartOf.AddressId} - {self.IsPartOf.Street}  '
+        return f'{self.AddressId} - {self.BoxReference} - {self.IsPartOf.AddressId} - {self.IsPartOf.Street} '
     
     def save(self,*args,**kwargs):
         pass
         self.AddressCategory ='Box'
-        self.AddressId = "Box_"+uuid.uuid4
+        self.AddressId = f"{self.AddressCategory}_{uuid.uuid4()}"
         return super(Box,self).save(*args,**kwargs)
 
 
@@ -243,8 +247,8 @@ class LivingUnit(GeneralAddress):
     Floor = models.CharField(null=True,blank=True,max_length=20,help_text = 'Floor:')
     AppartmentReference = models.CharField(null=True,blank=True,max_length=50,help_text = 'Appartment Reference:')
     AppartmentDescription = models.TextField()
-    created_by = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE, null=False, related_name= 'livingUnitCreated_by')
-    updated_by = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE, null=False) 
+    created_by = models.ForeignKey(User, on_delete=models.CASCADE, null=False, related_name= 'livingUnitCreated_by')
+    updated_by = models.ForeignKey(User, on_delete=models.CASCADE, null=False) 
 
     def __str__(self):
         return f'{self.AddressId} - {self.AppartmentReference} - {self.IsPartOf.SequenceNumber} - {self.IsPartOf.Street}'
@@ -252,6 +256,6 @@ class LivingUnit(GeneralAddress):
     def save(self,*args,**kwargs):
         pass
         self.AddressCategory ='LivingUnit'
-        self.AddressId = "LivingUnit_"+uuid.uuid4
+        self.AddressId = f"{self.AddressCategory}_{uuid.uuid4()}"
         return super(Address,self).save(*args,**kwargs)
 
