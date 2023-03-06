@@ -22,6 +22,7 @@ class AddressForm(forms.ModelForm):
     def __init__(self,*args,**kwargs):
         super(AddressForm,self).__init__(*args,**kwargs)
         readOnlyFields = [ 'created_by','updated_by']
+        onchangeFields = ['City']
         for visible in self.visible_fields():
             if visible.field.label not in readOnlyFields:
                 visible.field.widget.attrs['class'] = 'form-control'
@@ -29,6 +30,9 @@ class AddressForm(forms.ModelForm):
             else:
                 visible.field.widget.attrs['class'] = 'form-control-plaintext'
                 # visible.field.widget.attrs['placeholder'] = visible.field.label
+            if visible.field.label not in onchangeFields:
+                pass
+                visible.field.widget.attrs['onchange'] = 'onchangeInputCity()'
                 
         
     def save(self):

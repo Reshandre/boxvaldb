@@ -84,6 +84,8 @@ class Country(GeographicalUnit):
     InternetSuffix = models.CharField(max_length=200,blank=True,help_text='Internet suffix Code for Country with dot (example .fr) :',null=True) 
     ISO3166Country = models.CharField(max_length=3,help_text='Iso316 Code for Country :',null=True) 
 
+    class Meta:
+        ordering = ['GeographicalUnitName','IsPartOf',]
 
     
     @property
@@ -107,7 +109,7 @@ class Country(GeographicalUnit):
         del self.GeographicalUnitShortName
 
     def __str__(self):
-        return f'{self.CountryShortName} ({self.CountryCode})'
+        return f'{self.CountryShortName} ({self.CountryCode}) - {self.IsPartOf.GeographicalUnitName} '
     def save(self,*args,**kwargs):
         self.GeographicalUnitCategory = 'Country'
         self.CountryCode = self.CountryCode.upper()
@@ -121,9 +123,7 @@ class City(GeographicalUnit):
     # PostalCode = models.CharField(max_length=10,help_text='Postal Code:')
     
     
-    def __str__(self):
-        return f'{self.CityName} {self.CityCode}'
-    
+
     @property
     def CityName(self):
         return self.GeographicalUnitName
@@ -143,7 +143,10 @@ class City(GeographicalUnit):
     @CityShortName.deleter
     def CityShortName(self):
         del self.GeographicalUnitShortName
-    
+
+    def __str__(self):
+        return f'{self.CityName} - {self.IsPartOf.GeographicalUnitName} '
+        
     def save(self,*args,**kwargs):
         self.GeographicalUnitCategory = 'City'
         self.CityCode = self.CityCode.upper().replace(' ','_')
@@ -153,7 +156,7 @@ class City(GeographicalUnit):
 
 
 class GeneralAddress(models.Model):
-    AddressId = models.CharField(unique=True,max_length=128,default=uuid.uuid4,
+    AddressId = models.CharField(unique=True,max_length=128,# default=uuid.uuid4, 
                                  help_text= 'Unique visible number location')
     SequenceNumber = models.IntegerField(default=1,help_text='address sequence number')
     ADDRESS_CATEGORIES = (
@@ -188,8 +191,8 @@ class Address(GeneralAddress):
     City = models.ForeignKey(City,on_delete=models.DO_NOTHING,blank=True,null=True,help_text = 'Select a city or add one:')
     Region = models.CharField(null=True,blank=True,max_length=20,help_text ='Postal Code:')
     Country = models.ForeignKey(Country,on_delete=models.DO_NOTHING,blank=True,null=True,help_text = 'Enter a country:')
-    Latitude = models.DecimalField(null=True,blank=True,max_digits=20, decimal_places=6,help_text='Latitude (parallel to equator):')
-    Longitude = models.DecimalField(null=True,blank=True,max_digits=20, decimal_places=6,help_text='Longitude (Through Nord and south Pole)):')    
+    Latitude = models.DecimalField(null=True,blank=True,max_digits=19, decimal_places=16,help_text='Latitude (parallel to equator):')
+    Longitude = models.DecimalField(null=True,blank=True,max_digits=19, decimal_places=16,help_text='Longitude (Through Nord and south Pole)):')    
     created_by = models.ForeignKey(User, on_delete=models.CASCADE, null=False, related_name= 'addressCreated_by')
     updated_by = models.ForeignKey(User, on_delete=models.CASCADE, null=False) 
     @property
@@ -214,7 +217,9 @@ class Address(GeneralAddress):
     def save(self,*args,**kwargs):
         pass
         self.AddressCategory ='Address'
-        self.AddressId = f"{self.AddressCategory}_{uuid.uuid4()}"
+        if self.id is None:
+            if len(self.AddressId) == 0:
+                self.AddressId = f"{self.AddressCategory}_{uuid.uuid4()}"
         return super(Address,self).save(*args,**kwargs)
     
 class Box(GeneralAddress):

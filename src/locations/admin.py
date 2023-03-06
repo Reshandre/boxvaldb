@@ -157,7 +157,7 @@ class AddressAdmin(admin.ModelAdmin):
         ,'Country'
         ,'Latitude','Longitude'   
         ,'updated','created'
-        ,'created_by','updated_by',
+        ,'created_by','updated_by'
         ,'id'
     )
     

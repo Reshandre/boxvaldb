@@ -95,6 +95,7 @@ def viewAddress(request):
             addressForm.save()
     else:
         addressForm = AddressForm(initial=get_initialSet(request.user))
+        pass
     message = addressForm.errors
     templateName= f"{APP_NAME}/getAddress.html"
     context = {
