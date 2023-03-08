@@ -23,7 +23,7 @@ urlpatterns = [
     path('boxes/', include('boxes.urls')),
     path('locations/', include('locations.urls')),
     path('param/',include('param.urls')),
-    path('', include('masters.urls')),
+    path('master/', include('masters.urls')),
 
 ]
 

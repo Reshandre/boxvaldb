@@ -186,8 +186,24 @@ def mapRawColumns(rawColumns, appName, modelName):
     return mappedColumns
 
 
-# if the column is a foreign key tries to find the value
+# 
+
+
 def getForeignKeyValue(appName, modelName, column, value):
+    """Get the instnce based of a foreign key value of a column  
+
+    Args:
+        appName (string): app name
+        modelName (string): model name
+        column (string): column name
+        value (Any): foreign key as given by ModelFieldMapper
+
+    Raises:
+        Exception: _description_
+
+    Returns:
+        instance of model: instance of model
+    """    
     qs = ModelFieldMapper.objects.filter(
         AppName=appName, ModelName=modelName, ModelFieldName=column)
     isFound = len(qs) == 1
@@ -201,10 +217,21 @@ def getForeignKeyValue(appName, modelName, column, value):
     qsFKObject = qsFK[0]
     return qsFKObject
 
- # return the list the foreign key of a model
+    # return the list the foreign key of a model
 
 
 def listForeignKeys(modelObject,appName,modelName):
+    """Returns the list of foreign keys of the object
+
+    Args:
+        modelObject (class of model): class of a model
+        appName (string): app name
+        modelName (string): model name
+
+
+    Returns:
+        list of strings: list of foreign keys columns
+    """    
     lstForeignKeys = []
     for f in modelObject._meta.fields:
         if 'ptr' in f.name:

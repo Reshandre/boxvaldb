@@ -16,7 +16,7 @@ def getModel(appName, modelName):
         class of model not ound
 
     Returns:
-        model.Model: instance of model.Model
+        model.Model: class of model.Model
     """
     if '-' in modelName:
         modelName = modelName.split('-')[1]
@@ -24,7 +24,7 @@ def getModel(appName, modelName):
     result = None
     found = False
     for o in dir(module):
-        if (getattr(module, o).__class__.__name__ == 'ModelBase'):
+        if (getattr(module, o).__class__.__name__ in ('ModelBase')):
             if getattr(module, o).__name__ == modelName:
                 result = getattr(module, o)
                 found = True

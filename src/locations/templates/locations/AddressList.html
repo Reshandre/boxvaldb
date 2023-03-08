@@ -1,0 +1,29 @@
+{% extends "base_simple.html" %}
+{% block sidebar%}
+{% endblock %}
+{% block content %}
+    <h1>{{theobject}} List</h1>
+
+    {% if list_data %}
+        <table class="table">
+            <thead>
+                <tr>    
+                    {% for key in list_keys %}
+                        <th>{{ key }}</th>
+                    {% endfor %}
+                </tr>
+            </thead>
+            <tbody>
+            {% for row in list_data %}
+                <tr>    
+                    {% for col in row %}
+                        <td>{{ col }}</td>
+                    {% endfor %}
+                </tr>           
+            {% endfor %}     
+            </tbody>
+        </table>
+    {% else %}
+      <p>There are no {{ theobject }}s.</p>
+    {% endif %}
+{% endblock %}

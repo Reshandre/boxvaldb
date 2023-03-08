@@ -157,6 +157,6 @@ PROJECT_NAME = os.path.basename(PROJECT_ROOT)
 
 # AUTH_USER_MODEL = 'profiles.Profile'
 
-
+TEMPLATE_DEBUG = True
 
 

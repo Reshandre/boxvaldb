@@ -14,7 +14,8 @@ class AddressForm(forms.ModelForm):
         fields=['AddressType','SequenceNumber'
         ,'Street','HouseNumber'
         ,'AdditionalAddressLine'
-        ,'City'
+        ,'PostalCode','PostBoxNumber'
+        ,'City','Region'
         ,'Country'
         ,'Latitude','Longitude'
         ,'created_by','updated_by']
@@ -30,7 +31,7 @@ class AddressForm(forms.ModelForm):
             else:
                 visible.field.widget.attrs['class'] = 'form-control-plaintext'
                 # visible.field.widget.attrs['placeholder'] = visible.field.label
-            if visible.field.label not in onchangeFields:
+            if visible.field.label in onchangeFields:
                 pass
                 visible.field.widget.attrs['onchange'] = 'onchangeInputCity()'
                 

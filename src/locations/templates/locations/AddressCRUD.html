@@ -24,7 +24,7 @@
                 <br>
                 <div class="col-md-4">
                     {{ addressform.SequenceNumbers.errors }}
-                {{ addressform.SequenceNumber.label_tag }}
+                    {{ addressform.SequenceNumber.label_tag }}
                     {{ addressform.SequenceNumber }}
                     {{ addressform.SequenceNumber.help_text }}
     
@@ -37,18 +37,16 @@
                     {{ addressform.Street.label_tag }}
                     {{ addressform.Street }}
                     {{ addressform.Street.help_text }}
-
                 </div>
                 <div class="col-md-6">
                     {{ addressform.HouseNumber.errors }}
                     {{ addressform.HouseNumber.label_tag }}
                     {{ addressform.HouseNumber }}
                     {{ addressform.help_text }}
-
                 </div>
             </div>
             <br>
-            <div class="col">
+           <div class="col-md-6">
             {{ addressform.AdditionalAddressLine.errors }}
             {{ addressform.AdditionalAddressLine.label_tag }}
             {{ addressform.AdditionalAddressLine }}      
@@ -86,7 +84,23 @@
                             const href = "/admin/locations/city/"+opt+"/change/?_to_field=geographicalunit_ptr&amp;_popup=1";                            
                             window.open(href,'newwindow',width=100,height=125);
                         }
+                    </script>
+                    <script>
                         function onchangeInputCity(){
+                            const opt = document.getElementById("id_City").value
+                            const country = document.getElementById("id_Country")
+                            console.log(opt)
+                            fatherId=0
+                            fetch("/locations/api/parentid/"+opt)
+                             .then ((response) => response.json())
+                             .then((data) => {
+                                fatherId = data["id"]
+                                country.value=fatherId
+                             })
+                             .catch((error) =>{
+                                console.log("Error:",error)
+                             })
+                            
                             
                         }
                     </script>
