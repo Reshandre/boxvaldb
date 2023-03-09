@@ -1,7 +1,6 @@
 from django.shortcuts import render
 
-from param.tools import getFields, getSimpleModelList
-from tools.tools_global import getModel
+from tools.tools_global import getFields, getModel, getSimpleModelList
 from .forms import GetAppForm, ModelFieldMapperForm
 from .models import ModelFieldMapper
 from .XLSXinputoutput import runExport, runImport, runBackup

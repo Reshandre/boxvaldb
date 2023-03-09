@@ -1,11 +1,14 @@
 {% extends "base_simple.html" %}
 {% block sidebar%}
-{% endblock %}
+{% endblock sidebar %}
+{% block title %}
+    {{theobject}} manage
+{%endblock title%}
 {% block content %}
     <h1>{{theobject}} List</h1>
 
     {% if list_data %}
-        <table class="table">
+        <table class="table table-striped table-hover table-bordered table-sm">
             <thead>
                 <tr>    
                     {% for key in list_keys %}
@@ -18,12 +21,15 @@
                 <tr>    
                     {% for col in row %}
                         <td>{{ col }}</td>
+                        {% if forloop.counter == 1%}
+                        <a href=""></a>
+                        {% endif %}
                     {% endfor %}
                 </tr>           
             {% endfor %}     
             </tbody>
         </table>
     {% else %}
-      <p>There are no {{ theobject }}s.</p>
+      <p>There are no {{ theobject }}'s.</p>
     {% endif %}
 {% endblock %}

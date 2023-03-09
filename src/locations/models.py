@@ -172,7 +172,16 @@ class GeneralAddress(models.Model):
     class Meta:
         abstract = True
     
-
+def generate_AddressId(obj,city,country,street):
+    # generate_AddressId(self,self.City,self.Country,self.Street)
+    
+    suf  = f"_{'' if not hasattr(obj,'Country') else obj.Country.CountryCode}"
+    suf += f"_{'' if not hasattr(obj,'City') else obj.City.CityCode}"
+    suf += f"_{'' if not hasattr(obj,'Street') else obj.Street}"
+    suf += f"_{str(uuid.uuid4())[0:8]}"
+    return suf
+    
+    
     
 class Address(GeneralAddress):
     ADDRESS_TYPES = (
@@ -215,11 +224,15 @@ class Address(GeneralAddress):
         return f'{self.AddressId} - {self.AddressType} - {self.Street}'
     
     def save(self,*args,**kwargs):
-        pass
         self.AddressCategory ='Address'
         if self.id is None:
-            if len(self.AddressId) == 0:
-                self.AddressId = f"{self.AddressCategory}_{uuid.uuid4()}"
+            suf = generate_AddressId(self,self.City,self.Country,self.Street)
+            self.AddressId = f"{self.AddressCategory}_{suf}"
+
+        if len(self.AddressId) < 2:
+            suf = generate_AddressId(self,self.City,self.Country,self.Street)
+            self.AddressId = f"{self.AddressCategory}_{suf}"
+
         return super(Address,self).save(*args,**kwargs)
     
 class Box(GeneralAddress):

@@ -4,7 +4,7 @@ from pathlib import Path
 from param import settings
 from shutil import copyfile
 
-from tools.tools_global import getModel
+from tools.tools_global import getModel, getRawColumns
 
 from .settings import (
     DATA_LOAD_DUMP_BACKUP,
@@ -17,7 +17,7 @@ from .tools import (
     getLoadDataImportPath,
     uniqueFieldConstraintslist,
     getLoadDataExportPath,
-    getRawColumns, listForeignKeys,
+    listForeignKeys,
     loadData,
     mapColumns,
     mapRawColumns, 

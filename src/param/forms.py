@@ -1,8 +1,10 @@
 from django import forms
 
 from django.apps import apps
+
+from tools.tools_global import getAppList, getModelList
 from .models import ModelFieldMapper
-from .tools import (getAppList, getModelList  )
+# from .tools import ( getModelList  )
 
 
 

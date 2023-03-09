@@ -1,5 +1,6 @@
 from email.policy import default
 from django.db import models
+
 from locations.models import Country,City
 from .codes import *
 import uuid
